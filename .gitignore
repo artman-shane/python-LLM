@@ -2,4 +2,4 @@
 .env
 
 # Data output files
-urls.txt
+data/

@@ -1,3 +1,4 @@
+import json
 import os
 from dotenv import load_dotenv
 import requests
@@ -18,6 +19,8 @@ def grab_urls(url,required_string=None):
     response = requests.get(url)
     soup = BeautifulSoup(response.content, 'html.parser')
     link_elements = soup.select("a[href]")
+    # If we found a URL and appended it to the list, we set add_url=1. If we didn't find a URL, we set
+    add_url=0
 
     for link_element in link_elements:
         found_url = link_element['href'].strip()
@@ -28,6 +31,8 @@ def grab_urls(url,required_string=None):
 
                 print('Adding URL:', found_url) if os.getenv('DEBUG').lower() == "true" else None
                 urls.append(found_url)
+                # Did we add the url?
+                add_url=1
                 
             else:
                 print('URL not added (duplicate):', found_url) if os.getenv('DEBUG').lower() == "true" else None
@@ -38,12 +43,24 @@ def grab_urls(url,required_string=None):
             if full_url not in urls and (required_string in found_url if required_string else True):  # Check if URL already exists in the list
                 print('Adding URL:', full_url) if oos.getenv('DEBUG').lower() == "true" else None
                 urls.append(full_url)
+                # Simplify the URL for comparison later
+                found_url=full_url
+                # Did we add the url?
+                add_url=1
 
             else:
                 print('URL not added (duplicate):', full_url) if os.getenv('DEBUG').lower() == "true" else None
 
         else:
             print('URL not added:', found_url) if os.getenv('DEBUG').lower() == "true" else None
+
+        if add_url==1:
+            add_url=0
+            current_document = {}
+            current_document['url'] = found_url
+            current_document['title'] = soup.title.string
+            current_document['content'] = soup.get_text()
+            documents.append(current_document)
 
     return urls
 
@@ -67,10 +84,27 @@ for url in urls:
 
 print('\n\n Processed', urls_processed, 'URLs')
 
-with open('urls.txt', 'w') as file:
+output_dir = 'output'
+if not os.path.exists(output_dir):
+    os.makedirs(output_dir)
 
+# Handle output for URLs
+url_output_file = os.path.join(output_dir, 'urls.txt')
+if os.path.exists(url_output_file):
+    os.remove(url_output_file)
+
+with open(url_output_file, 'w') as file:
     for url in urls:
         file.write(url + '\n')
+
+# Handle output for documents
+documents_output_file = os.path.join(output_dir, 'documents.json')
+if os.path.exists(documents_output_file):
+    os.remove(documents_output_file)
+
+with open(documents_output_file, 'w') as file:
+    json.dump(documents, file, indent=4)
+
 
 
 # while len(urls) != 0:
