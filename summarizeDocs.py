@@ -21,7 +21,7 @@ print("Read in", len(documents), "documents")
 
 # Define the prompt
 prompt = "Please ensure that responses are formated for easy reading. Provide a header for each response.\n"
-prompt += "Please provide a 1 sentence summary of the following documents. Only 1 sentence per document content:\n"
+# prompt += "Please provide a 1 sentence summary of the following documents. Only 1 sentence per document content:\n"
 document_idx=0
 for document in documents:
     prompt += "document_idx: " + document['content'] + "\n"
@@ -33,7 +33,7 @@ print("Prompt has been created.")
 response = client.chat.completions.create(
     model="gpt-4-turbo",
     messages=[
-        {"role": "system", "content": "You are summarizing the documents for their technical content"},
+        {"role": "system", "content": "You are going to build a flex plugin. Please construct a plugin that will provide an interface to the OpenAI API for Flex 2.0"},
         {"role": "user", "content": prompt},
     ]
 )
