@@ -1,10 +1,11 @@
 import os
-import time
+from dotenv import load_dotenv
 import requests
 from bs4 import BeautifulSoup
 import pickle
 from collections import Counter
-from dotenv import load_dotenv
+
+# Load the environment variablese
 load_dotenv()
 
 
@@ -47,24 +48,24 @@ def grab_urls(url,required_string=None):
     return urls
 
 
-x=0
+urls_processed=0
 print("DEBUG Status:", os.getenv('DEBUG')) if os.getenv('DEBUG').lower() == "false" else None
 
 print('Processing:')
 
 for url in urls:
-    x+=1
-    duplicate_urls = [url for url, count in Counter(urls).items() if count > 1]
-
-    print('\n\nProcessing URL:', url, ' - #:', x,' of ',len(urls), ' - Dup URLs:', len(duplicate_urls)) if os.getenv('DEBUG').lower() == "true" else None
+    urls_processed+=1
+    
+    if os.getenv('DEBUG').lower() == "true":
+        duplicate_urls = [url for url, count in Counter(urls).items() if count > 1]
+        print('\n\nProcessing URL:', url, ' - #:', urls_processed,' of ',len(urls), ' - Dup URLs:', len(duplicate_urls))
 
     if len(urls) < 200:
         grab_urls(url,required_string='twilio.com')
 
     print('.', end='', flush=True) if os.getenv('DEBUG').lower() == "false" else None
 
-print('\n\n')
-
+print('\n\n Processed', urls_processed, 'URLs')
 
 with open('urls.txt', 'w') as file:
 
