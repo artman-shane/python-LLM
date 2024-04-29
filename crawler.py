@@ -10,74 +10,87 @@ from collections import Counter
 load_dotenv()
 
 
+# Feed the URL that you want to start from here
 urls=['https://www.twilio.com/docs/flex/developer']
+
+# Initialize the list of documents and URLs for temp storage
 documents = []
 found_urls = []
 
-# print("URLS to process: ", urls)
-def grab_urls(url,required_string=None):
-    response = requests.get(url)
-    soup = BeautifulSoup(response.content, 'html.parser')
-    link_elements = soup.select("a[href]")
-    # If we found a URL and appended it to the list, we set add_url=1. If we didn't find a URL, we set
-    add_url=0
-
-    for link_element in link_elements:
-        found_url = link_element['href'].strip()
-
-        if (found_url.startswith('http') or found_url.startswith('https')) and (required_string in found_url if required_string else False):
-
-            if found_url not in urls:  # Check if URL already exists in the list
-
-                print('Adding URL:', found_url) if os.getenv('DEBUG').lower() == "true" else None
-                urls.append(found_url)
-                # Did we add the url?
-                add_url=1
-                
-            else:
-                print('URL not added (duplicate):', found_url) if os.getenv('DEBUG').lower() == "true" else None
-
-        elif found_url.startswith('/'):
-            full_url = url + found_url
-
-            if full_url not in urls and (required_string in found_url if required_string else True):  # Check if URL already exists in the list
-                print('Adding URL:', full_url) if oos.getenv('DEBUG').lower() == "true" else None
-                urls.append(full_url)
-                # Simplify the URL for comparison later
-                found_url=full_url
-                # Did we add the url?
-                add_url=1
-
-            else:
-                print('URL not added (duplicate):', full_url) if os.getenv('DEBUG').lower() == "true" else None
-
-        else:
-            print('URL not added:', found_url) if os.getenv('DEBUG').lower() == "true" else None
-
-        if add_url==1:
-            add_url=0
-            current_document = {}
-            current_document['url'] = found_url
-            current_document['title'] = soup.title.string
-            current_document['content'] = soup.get_text()
-            documents.append(current_document)
-
-    return urls
-
-
+# initialize the number of URLs processed
 urls_processed=0
-print("DEBUG Status:", os.getenv('DEBUG')) if os.getenv('DEBUG').lower() == "false" else None
 
-print('Processing:')
+# Function to grab URLs from a page
+def grab_urls(url,required_string=None):
+    try:
+        response = requests.get(url)
+        soup = BeautifulSoup(response.content, 'html.parser')
+        link_elements = soup.select("a[href]")
+        # If we found a URL and appended it to the list, we set add_url=1. If we didn't find a URL, we set
+        add_url=0
 
+        for link_element in link_elements:
+            found_url = link_element['href'].strip()
+
+            if (found_url.startswith('http') or found_url.startswith('https')) and (required_string in found_url if required_string else False):
+
+                if found_url not in urls:  # Check if URL already exists in the list
+
+                    print('Adding URL:', found_url) if os.getenv('DEBUG').lower() == "true" else None
+                    urls.append(found_url)
+                    # Did we add the url?
+                    add_url=1
+                    
+                else:
+                    print('URL not added (duplicate):', found_url) if os.getenv('DEBUG').lower() == "true" else None
+
+            elif found_url.startswith('/'):
+                full_url = url + found_url
+
+                if full_url not in urls and (required_string in found_url if required_string else True):  # Check if URL already exists in the list
+                    print('Adding URL:', full_url) if oos.getenv('DEBUG').lower() == "true" else None
+                    urls.append(full_url)
+                    # Simplify the URL for comparison later
+                    found_url=full_url
+                    # Did we add the url?
+                    add_url=1
+
+                else:
+                    print('URL not added (duplicate):', full_url) if os.getenv('DEBUG').lower() == "true" else None
+
+            else:
+                print('URL not added:', found_url) if os.getenv('DEBUG').lower() == "true" else None
+
+            if add_url==1:
+                add_url=0
+                current_document = {}
+                current_document['url'] = found_url
+                current_document['title'] = soup.title.string
+                current_document['content'] = soup.get_text()
+                documents.append(current_document)
+
+        return urls
+    except Exception as e:
+        print("\n\nError occurred while making the request to", url, "\nGot error:", str(e), "\nContinuing\n\n")
+        return urls
+
+print("*****  DEBUG NOTICE - DEBUGGING:", os.getenv('DEBUG')) if os.getenv('DEBUG').lower() == "true" else None
+
+print('\n\n\n\nProcessing:')
+
+# Iterate through the URLs. Note that this will begin with the first
+# URL in the list but will continue to add URLs to the list as it finds them
 for url in urls:
+    # Counter for the number of URLs processed
     urls_processed+=1
     
+    # Debugging output
     if os.getenv('DEBUG').lower() == "true":
         duplicate_urls = [url for url, count in Counter(urls).items() if count > 1]
         print('\n\nProcessing URL:', url, ' - #:', urls_processed,' of ',len(urls), ' - Dup URLs:', len(duplicate_urls))
 
-    if len(urls) < 200:
+    # Limit the number of pages to MAX_PAGES or 10
+    if urls_processed < int(os.getenv("MAX_URLS",50)):
         grab_urls(url,required_string='twilio.com')
 
     print('.', end='', flush=True) if os.getenv('DEBUG').lower() == "false" else None
