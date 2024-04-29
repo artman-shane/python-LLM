@@ -89,9 +89,13 @@ for url in urls:
         duplicate_urls = [url for url, count in Counter(urls).items() if count > 1]
         print('\n\nProcessing URL:', url, ' - #:', urls_processed,' of ',len(urls), ' - Dup URLs:', len(duplicate_urls))
 
-    # Limit the number of pages to MAX_PAGES or 10
-    if urls_processed < int(os.getenv("MAX_URLS",50)):
+    # Limit the number of pages to MAX_PAGES or 50
+    if urls_processed <= int(os.getenv("MAX_PAGES",50)):
         grab_urls(url,required_string='twilio.com')
+    else:
+        urls_processed-=1
+        print('\n\nMax pages reached:', urls_processed, 'URLs processed')
+        break
 
     print('.', end='', flush=True) if os.getenv('DEBUG').lower() == "false" else None
 
