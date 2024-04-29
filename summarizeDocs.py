@@ -13,8 +13,11 @@ api_key = os.getenv('OPENAI_API_KEY')
 
 client = OpenAI(api_key=api_key)
 
-with open('./data/document.json', 'r') as file:
+fileName = os.path.join(os.getenv('OUTPUT_DIR',"output/"),os.getenv("DOCUMENTS_FILE",'documents.json'))
+with open(fileName, 'r') as file:
     documents = json.load(file)
+
+print("Read in", len(documents), "documents")
 
 # Define the prompt
 prompt = "Please ensure that responses are formated for easy reading. Provide a header for each response.\n"
@@ -23,6 +26,8 @@ document_idx=0
 for document in documents:
     prompt += "document_idx: " + document['content'] + "\n"
     document_idx+=1
+
+print("Prompt has been created.")
 
 # Get the model to generate a response
 response = client.chat.completions.create(

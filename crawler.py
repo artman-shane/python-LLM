@@ -101,12 +101,12 @@ for url in urls:
 
 print('\n\n Processed', urls_processed, 'URLs')
 
-output_dir = 'output'
+output_dir = os.getenv('OUTPUT_DIR',"output/")
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)
 
 # Handle output for URLs
-url_output_file = os.path.join(output_dir, 'urls.txt')
+url_output_file = os.path.join(output_dir, os.getenv("URLS_FILE","urls.txt"))
 if os.path.exists(url_output_file):
     os.remove(url_output_file)
 
@@ -115,7 +115,7 @@ with open(url_output_file, 'w') as file:
         file.write(url + '\n')
 
 # Handle output for documents
-documents_output_file = os.path.join(output_dir, 'documents.json')
+documents_output_file = os.path.join(output_dir, os.getenv("DOCUMENTS_FILE",'documents.json'))
 if os.path.exists(documents_output_file):
     os.remove(documents_output_file)
 

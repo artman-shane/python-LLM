@@ -1,3 +1,7 @@
+# Description: This script is used to get a response from the OpenAI API. The response is generated based on the context provided in the
+# `context_file.txt` file. The response is generated based on the prompt provided in the script. The response is then printed to the console.
+
+
 from openai import OpenAI
 import os
 import json
