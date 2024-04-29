@@ -17,35 +17,57 @@ def grab_urls(url,required_string=None):
     response = requests.get(url)
     soup = BeautifulSoup(response.content, 'html.parser')
     link_elements = soup.select("a[href]")
+
     for link_element in link_elements:
         found_url = link_element['href'].strip()
-        if found_url.startswith('http') or found_url.startswith('https') and (required_string in found_url if required_string else True):
+
+        if (found_url.startswith('http') or found_url.startswith('https')) and (required_string in found_url if required_string else False):
+
             if found_url not in urls:  # Check if URL already exists in the list
-                print('Adding URL:', found_url) if os.getenv('DEBUG_LIST_ADDITIONS') else None
+
+                print('Adding URL:', found_url) if os.getenv('DEBUG').lower() == "true" else None
                 urls.append(found_url)
+                
             else:
-                print('URL not added (duplicate):', found_url) if os.getenv('DEBUG_LIST_ADDITIONS') else None
+                print('URL not added (duplicate):', found_url) if os.getenv('DEBUG').lower() == "true" else None
+
         elif found_url.startswith('/'):
             full_url = url + found_url
+
             if full_url not in urls and (required_string in found_url if required_string else True):  # Check if URL already exists in the list
-                print('Adding URL:', full_url) if os.getenv('DEBUG_LIST_ADDITIONS') else None
+                print('Adding URL:', full_url) if oos.getenv('DEBUG').lower() == "true" else None
                 urls.append(full_url)
+
             else:
-                print('URL not added (duplicate):', full_url) if os.getenv('DEBUG_LIST_ADDITIONS') else None
+                print('URL not added (duplicate):', full_url) if os.getenv('DEBUG').lower() == "true" else None
+
         else:
-            print('URL not added:', found_url) if os.getenv('DEBUG_LIST_ADDITIONS') else None
+            print('URL not added:', found_url) if os.getenv('DEBUG').lower() == "true" else None
+
     return urls
+
+
 x=0
+print("DEBUG Status:", os.getenv('DEBUG')) if os.getenv('DEBUG').lower() == "false" else None
+
 print('Processing:')
+
 for url in urls:
     x+=1
     duplicate_urls = [url for url, count in Counter(urls).items() if count > 1]
-    print('\n\nProcessing URL:', url, ' - #:', x,' of ',len(urls), ' - Dup URLs:', len(duplicate_urls)) if os.getenv('DEBUG_LIST_URLS') else None
-    grab_urls(url,required_string='twilio.com')
-    print('.', end='', flush=True) if not os.getenv('DEBUG') else None
 
-print("URLS:", urls)
+    print('\n\nProcessing URL:', url, ' - #:', x,' of ',len(urls), ' - Dup URLs:', len(duplicate_urls)) if os.getenv('DEBUG').lower() == "true" else None
+
+    if len(urls) < 200:
+        grab_urls(url,required_string='twilio.com')
+
+    print('.', end='', flush=True) if os.getenv('DEBUG').lower() == "false" else None
+
+print('\n\n')
+
+
 with open('urls.txt', 'w') as file:
+
     for url in urls:
         file.write(url + '\n')
 
