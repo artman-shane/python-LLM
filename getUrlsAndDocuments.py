@@ -11,7 +11,7 @@ load_dotenv()
 
 
 # Feed the URL that you want to start from here
-urls=['https://www.twilio.com/docs/flex/developer']
+urls=['https://security.twilio.com']
 
 # Initialize the list of documents and URLs for temp storage
 documents = []
@@ -26,7 +26,7 @@ def grab_urls(url,required_string=None):
         response = requests.get(url)
         soup = BeautifulSoup(response.content, 'html.parser')
         link_elements = soup.select("a[href]")
-        # If we found a URL and appended it to the list, we set add_url=1. If we didn't find a URL, we set
+        # Test if URL was added or not to the urls list. Duplicates will be skipped. Used to process document capture
         add_url=0
 
         for link_element in link_elements:
@@ -61,13 +61,14 @@ def grab_urls(url,required_string=None):
             else:
                 print('URL not added:', found_url) if os.getenv('DEBUG').lower() == "true" else None
 
-            if add_url==1:
-                add_url=0
-                current_document = {}
-                current_document['url'] = found_url
-                current_document['title'] = soup.title.string
-                current_document['content'] = soup.get_text()
-                documents.append(current_document)
+        if add_url==1 or int(len(urls))==1:
+            print("Processing document capture for URL:", url) if os.getenv('DEBUG').lower() == "true" else None
+            add_url=0
+            current_document = {}
+            current_document['url'] = url
+            current_document['title'] = soup.title.string
+            current_document['content'] = soup.get_text()
+            documents.append(current_document)
 
         return urls
     except Exception as e:

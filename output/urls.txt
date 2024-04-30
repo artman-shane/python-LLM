@@ -1,9 +1,1 @@
-https://www.twilio.com/docs/flex/developer
-https://help.twilio.com
-https://www.twilio.com/login
-https://www.twilio.com/try-twilio
-https://assets.flex.twilio.com/docs/releases/flex-ui/latest/
-https://twilio.com/en-us
-https://www.twilio.com/console
-https://www.twilio.com/docs/flex/developer/plugins
-https://support.twilio.com/hc/en-us
+security.html
