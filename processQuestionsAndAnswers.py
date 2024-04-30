@@ -10,7 +10,7 @@ import pandas as pd
 load_dotenv()
 
 # Update airtable with responses
-def update_airtable(questions):
+def update_airtable(_questions):
     airtable_token = os.getenv('AIRTABLE_API_TOKEN')
     sheet_name = 'assessment'
     base_id = 'appmVJYxFELLgzcZQ'
@@ -20,8 +20,8 @@ def update_airtable(questions):
         'Content-Type': 'application/json'
     }
     try:
-        for question in questions:
-            update_url = f'https://api.airtable.com/v0/{base_id}/{sheet_name}/{question["id"]}'
+        for _question in _questions:
+            update_url = f'https://api.airtable.com/v0/{base_id}/{sheet_name}/{_question["id"]}'
             update_data = {
                 "fields": {
                     "Response": question['response']
@@ -30,40 +30,40 @@ def update_airtable(questions):
             update_response = requests.patch(update_url, headers=headers, json=update_data)
 
             if update_response.status_code==200:
-                print(f"Question: {question['question']}\n-----------\n")
-                print(f"Answer: {question['response']}\n-----------\n\n")
+                print(f"Question: {_question['question']}\n-----------\n")
+                print(f"Answer: {_question['response']}\n-----------\n\n")
             else:
-                print(f"Failed to update record {question['id']}\n\n")
+                print(f"Failed to update record {_question['id']}\n\n")
             
     except Exception as e:
         print(f"An error occurred: {e}")
 
 # Define function to send questions to OpenAI and get responses
 # This function is used to get responses for multiple questions one at a time restricting output to the answers provided.
-def getAnswers(question,answers):
+def getAnswers(_questions,_answers):
     try:
         # Set the OpenAI API Key
         api_key = os.getenv('OPENAI_API_KEY')
         client = OpenAI(api_key=api_key)
 
         # Get the model to generate a response
-        for question in questions:
+        for _question in _questions:
             response = client.chat.completions.create(
                 model="gpt-4-turbo",
                 messages=[
-                    {"role": "system", "content": f'\n\n***ANSWERS***\n{answers}'},
+                    {"role": "system", "content": f'\n\n***ANSWERS***\n{_answers}'},
                     {"role": "system", "content": 'Where there are questions around security, links to documents, requests for documents such as SOC2, ISO, compliance, pen testing, etc., please link to https://security.twilio.com and https://www.twilio.com/en-us/security explaing that if they would like to acquire a copy of these documents they must register and request access to the documents.'},
                     {"role": "system", "content": 'For questions related to HIPAA: https://www.twilio.com/en-us/hipaa and https://www.twilio.com/content/dam/twilio-com/global/en/other/hippa/pdf/Hipaa_eligible_products_and_services-323.pdf'},
                     {"role": "system", "content": 'For questions related to GDPR: https://www.twilio.com/en-us/gdpr'},
                     {"role": "system", "content": 'For questions related to SLAs: https://www.twilio.com/en-us/legal/service-level-agreement'},
-                    {"role": "system", "content": f"DO NOT pull answers from other locations. However, you can summarize the answer based on the data found in the answers."},
+                    {"role": "system", "content": "DO NOT pull answers from other locations. However, you can summarize the answer based on the data found in the answers."},
                     {"role": "system", "content": 'The answers are formatted like this: {"sheet_name":["Ques Num","Question/Request","Response","Additional Information","Category","Sub-category","SCA Reference","ISO 27002:2013 Relevance"]}'},
                     {"role": "system", "content": "Cite the sheet and Question Number or numbers used to answer the question at the conclusion of every answer provided in the format [sheet name (first key of each dictionary item): question number (in the ques num)]"},
-                    {"role": "user", "content": f"***QUESITION***\n\n{question['question']}"},
+                    {"role": "user", "content": f"***QUESITION***\n\n{_question['question']}"},
                     ]
             )
-            print(f"Question: {question['question']}")
-            question['response'] = response.choices[0].message.content
+            print(f"Question: {_question['question']}")
+            _question['response'] = response.choices[0].message.content
             print(f"Answer: {response.choices[0].message.content}")
             print()
         return questions
@@ -94,7 +94,7 @@ def getQuestions():
         # Send a request to the airtable API to get the questions
         # The response is paginated so we need to loop through the pages to get all the questions "offset"
         # Offset returns a value that is used to get the next page of results.
-        questions = []
+        _questions = []
         offset = None
         # Loop through the pages of the response to get all the questions
         while True:
@@ -106,30 +106,29 @@ def getQuestions():
             # Extract the questions from the response and store them in a list
             for record in data['records']:
                 # print("\n\n",record['fields'])
-                question = record['fields'].get('Question')
-                description = record['fields'].get('Description')
-                unique_identifier = record['fields'].get('Unique Identifier')
-                questionResponse = record['fields'].get('Response')
-                justification = record['fields'].get('Justification')
-                referenceUrl = record['fields'].get('URL for Reference')
-                id = record['id']
-                questions.append({
-                    'question': question,
-                    'description': description,
-                    'unique_identifier': unique_identifier,
-                    'response': questionResponse,
-                    'justification': justification,
-                    'referenceUrl': referenceUrl,
-                    'id': id,
+                _question = record['fields'].get('Question')
+                _description = record['fields'].get('Description')
+                _unique_identifier = record['fields'].get('Unique Identifier')
+                _questionResponse = record['fields'].get('Response')
+                _justification = record['fields'].get('Justification')
+                _referenceUrl = record['fields'].get('URL for Reference')
+                _id = record['id']
+                _questions.append({
+                    'question': _question,
+                    'description': _description,
+                    'unique_identifier': _unique_identifier,
+                    'response': _questionResponse,
+                    'justification': _justification,
+                    'referenceUrl': _referenceUrl,
+                    'id': _id,
                 })
-                # print(f"Question: {question}")
             
             if 'offset' not in data:
                 break
 
             offset = data['offset']
 
-        return questions
+        return _questions
     except Exception as e:
         print(f"An error occurred: {e}")
         return 1
