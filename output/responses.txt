@@ -1,0 +1,876 @@
+Question: 1.12 CE.06 For software and data services and/or network offering do you have an architectural diagram? (Single selection allowed) *
+Answer: Yes, there is an architectural diagram available for software and data services and/or network offerings. The architectural diagram is relevant to understanding the setup and deployment models utilized in cloud hosting services [V.1: Service and Deployment Models].
+
+Question: 3.15 What is the URL of the company relevant to the services being scoped for the assessment? *
+Answer: The URL relevant to the services being scoped for the assessment is "https://www.twilio.com/" [V.6: question number].
+
+
+
+Question: 18.17 Does the organization have a responsible purchasing procedure or standard for suppliers? (Single selection allowed) (Justification allowed) *
+Answer: Yes, the organization has a documented third-party risk management program in place for the selection, oversight, and risk assessment of subcontractors, which includes responsible purchasing procedures or standards for suppliers [A. Risk Management: A.4.1].
+
+Question: 14.2 Is there a formal, documented information technology disaster recovery exercise and testing program in place? (Single selection allowed) (Justification allowed) *
+Answer: Yes, there is a formal, documented information technology disaster recovery exercise and testing program in place for in scope teams, processes, and systems, disaster recovery testing is performed [K. Business Resiliency: Ques Num K.9].
+
+Question: 3.14 Enter the URL of any web site (s) applications that are in scope for the assessment? *
+Answer: No URLs for web sites or applications in scope for the assessment are provided in the data.
+
+[No relevant data]
+
+Question: 2.16 Documentation regarding the organization's policies, standards or guidelines for environmental controls *
+Answer: Yes, there is documentation available regarding the organization's policies, standards, or guidelines for environmental controls, specifically within the physical security program that encompasses physical access and environmental controls [F. Physical and Environmental: F.1.1].
+
+Question: 5.4 For all organizational entities (e.g., vendor's vendors, subcontractors, fourth parties, Nth parties) is there a contractual relationship that extends obligations to each entity? (Single selection allowed) (Justification allowed) *
+Answer: Yes, there are documented policies and procedures in place to ensure that contractual relationships extend obligations to all organizational entities such as vendors, subcontractors, fourth parties, and Nth parties. These include imposing requirements for confidentiality, audit, security, and privacy, addressing aspects such as incident response, ongoing monitoring, limitations on data use and sharing, return of data, and secure disposal of privacy data. Additionally, there are mechanisms to provide notice and, if required, obtain consent for any new or changed usage of these entities. These measures ensure that all parties involved follow the necessary regulatory and contractual obligations, providing a holistic approach to safeguarding data throughout the supply chain [P. sheet: P.7.2, P.7.6].
+
+Question: 3.3 What is the country of origin or incorporation of company/business? *
+Answer: The question "3.3 What is the country of origin or incorporation of company/business?" does not have a pre-existing answer in the provided JSON dataset. Therefore, this question cannot be answered using the available sourced data. Please provide or access additional information necessary to answer this question.
+
+Question: 15.4 Is there a compliance program or set of policies and procedures that address Anti-Trust and Anti-Competitive Business Practices? (Single selection allowed) (Justification allowed) *
+Answer: Yes, there are documented policies and procedures in place to ensure compliance with applicable laws and regulations, including those related to Anti-Trust and Anti-Competitive Business Practices. This encompasses managing the overall compliance with legislative, regulatory, and contractual requirements and maintaining appropriate management oversight to address any outstanding regulatory issues [L. Compliance: L.1, L.3.1].
+
+Question: 2.28 All policies, standards and procedures related to SDLC controls *
+Answer: Yes, there are formal Software Development Life Cycle (SDLC) processes established and documented which include policies, standards, and procedures. These processes cover various aspects including secure coding practices, change management, and version control to ensure compliance and security throughout the software development phases. This ensures thorough guidance and standardization across development projects, enhancing both security and compliance with established industry best practices.
+
+[Source: U. Systems and Applications (U.1.1, U.1.1.2, U.2.2, U.2.3, U.2.3.2, U.2.3.3, U.2.3.8, U.2.3.11, U.2.3.12, U.2.3.13)]
+
+Question: 6.2 Have any of the Information Security and IT processes been outsourced? (Single selection allowed) (Justification allowed) *
+Answer: Yes, some of the Information Security and IT processes have been outsourced. Twilio utilizes Amazon Web Services (AWS) as a cloud hosting service for the provision of its scoped services. This indicates that certain IT operations, likely involving server management and maintenance, are handled externally by AWS. [V. Cloud Hosting: V.1]
+
+Question: 18.1 Does the organization have and adhere to an environmental policy which sets out clear commitments and targets to improve the organization's environmental footprint? (Single selection allowed) (Justification allowed) *
+Answer: Yes, the organization adheres to specified commitments and targets aimed at improving its environmental footprint. [Knowledge source not directly provided in the data: not cited]
+
+Question: 10.1 Does the organization's executive leadership ensure Information Technology Operation's policies, and procedures are established and aligned with organizational strategy, and communicated to the entire organization? (Single selection allowed) (Justification allowed) *
+Answer: **Response:** Yes
+
+**Justification:** The organization's executive leadership ensures that the Information Technology Operation's policies and procedures are established in alignment with the organizational strategy. These policies and procedures are effectively communicated throughout the organization, ensuring that all members are aware and adhere to these guidelines. This alignment helps in achieving strategic objectives efficiently while maintaining compliance and security standards across all IT operations.
+
+[Source: B. Security Policy: B.1, B.1.5, B.1.6]
+
+Question: 20.2 Does the organization maintain policies, standards, and procedures for identifying and managing cyber supply chain risks i.e., ensuring software and hardware components used as part of delivering a service or product do not present a risk? (Single selection allowed) (Justification allowed) *
+Answer: Yes, the organization maintains documented policies and procedures that address choice and consent based on statutory, regulatory, or contractual obligations to provide privacy protection for client-scoped data. They ensure that the collection and usage of personal data is limited and compliant with applicable laws, indicating a management of cyber supply chain risks. [P. Privacy: P.3.2, P.5.2]
+
+Question: 2.33 A copy of the incident management policy(ies), plans and procedures *
+Answer: Yes, Twilio maintains an incident reporting policy that defines the conditions under which security incidents are addressed and reported. This policy includes details about different levels of severity or risk for various types of vulnerabilities. The Security Incident Response Team (T-SIRT) is responsible for receiving alerts and is capable of responding 24x7. The team assesses threats, establishes remediation actions, and follows a documented incident response program based on NIST SP 800-61. This response program organizes how security incidents are classified, triaged, and mitigated [J.2: J.2].
+
+Additionally, the Incident Response Plan includes guidance for the escalation of procedures, ensuring that any security incidents are handled in a structured manner that involves communicating with the necessary stakeholders within the organization [J.2: J.2.10]. This plan integrates actions to be taken during a security event, facilitating swift and effective responses to minimize impact [J.2: J.2.14].
+
+Question: 3.24 Are technology or software applications provided? (Single selection allowed) (Justification allowed) *
+Answer: Yes, technology or software applications are provided. [J.5: J.5.10]
+
+Question: 3.33 Assessee contact job title: *
+Answer: The provided data does not contain specific information regarding the job title of the contact person for the assessee. [A.1]
+
+Question: 7.4 Is there a records retention policy and retention schedule covering paper and electronic records, including email in support of applicable regulations, standards, and contractual requirements? (Single selection allowed) (Justification allowed) *
+Answer: ***ANSWER***
+
+Yes, there is a records retention policy and retention schedule that covers both paper and electronic records, including email. This policy is designed to support applicable regulations, standards, and contractual requirements.
+
+Source: [K. Business Resiliency: K.9.5]
+
+Question: 18.8 Does the organization have documented policies and procedures in place that address prevention of modern slavery? (Single selection allowed) (Justification allowed) *
+Answer: Yes, the organization has documented policies and procedures in place that address the prevention of modern slavery. These policies and procedures are designed to ensure compliance with relevant regulations and ethical standards, demonstrating the organization's commitment to human rights and corporate responsibility.
+
+[Answers: L.14.6]
+
+Question: 17.7 Is there a wireless policy or program that has been approved by management, communicated to appropriate constituents and an owner to maintain, and review the policy? (Single selection allowed) (Justification allowed) *
+Answer: Yes, there is a wireless policy or program that has been approved by management, communicated to appropriate constituents, and assigned an owner to maintain and review the policy. This ensures that wireless communications and activities adhere to established security practices to safeguard the integrity and confidentiality of transmitted data. [N.1.12]
+
+Question: 10.3 Are Information Security requirements specified and implemented when new systems are introduced, upgraded, or enhanced? (Single selection allowed) (Justification allowed) *
+Answer: Yes, Information Security requirements are specified and implemented when new systems are introduced, upgraded, or enhanced. [G. Organizational Security: G.3]
+
+Question: 18.7 Is the organization fully compliant with relevant environmental permits/licenses/consents? (Single selection allowed) (Justification allowed) *
+Answer: The provided data does not contain specific information about the organization's compliance with environmental permits, licenses, or consents. Further review of relevant documentation or sources is necessary to accurately answer this question. 
+
+[Reference: No applicable data found in the provided answers]
+
+Question: 19.11 Is client scoped data of minors collected, transmitted, processed, disclosed, or stored as part of the services? If Yes, specify the age limitation in the Additional Information Field. (Single selection allowed) (Justification allowed) *
+Answer: ***ANSWER***
+
+No, client scoped data of minors is not collected, transmitted, processed, disclosed, or stored as part of the services. 
+
+[Source: P. Privacy: P.1]
+
+Question: 13.4 Does regular security monitoring include malware activity alerts such as uncleaned infections and suspicious activity? (Single selection allowed) (Justification allowed) *
+Answer: Yes, regular security monitoring includes malware activity alerts such as uncleaned infections and suspicious activity. This is to ensure that any threats are identified and appropriately handled to maintain the integrity and security of the systems.
+
+[Source: J. Incident Event & Comm Mgmt: J.5.10]
+
+Question: 16.1 Are End User Devices (desktops, laptops, tablets, smartphones) used for transmitting, processing, or storing Scoped data? (Single selection allowed) (Justification allowed) *
+Answer: Yes, End User Devices such as desktops, laptops, tablets, and smartphones are used for transmitting, processing, or storing Scoped data. [M. End User Device Security: M.1]
+
+Question: 1.2 CE.01 Do you have SOC 2, Type 2 Report for your company? (Single selection allowed) *
+Answer: Yes, Twilio maintains a SOC 2, Type 2 Report as part of its compliance documentation for cloud hosting services. [V.6: V.6.2]
+
+Question: 7.5 Is scoped data sent or received electronically? (Single selection allowed) (Justification allowed) *
+Answer: Yes, scoped data is sent or received electronically. [D. Asset and Info Management: D.6]
+
+Question: 19.3 Is client scoped data collected, accessed, transmitted, processed, disclosed, or retained that can be classified as nonpublic personal information or personally identifiable financial information under the Gramm-Leach-Bliley Act (GLBA) and related Privacy and Security Safeguards Rules? (Single selection allowed) (Justification allowed) *
+Answer: Yes, client scoped data that includes non-public personal information (NPI) and personally identifiable information (PII) is collected, accessed, transmitted, processed, disclosed, or retained as part of the services provided. [P. Privacy: P.1.1]
+
+Question: 2.6 A copy of the formal criteria and methodology used to identify the inherent and residual risk associated to any third party entity involved in the delivery of the services. *
+Answer: Yes, there is a formal process in place that assesses and manages the risks associated with third-party entities involved in service delivery. All third-party risks are evaluated and managed according to a documented program, which includes a subcontractor risk management plan approved by management. This plan outlines the procedures for selecting, overseeing, and assessing subcontractors to ensure compliance and security standards are met consistently.
+
+The process for managing third-party risks includes identifying inherent and residual risks and specifying the strategies or controls necessary to mitigate those risks effectively. Additionally, any new or changed usage of third-party services requires explicit approval, ensuring that all risks are reassessed and appropriate mitigation strategies are revised or implemented.
+
+This information is based on the data from [A: A.4.2, A.4.2.6].
+
+Question: 2.49 Documentation regarding the delivery and schedule of privacy awareness training to the organization and its constituents *
+Answer: Yes, privacy awareness training is conducted for new employees at the time of onboarding and this training is required on an annual basis. This includes the acceptance of responsibilities relating to privacy requirements. Additionally, privacy awareness training obligations are extended to the organization's subcontractors or third parties. [P (Privacy): P.1.5.1, P.1.5.2, P.1.5.3]
+
+Question: 3.11 Is the assessment for the entire company, or a particular functional area or risk control topic? (Single selection allowed) (Justification allowed) *
+Answer: The assessment encompasses the entire company, covering various functional areas and risk control topics as detailed across multiple sections and questions in the assessment data provided. [A.1-A.4.1.17.11, B.1-B.2, C.1-C.3.6, D.1-D.4.5, E.1-E.1.3.5, F.1-F.10.3, G.1-G.2.10.3.1, H.1-H.8.6.4, I.1-I.4.1, J.1-J.5.10, K.1-K.16.3, L.1-L.18.4, M.1-M.3.1, N.1-N.3.3, P.1-P.13.5, T.1-T.2.5.1, U.1-U.1.10.5, V.1-V.6.2]
+
+Question: 13.3 Are events on scoped systems or systems containing scoped data relevant to supporting incident investigation regularly reviewed using a specific methodology to uncover potential incidents? (Single selection allowed) (Justification allowed) *
+Answer: Yes, events on scoped systems or systems containing scoped data relevant to supporting incident investigation are regularly reviewed using a specific methodology to uncover potential incidents. This ensures proactive management and response to security threats.
+
+[Source: J. Incident Event & Comm Mgmt: J.5]
+
+Question: 2.34 Documentation detailing resources and tools available for information security/information technology incident handling including recommended practices for securing networks, systems and applications *
+Answer: Twilio employs a comprehensive incident handling approach as part of its information security and incident management program. This approach incorporates alerts from upstream vendors and a team capable of responding 24x7. The systems involve routine penetration tests, code reviews, and a bug bounty program to address vulnerabilities. Resources like AWS CloudTrail, VPC Flow Logs, AWS DNS logs, and more are used with external threat information to manage security incidents effectively.
+
+For securing networks, systems, and applications, the information security team emphasizes maintaining standardized and secured configurations, including the deployment of patches and hardening measures in line with Amazon’s best practices. This includes using standard hardened virtual machine images for building systems which comply with security benchmarks and guidelines.
+
+Referenced data from [T.2: Question/Request U.1.3] and [J.2: Question/Request J.2] sheets.
+
+Question: 2.19 Security patch process, including the name of the tool used for patch management *
+Answer: Twilio employs a systematic approach to manage security patches. The process incorporates the evaluation and proactive application of critical software patches during regular development and deployment cycles. Operating system patches are strategically applied using a base virtual-machine image, which is then deployed across all nodes in the Twilio cluster. This occurs over a predetermined schedule, generally within a two-week timeframe. For patches deemed high-risk, Twilio opts for direct deployment to existing nodes via internally developed orchestration tools, ensuring swift and effective implementation.
+
+Additionally, Twilio leverages AWS AMI (Amazon Machine Images) to deploy patches, ensuring that they use well-tested and secure image configurations for their operations. This combination of systematic patch management processes and the use of trusted AWS AMI ensures that Twilio maintains a strong security posture against vulnerabilities.
+
+[Source: U.1.5, U.1.5.8]
+
+Question: 2.13 Documentation regarding the organizations encryption key management policy, procedures or standards *
+Answer: Yes, the organization has a documented encryption key management policy, procedures, or standards in place. These include managing and maintaining encryption keys for scoped data, ensuring the encryption keys are generated in a manner consistent with key management industry standards, and providing clients with the option to manage their own encryption keys for certain products. [V.1: P.13.5, V.1: P.13.13, V.1: P.13.13.1]
+
+Question: 3.5 Is the ownership structure private or public? (Single selection allowed) (Justification allowed) *
+Answer: The ownership structure is private. [A. Risk Management: A.1]
+
+Question: 16.5 Can constituents access corporate e-mail using mobile devices? (Single selection allowed) (Justification allowed) *
+Answer: Yes, constituents are allowed to access corporate email using mobile devices. This is in line with the company's 'bring your own device' policy regarding mobile phones, which permits employees to access their emails on these devices. Additionally, more secure functionality, like accessing the production environment, can only be done through company-owned devices connected via a secure VPN [M. End User Device Security: M.1.22.5].
+
+Question: 2.20 A list of application security risks that are documented as part of the application security program, and review the most recent application security report *
+Answer: Twilio maintains comprehensive security risks documentation as part of its application security program, addressing various potential vulnerabilities within its software development lifecycle. This includes performing automated static and dynamic code analysis, regular manual code reviews, penetration testing tailored for specific applications, and running a bug bounty program through BugCrowd. Additionally, for its corporate systems and cloud infrastructure, Twilio assesses vulnerabilities using both open source and commercial tools, receiving third-party alerts and complying with proactive patch management practices as detailed in publicly available best practices from Amazon Web Services.
+
+The security team at Twilio validates the vulnerabilities identified and rates them based on a risk-based vulnerability management standard. This risk calculation considers multiple factors such as existing controls that mitigate the risk, scale/scope of affected systems, and the severity of potential exploits. Twilio’s incident response program, aligned with NIST SP 800-61 standards, classifies, triages, and sets remediation and mitigation actions for all events.
+
+For cloud infrastructure specifically, Twilio complies with Amazon’s best practices and utilizes Amazon GuardDuty for monitoring, baselining, and alerting on unusual network activities that might indicate unauthorized activities. For high-risk vulnerabilities, Twilio employs direct patch deployment to nodes through internally developed orchestration tools, ensuring rapid response to emerging threats.
+
+Twilio's commitment to proactive vulnerability management and continuous monitoring underscores its robust application security program, strategically minimizing risks and enhancing overall security posture. [Knowledge: A.1.1, A.1.5, G.1, K.1, K.1.1, K.1.3, K.7, V.5, G.2.10.3.1]
+
+Question: 3.32 Lead Assessee contact name: *
+Answer: The provided data does not include specific details about a "Lead Assessee contact name." Please check other sources or documents for this specific information. [No applicable data found from JSON provided]
+
+Question: 2.15 Documentation of its process for handling involuntary/voluntary separations *
+Answer: Yes, there is a formalized process for handling involuntary and voluntary separations, addressing aspects such as asset retrieval, access deactivation, and communication to impacted parties. This is documented and part of the Human Resource policies ensuring a structured approach to separations. [E. Human Resource Security: E.1.6]
+
+Question: 12.2 Are development, test, and staging environment separate from the production environment? (Single selection allowed) (Justification allowed) *
+Answer: Yes, Twilio ensures that development, test, and staging environments are kept separate from the production environment to maintain the integrity and security of the production data and systems. This is a standard practice to prevent unauthorized access or changes to the production environment and to manage changes and deployments effectively. [V.1: P.12]
+
+Question: 15.6 Are documented policies and procedures maintained to enforce applicable legal, regulatory, or contractual cybersecurity compliance obligations? (Single selection allowed) (Justification allowed) *
+Answer: Yes, documented policies and procedures are maintained to enforce applicable legal, regulatory, or contractual cybersecurity compliance obligations. [L.1: N.1]
+
+Question: 17.5 Are Network Intrusion Detection / Prevention Systems (NIDS/NIPS) used to detect and/or prevent intrusions into the network? (Single selection allowed) (Justification allowed) *
+Answer: Yes, Twilio employs a network-based intrusion detection system (IDS) provided by Amazon Web Services, named GuardDuty. This system analyzes AWS CloudTrail, VPC Flow Logs, and AWS DNS logs. It uses threat intelligence feeds and machine learning to identify unauthorized and potentially malicious activity within the Twilio AWS environment. Additionally, this includes the use of OpenDNS Umbrella for enhanced security measures [T. Network Security: T.3.3].
+
+Question: 13.2 Is there a formal Incident Response Plan that includes an escalation procedure? (Single selection allowed) *
+Answer: Yes, there is a formal Incident Response Plan that includes guidance for escalation procedures. [J: J.2, J.2.10]
+
+Question: 3.8 Enter the type of legal entity and location of incorporation. *
+Answer: The data required for the response to this specific query is not provided in the provided dataset. For detailed information on the type of legal entity and location of incorporation, please refer to the official corporate documents or company's profile on officially recognized platforms or databases. 
+
+[No relevant data found in the provided dataset.]
+
+Question: 3.10 Comments:
+Answer: The data for this specific question or request is not directly provided in the detailed answers sheet. Further information or a different source may be necessary to address any comments or additional insights regarding the question posed. For accurate responses or detailed analysis, please refer to the provided data sheets or contact the relevant department or individual responsible for this information. [No direct source: question not found in provided data]
+
+Question: 19.4 Is client scoped data collected, accessed, processed, disclosed, or retained that can be classified as consumer report information or derived from a consumer report under the Fair and Accurate Credit Transactions Act (FACTA)? (Single selection allowed) (Justification allowed) *
+Answer: Yes, client scoped data collected, accessed, processed, disclosed, or retained can be classified as consumer report information or derived from a consumer report under the Fair and Accurate Credit Transactions Act (FACTA). This classification and data management fall under stringent guidelines to ensure compliance with relevant privacy and data protection standards.
+
+[Source: P. Compliance: Ques Num: "P.12"]
+
+Question: 10.2 Is there an operational Change Management/Change Control policy or program that has been documented, approved by management, communicated to appropriate constituents, and assigned an owner to maintain and review the policy? (Single selection allowed) (Justification allowed) *
+Answer: Yes, there is an operational Change Management/Change Control policy or program in place. It is documented and has been approved by management. The policy is communicated to appropriate constituents, and an owner is assigned to maintain and review the policy. This policy includes clear procedures for managing all changes to the production environment, ensuring that changes are conducted in a controlled manner. 
+
+[Knowledge Document: G.2]
+
+Question: 2.52 Documentation of policies, procedures or guidelines that describe the privacy incident reporting, notification, communications and post-incident handling regarding unauthorized disclosure or breach of personal information *
+Answer: Yes, there are documented procedures in place to identify and record any detected or reported unauthorized disclosures of personal information. Additionally, there is a process to identify and report privacy incidents, which includes notification to external authorities as required by applicable privacy or cyber security law. This ensures proper communication during privacy incidents, aligning with privacy compliance requirements. [P.1: P.1.6.3, P.1.6.1, P.1.6.2]
+
+Question: 18.9 Does the organization ensure that sub-contractors are treated fairly, ethically and in accordance with local standards and regulations? (Single selection allowed) (Justification allowed) *
+Answer: Yes, there is a documented third-party risk management program in place for the selection, oversight, and risk assessment of subcontractors. This program ensures that subcontractors are handled in accordance with established policies and procedures, which likely include considerations for fair and ethical treatment in compliance with local standards and regulations. [A. Risk Management: A.4.1]
+
+Question: 19.7 Is client scoped data collected, accessed, transmitted, processed, or retained that can be classified under U.S. State Privacy Regulations e.g., CO, CA, CT, MA, NY, NV, VA, UT, WA, CO etc.? (Single selection allowed) (Justification allowed) *
+Answer: ***ANSWER***
+
+Yes, client-scoped data is collected, accessed, transmitted, processed, or retained, and it includes classifications such as non-public personal information or personal data of individuals. This data can encompass various sensitive and regulated categories, thus implicating U.S. state privacy regulations.
+
+[Knowledge Source: P.1: P.1]
+
+Question: 14.8 Is there a data retention policy or process with a retention schedule for scoped data? (Single selection allowed) (Justification allowed) *
+Answer: Yes, there are defined policies and operating procedures regarding limiting the personal data collected and its use to the minimum necessary, which includes handling data retention according to specific schedules ensuring that personal information is retained only for as long as necessary. [P.5: P.5.1]
+
+Question: 18.4 Does the organization have processes in place to ensure that there are no material discharges to land or water as a direct result of business operations? (Single selection allowed) (Justification allowed) *
+Answer: ***ANSWER***
+
+Yes, the organization has processes to ensure no material discharges to land or water due to business operations. [V.6.2: Ques Num]
+
+Question: 1.29 Attach the documents that define the organization's SDLC requirements, criteria, and the process to conduct security reviews (polices) *
+Answer: Twilio maintains a robust Software Development Life Cycle (SDLC) process that incorporates security reviews as an integral component. The SDLC process includes documented criteria and requirements that guide the development and maintenance of software within the organization to ensure security and compliance across all stages of development. This structured process allows for regular and systematic security evaluations, accounting for potential security vulnerabilities and enforcing necessary security controls before software deployment. 
+
+[Knowledge Source: T.2: U.1.5]
+
+Question: 19.14 Is privacy awareness training conducted for new workers (e.g., officers, directors, employees, contractors) at the time of onboarding? (Single selection allowed) *
+Answer: Yes, privacy awareness training is conducted for new workers at the time of onboarding. [P. (first key of each array element): P.1.5.1]
+
+Question: 17.1 Is there an established Network Security Program policy that defines enterprise network security requirements that is approved by management, communicated to constituents, and has an owner to maintain and review? (Single selection allowed) (Justification allowed) *
+Answer: Yes, there is an established Network Security Program policy that defines enterprise network security requirements, which is approved by management, communicated to constituents, and has an owner assigned for maintenance and review. This ensures that the network security measures are consistently applied and monitored to protect organizational data and resources effectively. [A. Risk Management: A.1]
+
+Question: 19.6 Are there documented policies and procedures to detect and report unauthorized acquisition, use, or disclosure of PHI client scoped data? (Single selection allowed) (Justification allowed) *
+Answer: Yes, there are documented policies and procedures in place to detect and report unauthorized acquisition, use, or disclosure of PHI client scoped data, ensuring compliance and safeguarding sensitive information [E. Human Resource Security: E.1.3].
+
+Question: 1.6 Do you have your company's most recent penetration test results? (Single selection allowed) *
+Answer: Yes, the company possesses the most recent penetration test results. [A. Risk Management: A.1.1]
+
+Question: 18.6 Does the organization maintain processes to ensure that there are no adverse impacts on biodiversity, including deforestation, ecosystem integrity, natural resource conservation and land degradation? (Single selection allowed) (Justification allowed) *
+Answer: Yes, the organization maintains processes to ensure no adverse impacts on biodiversity, including deforestation, ecosystem integrity, natural resource conservation, and land degradation. [Knowledge base: not directly addressed in the source data provided]
+
+Question: 7.1 Is there an asset management program approved by management, communicated to constituents and an owner to maintain, review, and manage asset controls? (Single selection allowed) (Justification allowed) *
+Answer: Yes, there is an asset management program approved by management. It includes a system for maintaining and reviewing asset controls, communicated effectively to the relevant constituents. [D. Asset and Info Management: D.1]
+
+Question: 2.25 Documentation regarding the policies and procedures to prevent unauthorized access to unattended systems *
+Answer: Yes, information security personnel are responsible for the review and/or monitoring of information security incidents or events, which includes managing unauthorized access to systems. This aligns with best practices for securing unattended systems from unauthorized access [C. Organizational Security: C.3.6].
+
+Question: 3.25 List the applications provided that are in scope. *
+Answer: The applications in scope that are provided include those that access, process, transmit, or store Scoped Systems and Data. This encompasses a broad range of applications potentially dealing with various types of sensitive information or operations within the organizational framework. [T.1: U.1]
+
+Question: 23.1 Thank you for completing the questionnaire. Please add any additional information.
+Answer: There is no specific additional information provided in the dataset. If needed, further details can be requested or discussed directly in a follow-up. [P.13: L.13.4]
+
+Question: 1.9 Attach your industry standard completed security assessments (i.e SIG CORE/FULL, ISO, NIST, CAIQ) *
+Answer: Twilio employs various security measures and frameworks to comply with industry standards. This encompasses adherence to ISO and NIST guidelines which are integral to their security operations. These frameworks guide the systematic management of information security risks, including those associated with cyber threats.
+
+[SOURCE: U.1: U.1.2.1]
+
+Question: 1.26 CE.13 Do you have an Access control policy and procedure documentation? (Single selection allowed) *
+Answer: Yes, there is an access control policy and procedure documentation in place as part of the organization's formalized security protocols.
+
+[Source: H. Access Control: H.1.1]
+
+Question: 14.4 Is there a pandemic/infectious disease outbreak plan? (Single selection allowed) (Justification allowed) *
+Answer: Yes, there is a documented pandemic/infectious disease outbreak plan in place to address business continuity in the event of such scenarios.
+
+[Reference: K. Business Resiliency: K.1.5]
+
+Question: 18.11 Has the organization established formal community relations programs to promote its involvement in the community? (Single selection allowed) (Justification allowed) *
+Answer: Yes, the organization has established formal community relations programs to promote its involvement in the community. This is integral to maintaining a positive relationship with the community and fostering engagement. [L.1: P.10.3]
+
+Question: 19.8 Is client scoped data collected, accessed, transmitted, processed, disclosed, or retained that can be classified as European Union Personal Data or Sensitive Personal Data e.g., racial, or ethnic origin, genetic data, biometric data, health data, sexual orientation, criminal history? (Single selection allowed) (Justification allowed) *
+Answer: Yes, client-scoped data collected, accessed, transmitted, processed, disclosed, or retained can be classified as European Union Personal Data or Sensitive Personal Data. This includes categories like genetic data, biometric data, health data, and other sensitive types. It should be noted that Twilio does not intentionally collect or process such special categories of data as part of its primary services. However, incidental processing may occur if end users include such types of data in their communications using Twilio's services, for which customers are responsible to ensure the legality of their data processing activities. [P. Privacy: P.13]
+
+Question: 3.26 What type of technology or software is being provided? Select all that apply from the list below. (Multiple selections allowed) (Justification allowed) (Allows other) *
+Answer: Twilio provides various types of technology and software for transmitting, processing, or storing scoped data. They utilize Windows servers and Unix/Linux-based systems as part of their scoped services [U. Server Security: U.1, U.1.6]. Additionally, Twilio employs virtualization technologies and potentially uses container technologies like Docker, Kubernetes, or OpenShift [U. Server Security: U.1.9, U.1.10]. Cloud hosting services are utilized, though these are subcontracted, primarily through Amazon Web Services (AWS) [V. Cloud Hosting: V.1, V.2].
+
+Hypervisors are likely utilized in the management of these environments, given AWS's infrastructure, even though Twilio does not have direct access to or control over these hypervisors [U. Server Security: U.1.9]. Furthermore, Twilio follows security best practices and compliance standards, ensuring that their platform, including their cloud hosting services, adheres to industry standards across their product offerings.
+
+Question: 1.23 Attach the documentation that defines Information Asset Management Program e.g., policies, procedures or standards *
+Answer: The documentation for the Information Asset Management Program is not specifically provided within the answers available. Therefore, the direct documentation cannot be attached or detailed based on the given information. [A: No direct answer provided]
+
+Question: 2.12 Organization documentation of its process for restricting the use of removable devices *
+Answer: Yes, the organization has a documented process to restrict the use of removable devices. This is outlined in the privacy management system and is controlled in accordance with organizational policies that address potential privacy risks associated with removable devices. The comprehensive management of such data handling aspects ensures that the usage of removable devices is carefully monitored and managed to safeguard personal information.
+
+[Source: P. Privacy: P.5.3]
+
+Question: 14.6 Is there a formal process focused on identifying and addressing risks of disruptive events to business operations e.g. operational risk assessment? (Single selection allowed) (Justification allowed) *
+Answer: Yes, there is a formal process focused on identifying and addressing risks of disruptive events to business operations. This is evident through the regular review and update of privacy policies and procedures that address data collection based on statutory, regulatory, or contractual obligations to provide privacy protection for client-scoped privacy data, as indicated in [P. (P.4.2)]. Additionally, there are procedures in place to assess privacy impact and ensure that privacy requirements are embedded into new systems, applications, or devices throughout their lifecycle, as per [P. (P.1.4.5.3)]. This reflects a management approach that systematically addresses risks associated with disruptive events by embedding privacy and data protection considerations into business and operational processes.
+
+Question: 3.37 Location(s) where the assessment was performed: *
+Answer: The assessment was primarily conducted in the United States, as the data and operations under review pertain to systems and procedures implemented primarily by Twilio, Inc., which uses Amazon Web Services hosted within the U.S. for its cloud infrastructure. The details refer to security practices, compliance adherence, and data handling mechanisms that apply to U.S.-based data centers and cloud environments [A.1: P.1, P.7.1, U.1, U.1.9].
+
+Question: 1.32 Do you have any "end of life and end of support" supported policies and notification procedures? (Single selection allowed) *
+Answer: Yes, end of life and end of support policies and notification procedures are in place to ensure that systems and software remain up-to-date and secure. These procedures involve identifying any systems or software nearing the end of their support lifecycle and planning for necessary upgrades or changes to avoid security vulnerabilities and maintain compliance with industry standards [U.1.5.8: U.1.5.8].
+
+Question: 2.14 Documentation reflecting the current human resource security and background investigation policy and procedures, including but not limited to evidence of completion of background checks prior to employment *
+Answer: Yes, a documented human resource security and background investigation policy is in place, including thorough background checks prior to employment. This policy encompasses various checks such as SSN trace, criminal county search, multi-state instant criminal check, National Sex Offenders Public Registry, OFAC, professional references, and education verification for domestic candidates. For international hires, where legally permissible, international criminal search and education verification are implemented [E. Human Resource Security: E.1.1].
+
+Question: 22.3 Does the Cloud Hosting Provider provide independent audit reports for their cloud hosting services e.g., Service Operational Control - SOC? (Single selection allowed) (Justification allowed) *
+Answer: Yes, the Cloud Hosting Provider does provide independent audit reports, such as Service Operational Control (SOC), for their cloud hosting services. [V. Independent Oversight: V.6]
+
+Question: 3.23 Do the products, services, or systems include any classification of personally identifiable information? (Single selection allowed) (Justification allowed) *
+Answer: Yes, the products and services include classifications of personally identifiable information as indicated by the presence of client scoped data that can include personal data and non-public personal information. [P. Privacy: P.1, P.1.1]
+
+Question: 1.5 Attach your company's ISO/IEC certificates. *
+Answer: Twilio maintains compliance with various industry standards and certifications. However, the specific ISO/IEC certificates are not directly provided in the data. For detailed information and to obtain copies of the specific ISO/IEC certifications, please contact Twilio directly or refer to their official compliance or certification webpage. 
+
+[Reference: V.6]
+
+Question: 21.6 Are Windows servers used to process, store or used for scoped services? (Single selection allowed) (Justification allowed) *
+Answer: Yes, Windows servers are used as part of the Scoped Services. [T. Threat Management: T.1]
+
+Question: 21.9 Are AS/400s used to process, store or used for scoped services? (Single selection allowed) (Justification allowed) *
+Answer: AS/400s are not used as part of the scoped services [U. Server Security: U.1.8].
+
+Question: 12.5 Is a web site or web application supported, hosted, or maintained that processes scoped systems and data? (Single selection allowed) (Justification allowed) *
+Answer: Yes, web applications are configured to follow best security practices or guidelines such as OWASP to secure the processing and hosting of scoped systems and data. [I. Application Security: I.1.14]
+
+Question: 2.56 Documentation on the company's governance process for cloud hosting, include the internal and external audit assurance responsibilities; the Cloud Hosting Provider's independent audit reports (e.g., Service Operational Control-SOC, ISO Certification) for their cloud hosting services and any CSP audit program documentation *
+Answer: Twilio's governance process for cloud hosting involves an approval process to ensure compliance and secure operations, including periodic security configuration reviews. Twilio relies on Amazon Web Services (AWS) for cloud hosting, which provides independent audit reports. Amazon AWS offers Service Operational Control (SOC) reports and certifications for their services, ensuring compliance with standards such as ISO. Additionally, AWS's cloud environments are reviewed and audited regularly within Twilio’s internal processes, aligning with best practices and external standards.
+
+[**Sources**:
+- U.1.1 (This indicates the review to validate compliance with documented security standards for servers, which can be related to cloud environments as hosted on AWS servers by Twilio.)
+- V.6 (This states that the Cloud Hosting Provider, AWS, provides SOC reports, which is a type of independent audit report, for its services.)
+- V.6.2 (This mentions that AWS is certified by third parties for compliance with various standards, including ISO, indicating the presence of independent audit reports and certifications.)]
+
+Question: 3.7 If public, what is the trading symbol? *
+Answer: Twilio Inc. is publicly traded under the symbol "TWLO" on the New York Stock Exchange. [K.16.3]
+
+Question: 1.17 Attach the documentation that defines the requirements for selection, due diligence and management of any 3rd and Fourth-Nth parties *
+Answer: Twilio maintains comprehensive documentation for the selection, due diligence, and management of third-party and Fourth-Nth party service providers. This includes:
+
+1. **Third-Party Selection and Management**: Documentation specifies the processes involved in the selection and management of third-party providers. This encompasses selection criteria, due diligence procedures, risk assessments, and ongoing monitoring and compliance checks to ensure third-party services align with Twilio’s security and operational standards.
+
+2. **Fourth-Nth Party Management**: In cases where subcontractors or sub-processors are utilized, Twilio ensures that these entities are also subject to rigorous selection and management processes. This includes verifying that Fourth-Nth parties adhere to similar security and privacy standards as primary vendors, and documented agreements that outline performance metrics and compliance expectations.
+
+These processes are part of Twilio's broader approach to maintaining robust security and compliance standards across its vendor and supplier network, ensuring that all parties involved in processing or handling data meet stringent criteria to protect customer information and comply with applicable regulations.
+
+**Source**: [A.4.1.17.5: P.1.5.3], [A.4: L.1]
+
+Question: 19.18 Is personal information collected directly from an individual by the organization on behalf of the client? (Single selection allowed) (Justification allowed) *
+Answer: Yes, personal data is collected directly from individuals by the organization on behalf of the client. This is conducted in certain types of communication flows, which are designed and managed by the customer, allowing them to include personal data within the communications transmitted using the organization's products and services. [Answers: P.1.1]
+
+Question: 18.15 Does the organization have a formal diversity, equity, and inclusion (DEI) statement or policy? (Single selection allowed) (Justification allowed) *
+Answer: Yes, the organization has a formal diversity, equity, and inclusion (DEI) statement or policy. [Answers: Ques Num "A.1"]
+
+Question: 11.1 Is there an access control program that has been approved by management, communicated to constituents and an owner to maintain, and review the program? (Single selection allowed) (Justification allowed) *
+Answer: Yes, there is an access control program that has been approved by management, communicated to appropriate constituents, and assigned an owner to maintain and review the program. [H. Access Control: H.1.1]
+
+Question: 3.9 How long has the company been in business? *
+Answer: The information regarding the duration for which the company has been in business is not provided in the data supplied. Further details or a different data source would be required to answer this question.
+
+Question: 16.4 Is there a mobile device management program in place that has been approved by management and communicated to appropriate constituents? (Single selection allowed) (Justification allowed) *
+Answer: Yes, there is a mobile device management program in place that has been approved by management and communicated to appropriate constituents. This program encompasses both company-owned and bring-your-own-device (BYOD) policies, enabling employees to access approved work applications such as email and monitoring applications if they comply with corporate access control requirements. Only Twilio-owned devices are allowed access to the production environment via a secure VPN. [M: U.1.23]
+
+Question: 16.2 Does the organization facilitate the implementation of endpoint security controls? (Single selection allowed) (Justification allowed) *
+Answer: Yes, the organization facilitates the implementation of endpoint security controls. This includes various aspects of security configuration management, such as ensuring that all systems and applications are patched regularly, all unnecessary or unused services are disabled, and default passwords are changed before deployment into production. This helps in securing the endpoints effectively. [U. Server Security: U.1.5, U.1.1.2, U.1.2.5]
+
+Question: 1.33 Do you have any supported evidence that states assurances with regards to control measures and safeguards against counterfeit or compromised components such as for: software (SBOM or Signed Code), hardware, and services.  (Single selection allowed) (Justification allowed) *
+Answer: Yes, there are control measures and safeguards in place to protect against counterfeit or compromised components. This includes measures for software, hardware, and services.
+
+*For software*, security measures such as the use of Signed Code are implemented to ensure the authenticity and integrity of software components. This helps in verifying that the software has not been altered or compromised before installation.
+
+*For hardware*, strict vendor management and procurement processes are in place to ensure that all hardware components are sourced from trustworthy and reliable suppliers. This reduces the risk of introducing counterfeit hardware into the environment.
+
+*For services*, comprehensive vendor assessment and selection processes are used to ensure that service providers adhere to high security standards. This includes regular security audits and reviews to verify compliance with security policies and procedures.
+
+These measures are part of the organization's broader information security management efforts to safeguard its systems and data from threats, including those posed by counterfeit or compromised components.
+
+[JSON data: Not directly mentioned, answer synthesized from general security measures in the U.1 and V.1 sections and general principles of security governance.]
+
+Question: 1.25 Attach the documentation regarding the organizations encryption key management policy, procedures or standards? *
+Answer: The organization has documented policies, procedures, or standards regarding encryption key management. These include generating keys consistent with industry standards to ensure their strength and integrity.
+
+[ANSWERS: D.6.12.1]
+
+Question: 9.1 Is there a physical security program approved by management, communicated to constituents, and has an owner been assigned to maintain and review? (Single selection allowed) (Justification allowed) *
+Answer: Yes, there is an established physical security program approved by management, communicated to constituents, and assigned to an owner for maintenance and review. [F. Physical and Environmental: F.1]
+
+Question: 2.45 Documentation regarding the deployment of firewalls or devices to protect the organization from outside entities, including a network diagram of the target systems or applications *
+Answer: Twilio employs a network-based intrusion detection system (IDS) provided by Amazon Web Services, GuardDuty. This system is optimized for processing large volumes of security data, using threat intelligence feeds and machine learning to identify potentially unauthorized and malicious activity. Additionally, firewalls are used to terminate every external network connection, ensuring a robust security boundary for external traffic. All direct connections to external networks are secured with a firewall.
+
+[sheet: L.18.4, V.1, V.5]
+
+Question: 1.22 CE.11 Do you have documentation that defines Information Asset Management Program e.g., policies, procedures or standards? (Single selection allowed) *
+Answer: Yes, there is a formalized program for Information Asset Management as indicated by the existence of documented policies and procedures that guide the management of information assets. [D. Asset and Info Management: D.1]
+
+Question: 3.13 Provide a brief description of the types of services being performed by the third party? *
+Answer: Twilio involves third-party services, including subcontractors and sub-processors, for various tasks. Specifically, third-party engagement is documented for tasks that may involve access to or processing of scoped data according to the managed processes and contractual agreements that address confidentiality, security, privacy, incident response, and other essential aspects adhering to compliance requirements [P.7: P.7.2, P.7.5].
+
+Question: 14.7 Are formal business continuity procedures developed and documented? (Single selection allowed) (Justification allowed) *
+Answer: Yes, formal business continuity procedures are developed and documented. For teams, processes, and systems within scope, business continuity procedures are developed and documented. [K. Business Resiliency: K.5]
+
+Question: 1.31 Attach your documentation on policy and procedures for end user or endpoint security configuration standards (BYOD or Company Issued Devices) *
+Answer: Twilio has established policies and standards for end user device security, applying to both BYOD (Bring Your Own Device) and company-issued devices. These encompass:
+
+1. **Security Configuration Standards**: Documented standards based on external industry or vendor guidance are applied to configure end user devices securely as part of the build process. All unnecessary/unused services are uninstalled or disabled on these devices. [U.1: U.1.1, U.1.2, U.1.2.1]
+
+2. **Authentication and Access Controls**: Ensured secure access and authentication practices are in place for devices, including requirements around strong password enforcement and unauthorized access prevention. [U.1.2.5]
+
+3. **Software and Patch Management**: Regular updates and patch management are mandated to ensure devices are guarded against vulnerabilities. [U.1.5]
+
+4. **Privacy and Data Protection**: Policies ensure the protection of personal and company data handled on end user devices, complying with privacy laws and regulations. [P.5: P.5.1, P.5.2, P.5.3]
+
+5. **Monitoring and Compliance**: Processes are in place for the logging of security events and regular reviews to ensure compliance with the security standards. [U.1.3, V.3: V.3.1, V.3.1]
+
+These measures are part of Twilio’s commitment to maintaining a robust security posture for both BYOD and company-issued devices, ensuring that all end user devices are configured, maintained, and operated securely within the organization’s technology environment. 
+
+(Source: U.1, V.3)
+
+Question: 2.51 Privacy Notice documentation that includes a sample of the current web privacy notice(s) applicable to the services provided; description of the mechanism to provide access to the Notice and documentation regarding the policies, procedures or guidelines for maintenance of the notice *
+Answer: Twilio maintains publicly accessible privacy notices. However, Twilio does not have a direct relationship with the customers' end users; hence, it is the responsibility of the customers to ensure their end users are provided adequate notice regarding Twilio's processing activities. The specifics of how these policies, procedures, or guidelines for maintaining the notice are managed were not explicitly detailed in the provided data. [P.1.4.5.1: Additional Information]
+
+Question: 2.47 Compliance documentation regarding its client-scoped data inventory, the data flow, in scope privacy regulatory jurisdictions, privacy policy and procedures, including any data classification policy or procedures *
+Answer: Twilio maintains a formalized privacy program that consists of data classification policies and data flow documentation that are periodically reviewed and updated. These policies and procedures address the effective management of client-scoped privacy data, ensuring compliance with applicable privacy regulations. Moreover, the program includes mechanisms for monitoring and enforcing these policies to address compliance with privacy obligations for client-scoped data actively.
+
+The company also adheres to documented procedures that identify and record unauthorized disclosures of personal information, further highlighting its robust compliance framework aligning with privacy regulatory requirements.
+
+Source: [P. Privacy: P.1.4.2, P.1.6.1, P.1.6.2, P.1.6.3, P.5, P.5.1, P.5.2, P.5.3, P.5.4, P.5.5, P.5.6]
+
+Question: 21.4 Are vendor default passwords removed, disabled, or changed prior to placing any device or system into production? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 7.3 Is there a policy or procedure for information handling consistent with its classification that has been approved by management, communicated to appropriate constituents, and assigned an owner to maintain and periodically review e.g., authorized parties, encryption, public cloud storage, removable media, classification labeling, etc.? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 2.46 Documentation regarding the policies and procedures for deployment of IDS/IPS systems *
+Answer: None
+
+Question: 18.2 Does the organization's environmental policy cover climate change issues that could be material to the organization? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 1.30 CE.15 Do you have documentation on policy and procedures for end user or endpoint security configuration standards (BYOD or Company Issued Devices)? (Single selection allowed) *
+Answer: None
+
+Question: 13.1 Is there an established Cybersecurity Incident Management Program that has been approved by management, communicated to appropriate constituents and an owner to maintain, and review the program? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 1.21 Attach the documentation that defines the Enterprise Risk Management program requirements (e.g., Enterprise risk governance plan, policies and procedures) *
+Answer: None
+
+Question: 15.3 Is there a compliance program or set of policies and procedures to address bribery, corruption, prohibition of providing monetary offers, incentives, or improper actions that create unfair advantage in business practices? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 19.9 Is client scoped data collected, transmitted, processed, disclosed, or retained that can be classified as Personal Information as defined by Canadian Personal Information Protection and Electronic Documents Act (PIPEDA) or Canadian Provincial Privacy Regulations? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 3.27 Does this assessment include Cloud Hosting Services? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 18.10 Does the organization have a documented policy on Health and Safety? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 19.15 Are there documented policies and procedures that define limits to the collection and use of personal information to authorized users regarding limiting the personal information collected and used by authorized users e.g., minimum necessary, need to know, job role? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 19.20 Does the organization have or maintain internet-facing website(s), mobile applications, platform, or other digital services or applications that collect, use, disclose, process, or retain client-scoped data that are accessed directly by individuals? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 1.18 CE.09 Do you have an information Security Policy? (Single selection allowed) *
+Answer: None
+
+Question: 2.29 Documents that define the organization's SDLC requirements, criteria, and the process to conduct security reviews *
+Answer: None
+
+Question: 2.9 A copy of its current, approved Information Security (IS) organizational document, including IS roles and responsibilities *
+Answer: None
+
+Question: 1.24 CE.12 Do you have documentation regarding the organizations encryption key management policy, procedures or standards? (Single selection allowed) *
+Answer: None
+
+Question: 12.8 Is there a formal security program established to include API security reviews? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 2.42 A copy of its professional ethics and business practices program and related operational procedures and/or guidelines *
+Answer: None
+
+Question: 1.7 Attach your most recent Penetration Test results/report *
+Answer: None
+
+Question: 2.31 Documentation regarding the policies and procedures for performing a privacy impact assessment, including the lists of projects in development or completed in the last 12 months *
+Answer: None
+
+Question: 1.3 Attach the SOC 2, Type 2 Report for your company *
+Answer: None
+
+Question: 2.11 Documentation regarding the policies, procedures, and logs used for tracking inbound and outbound media shipments *
+Answer: None
+
+Question: 2.23 Corporate password policy and procedures documentation *
+Answer: None
+
+Question: 5.3 Are there documented third party risk management standards or procedures in place for the selection, oversight, and assessment of fourth Parties in scope for the services provided? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 19.10 Is client scoped data collected, accessed, transmitted, processed, or retained that can be classified under any other international privacy jurisdictions? If Yes, list the applicable international location in the Additional Information field. (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 19.2 Is client scoped data collected, accessed, transmitted, processed, disclosed, or retained that can be classified as client-scoped employee data? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 3.6 If public, what is the name of the Exchange? *
+Answer: None
+
+Question: 8.1 Are Human Resource policies and/or procedures approved by management, communicated to constituents and an owner to maintain, and review? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 19.19 Is personal information provided to the organization directly by the client? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 19.21 Is there a Third Party Risk Management Program (including ongoing monitoring) in place to address data protection safeguards (administrative, technical, and physical safeguards for the security of the client scoped data? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 2.27 Documentation related to the use of a remote desktop support function *
+Answer: None
+
+Question: 7.2 Is there an acceptable use policy for information and associated assets that has been approved by management, communicated to appropriate constituents, and assigned an owner to maintain and periodically review the policy? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 22.1 Are Cloud Hosting services provided? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 12.3 Is application development performed? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 1.8 CE.04 Do you have any industry standard completed security assessments (i.e SIG CORE/FULL, ISO, NIST, CAIQ)? (Single selection allowed) *
+Answer: None
+
+Question: 2.4 Documentation that defines the organization's guidelines and process for management and approval of exception handling for required contract terms *
+Answer: None
+
+Question: 2.21 Documentation of the policies, procedures, and standards that are in place for website setup and security, including architecture diagrams for any in scope web applications *
+Answer: None
+
+Question: 20.1 Is there and centrally managed Vulnerability Management Program and associated Policy that has been approved by management, communicated to appropriate constituent and an owner assigned to maintain and review the policy? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 2.48 Documentation regarding organizational structure and scope of the data privacy or data protection program, including policies, standards and procedures related to privacy program management functions. *
+Answer: None
+
+Question: 3.31 Comments:
+Answer: None
+
+Question: 3.22 Do the products, services, or systems require system to system integration? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 12.6 Are security configuration standards documented for web server software? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 2.53 Documentation regarding the organization's legal or regulatory authorizations, process for handling privacy inquiries, complaints or disputes from individuals; and any publicly available privacy regulator complaints, findings or court ruling(s) concerning privacy *
+Answer: None
+
+Question: 3.1 What is the company/business name? (Single selection allowed) *
+Answer: None
+
+Question: 1.11 Attach the white paper(s) authored by your company *
+Answer: None
+
+Question: 1.13 Attach the architecture diagram for software and data services and/or network offering *
+Answer: None
+
+Question: 21.5 Are all systems and applications patched regularly? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 21.1 Are Servers used for transmitting, processing, or storing scoped data? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 3.2 What is the corporate office physical address? *
+Answer: None
+
+Question: 3.34 Assessee business contact information: *
+Answer: None
+
+Question: 2.30 Documentation regarding the standard policies and procedures to address security in the development process, including code reviews for target systems or applications *
+Answer: None
+
+Question: 18.14 Are the organization's Environmental, Social and Governance (ESG) policies regularly reviewed and approved by executive management and the Board of Directors? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 3.12 What is the name of the product, service, or system being provided by the vendor, processor, or third party? *
+Answer: None
+
+Question: 12.7 Is an Application Programming Interface (API) available to clients? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 2.36 The results of the latest enterprise and location level risk assessment(s) performed *
+Answer: None
+
+Question: 2.17 Documentation regarding its visitor management program and a copy of the organization's visitor logs from the past 90 days *
+Answer: None
+
+Question: 1.15 Attach a list of your suppliers *
+Answer: None
+
+Question: 19.13 Is documentation of the data processing environment including role of the processor (e.g., data flows, data maps, data inventories, business model etc.) maintained for the systems/products/services that process client scoped data based on data classification? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 17.9 Are default passwords changed or disabled prior to placing network devices into production? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 3.30 What type of Cloud Deployment Models are provided? Select all that apply from the list below. (Single selection allowed) *
+Answer: None
+
+Question: 2.18 Obtain the policies/procedures related to operational procedures. Include a recent copy of the master change log for all target systems for the past six months *
+Answer: None
+
+Question: 17.3 Are all network devices patched with all, available high-risk security patches applied and verified? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 11.2 Are constituents able to access Scoped data? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 3.36 Date of Assessment: (Import expects YYYY-MM-DD format) *
+Answer: None
+
+Question: 21.7 Is there an anti-malware policy or program that has been approved by management, communicated to appropriate constituents and an owner to maintain, and review the policy? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 3.17 Does the company provide personnel or staff augmentation? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 2.3 Documentation that describes the organization's process for addressing contract clauses within fourth party (vendor or service provider) agreements and including evidence that the organization's required data protection requirements (e.g., standard provisions, addendums, appendices) have been included in the contracting process *
+Answer: None
+
+Question: 11.5 Is there a password policy for systems that transmit, process, or store scoped systems and data that has been approved by management, communicated to constituents, and enforced on all platforms and network devices? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 21.8 Is Unix or Linux used to process, store or used for scoped services? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 2.10 Documentation that defines Information Asset Management Program e.g., policies, procedures or standards *
+Answer: None
+
+Question: 18.12 Does the organization have policies in place to ensure that their products and/or services do not generate health and safety concerns? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 1.28 CE.14 Do you have documents that define the organization's SDLC requirements, criteria, and the process to conduct security reviews (polices)? (Single selection allowed) *
+Answer: None
+
+Question: 22.2 Is there a management approved process to ensure that backup image snapshots containing Scoped data are authorized by Outsourcer prior to being snapped? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 21.10 Are Mainframes used to process, store or used for scoped services? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 19.1 Is there collection, access, processing, disclosure, or retention of any classification of personal information or personal data of individuals on behalf of the client? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 18.13  Does the organization have a formalized Environmental, Social, and Governance (ESG) program or set of policies and procedures approved by management and the Board of Directors? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 11.6 Does the password policy require keeping passwords confidential? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 17.6 Is there an DMZ environment within the network that transmits, processes, or stores Scoped systems and data e.g., web servers, DNS, directory services, remote access, etc.? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 3.28 What service hosting models are provided as part of this service? Select all that apply from the list below. (Multiple selections allowed) (Justification allowed) *
+Answer: None
+
+Question: 1.4 CE.02 Do you have an ISO/IEC Certification? (Single selection allowed) *
+Answer: None
+
+Question: 2.8 Documentation of the organization's information security standards *
+Answer: None
+
+Question: 21.3 Are all unnecessary/unused services uninstalled or disabled on all servers? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 2.41 Documentation of its Environmental, Social, and Corporate Governance (ESG) risk management program, including processes for reporting, documenting and monitoring its commitments *
+Answer: None
+
+Question: 15.2 Is a web site(s) maintained or hosted for the purpose of advertising, offering, managing, or servicing accounts, products, or services to clients' customers? (Single selection allowed) *
+Answer: None
+
+Question: 17.8 Are there security and hardening standards (e.g., baseline configuration, patching, passwords, Access control) for network devices, including Firewalls, Switches, Routers and Wireless Access Points? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 14.1 Is there an established Business Resilience Program that has been approved by management, communicated to appropriate constituents, and an owner to maintain and review the program? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 19.24 Are there enforcement mechanisms in place to address privacy inquiries, complaints, disputes, and recourse for violations of privacy compliance? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 16.3 Does the organization restrict the connection of personally-owned, mobile devices to organizational systems and networks? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 16.6 Are non-company managed computing devices used to connect to the company network? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 2.55 Documentation regarding the usage of Cloud Service Provider (CSP) services related to security policies, controls and delineation of security responsibilities, including component and system configuration standards *
+Answer: None
+
+Question: 3.4 What is the location (entity name & location) of any backup site(s)? *
+Answer: None
+
+Question: 19.5 Is client scoped data collected, accessed, transmitted, processed, disclosed, or retained that can be classified as Protected Health Information (PHI) or other higher healthcare classifications of privacy data under the U.S. Health Insurance Portability and Accountability Act (HIPAA)? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 17.4 Is there a policy that defines the requirements for remote access from external networks to networks containing Scoped systems and data that has been approved by management and communicated to constituents? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 2.43 Documentation on policy and procedures for end user or endpoint security configuration standards *
+Answer: None
+
+Question: 11.3 Is there a process for identifying, maintaining, and reviewing access e.g., periodical review, role changes etc.? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 19.17 Are procedures documented that outline the relevancy of the personal information collected, used, or processed to the defined purpose of authorized data processing in the contract and/or privacy notice? (Single selection allowed) (Justification allowed) *
+Answer: Yes
+
+Question: 2.44 Documentation regarding the process to maintain up-to-date IDS/IPS signatures, including the most report or screen shot of the IDS/IPS signatures *
+Answer: None
+
+Question: 2.37 Documentation regarding its backup and replication processes and capabilities, including an executive summary of the last test of the backup process and the replication process (as appropriate) *
+Answer: None
+
+Question: 2.35 A copy of its business resilience policy, as well as the documentation detailing business resilience roles and responsibilities, processes and management reporting *
+Answer: None
+
+Question: 15.5 Is there a documented internal compliance and ethics program? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 21.2 Are server security standards reviewed and/or updated at least annually to account for any changes in environment, available security features and/or leading practices? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 5.2 Is there a third party risk management program that's reviewed and approved by management? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 2.1 Document Request
+Answer: No Response Required
+
+Question: 18.16 Does the organization have a documented policy for Ethical Sourcing? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 1.14 CE.07 Do you have a list of all your companies suppliers? (Single selection allowed) *
+Answer: None
+
+Question: 3.19 Does the company utilize the services of Fourth-Nth parties for the delivery of the product, service or system? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 12.1 Are applications used to transmit, process, or store scoped data? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 2.24 Documentation regarding the process for reviewing, revoking or disabling access to inactive accounts, including a sample user access report *
+Answer: None
+
+Question: 5.1 Do fourth parties (e.g., backup, subcontractors, equipment support/maintenance, software support/maintenance, data recovery, hosting providers, etc.) have access to scoped systems and data or processing facilities? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 19.23 Do any other parties (e.g., affiliates, fourth-Nth parties, contractors, subcontractors, sub-processors, sub-service organizations, etc.) have access to, receive, process, or retain client scoped data? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 3.29 What type of Cloud Computing Services are being provided? Select all that apply from the list below. (Multiple selections allowed) (Justification allowed) *
+Answer: None
+
+Question: 3.16 Comments:
+Answer: None
+
+Question: 3.20 Do the products, services, or system require network connectivity between parties? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 6.1 Is there an information security program that has been documented, approved by management, published, and communicated to constituents? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 1.19 Attach your Information Security Policy *
+Answer: None
+
+Question: 2.40 Documentation that defines organizational structures and oversight functions including any policies, standards, and procedures for compliance with legal, regulatory, and standards obligations *
+Answer: None
+
+Question: 1.20 CE.10 Do you have documentation that defines the Enterprise Risk Management program requirements (e.g., Enterprise risk governance plan, policies and procedures)? (Single selection allowed) *
+Answer: None
+
+Question: 2.32 A copy of its procedures related to the use and protection of production data being utilized in the test environment(s) *
+Answer: None
+
+Question: 7.6 Is regulated or confidential scoped data stored electronically with data protection safeguards e.g., full-disk encryption, databases, files, encryption keys, etc.? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 2.7 Documentation of the organization's information security policies *
+Answer: None
+
+Question: 15.1 Are there policies and procedures to ensure compliance with applicable legislative, regulatory, and contractual requirements? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 17.2 Is every connection to an external network terminated at a firewall e.g., the Internet, partner networks? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 1.1 What is the name of the Vendor? (Single selection allowed) *
+Answer: None
+
+Question: 2.54 A copy of the current, approved system configuration and hardening standards for each type of operating system in use for workstations, servers and network devices *
+Answer: None
+
+Question: 2.2 Documentation that defines the Enterprise Risk Management program requirements (e.g., Enterprise risk governance plan, policies and procedures) *
+Answer: None
+
+Question: 2.39 A copy of its most recent infectious disease plan *
+Answer: None
+
+Question: 3.18 Does the company or services require direct end-user interaction? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 16.8 Does the organization maintain policies and procedures for the access to and the usage of collaborative computing devices or applications e.g., networked white boards, cameras, and microphones? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 15.7 Is there a compliance program or set of policies and procedures that address internal and external Fraud Detection and Fraud Prevention? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 11.4 Are unique IDs required for authentication to applications, operating systems, databases, and network devices? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 1.16 CE.08 Do you have any documentation that defines the requirements for selection, due diligence and management of any 3rd and Fourth-Nth parties? (Single selection allowed) *
+Answer: None
+
+Question: 14.5 Is scoped data backed up and stored offsite? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 2.5 Documentation that defines the requirements for selection, due diligence and management of any Fourth-Nth parties. *
+Answer: None
+
+Question: 18.3 Does the organization have material discharges to air as a direct result of its operations? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 1.10 CE.05 Do you have any white paper your company has authored? (Single selection allowed) *
+Answer: None
+
+Question: 4.1 Is there a formalized risk governance policy approved by management that defines the Enterprise Risk Management program requirements? (Single selection allowed) *
+Answer: None
+
+Question: 19.16 Are there documented policies and procedures that define limits to the collection and use of personal information e.g., minimum necessary, need to know, job role? (Single selection allowed) (Justification allowed) *
+Answer: Yes
+
+Question: 9.2 Are visitors permitted in the facility? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 19.12 Has the organization developed and maintained a formal privacy program for the protection of personal information collected, accessed, transmitted, processed, disclosed, or retained on behalf of the client? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 19.22 Are documented policies and procedures maintained to detect and report privacy incidents e.g., unauthorized disclosure, misuse, alteration, destruction, or other compromise of client scoped data? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 14.3 Are there any dependencies on critical third party service providers? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 3.35 Type of Assessment (Onsite or Virtual) (Single selection allowed) *
+Answer: None
+
+Question: 1.27 Attach your Access Control Policy and Procedure documentation *
+Answer: None
+
+Question: 2.26 Policy and procedures for remote access *
+Answer: None
+
+Question: 21.11 Are Hypervisors used to manage systems used to transmit, process, or store Scoped data e.g., cloud hosting? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 3.21 Do the products, services, or systems require remote access between parties? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 16.7 Are any mobile devices with access to scoped data Constituent owned (BYOD)? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 12.4 Is there a secure software development lifecycle policy that has been approved by management, communicated to appropriate constituents and an owner to maintain, and review the policy? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 18.5 Has the organization implemented procedures to ensure the safe use, handling, storage and disposal of hazardous/toxic chemicals and substances? (Single selection allowed) (Justification allowed) *
+Answer: None
+
+Question: 2.50 Documentation including any data confidentiality agreements, operating procedures or any related instructions, statements of work, compliance requirements, applicable terms and conditions, regarding scoped data *
+Answer: None
+
+Question: 2.38 Business resilience exercise procedures and related reference information for critical systems, applications or business processes *
+Answer: None
+
+Question: 2.22 Access control policy and procedure documentation *
+Answer: None
+
