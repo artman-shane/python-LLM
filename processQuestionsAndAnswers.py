@@ -9,98 +9,6 @@ import pandas as pd
 # Load environment variables from .env file
 load_dotenv()
 
-
-
-# Define function to send questions to OpenAI and get responses
-def send_questions(questions):
-    try:
-        # Set the OpenAI API Key
-        api_key = os.getenv('OPENAI_API_KEY')
-        client = OpenAI(api_key=api_key)
-
-        # Get the model to generate a response
-        for question in questions:
-            response = client.chat.completions.create(
-                model="gpt-4-turbo",
-                messages=[
-                    {"role": "system", "content": f"Here are the answers you MUST source for the questions provided:\n\n***ANSWERS***\n{answers}"},
-                    {"role": "system", "content": f"DO NOT pull answers from other locations. However, you can summarize the answer based on the data found in the answer provided. Cite the sheet and Question Number or numbers used to answer the question in a [sheet name (first key of each array element): question number] format at the end of the answer."},
-                    {"role": "user", "content": f"***QUESITION***\n\n{question['question']}"},
-                    ]
-            )
-            print(f"Question: {question['question']}")
-            question['response'] = response.choices[0].message.content
-            print(f"Answer: {response.choices[0].message.content}")
-            print()
-            return questions
-    except Exception as e:
-        print(f"An error occurred: {e}")
-        return 1
-
-
-
-
-
-# Define function to read questions from Airtable and get single response from OpenAI
-def answer_question(answers):
-    airtable_token = os.getenv('AIRTABLE_API_TOKEN')
-    
-    sheet_name = 'assessment'
-    base_id = 'appmVJYxFELLgzcZQ'
-    url = f'https://api.airtable.com/v0/{base_id}/{sheet_name}'
-    headers = {
-        'Authorization': f'Bearer {airtable_token}',
-        'Content-Type': 'application/json'
-    }
-
-    try:
-        response = requests.get(url, headers=headers)
-        # print(response, response.json())
-        data = response.json()
-
-        # Extract the questions from the response and store them in a list
-        for record in data['records']:
-            # print("\n\n",record['fields'])
-            question = record['fields'].get('Question')
-            answer = getAnswers(question, answers)
-
-            record_id=record['id']
-            update_url = f'https://api.airtable.com/v0/{base_id}/{sheet_name}/{record_id}'
-            update_data = {
-                "fields": {
-                    "Response": answer
-                }
-            }
-            update_response = requests.patch(update_url, headers=headers, json=update_data)
-
-            if update_response.status_code==200:
-                print(f"Question: {question}")
-                print(f"Answer: {answer}\n\n")
-            else:
-                print(f"Failed to update record {record_id}\n\n")
-        
-    except Exception as e:
-        print(f"An error occurred: {e}")
-
-
-
-# Define function to send questions to OpenAI and get responses
-def getAnswers(question,answers):
-    # Set the OpenAI API Key
-    api_key = os.getenv('OPENAI_API_KEY')
-    client = OpenAI(api_key=api_key)
-
-    # Get the model to generate a response
-    response = client.chat.completions.create(
-        model="gpt-4-turbo",
-        messages=[
-            {"role": "system", "content": f"Here are the answers you MUST source for the questions provided:\n\n***ANSWERS***\n{answers}"},
-            {"role": "system", "content": f"DO NOT pull answers from other locations. However, you can summarize the answer based on the data found in the answer provided. Cite the sheet and Question Number or numbers used to answer the question in a [sheet name (first key of each array element): question number] format at the end of the answer."},
-            {"role": "user", "content": f"***QUESITION***\n\n{question}"},
-            ]
-    )
-    return(response.choices[0].message.content)
-
 # Update airtable with responses
 def update_airtable(questions):
     airtable_token = os.getenv('AIRTABLE_API_TOKEN')
@@ -132,7 +40,7 @@ def update_airtable(questions):
 
 # Define function to send questions to OpenAI and get responses
 # This function is used to get responses for multiple questions one at a time restricting output to the answers provided.
-def getAnswers2(question,answers):
+def getAnswers(question,answers):
     try:
         # Set the OpenAI API Key
         api_key = os.getenv('OPENAI_API_KEY')
@@ -143,9 +51,14 @@ def getAnswers2(question,answers):
             response = client.chat.completions.create(
                 model="gpt-4-turbo",
                 messages=[
-                    {"role": "system", "content": 'The answers are formatted like this: {"sheet_name":["Ques Num","Question/Request","Response","Additional Information","Category","Sub-category","SCA Reference","ISO 27002:2013 Relevance"]}'},
-                    {"role": "system", "content": f"DO NOT pull answers from other locations. However, you can summarize the answer based on the data found in the answers. Cite the sheet and Question Number or numbers used to answer the question in a [sheet name (first key of each array element): question number] format at the end of the answer."},
                     {"role": "system", "content": f'\n\n***ANSWERS***\n{answers}'},
+                    {"role": "system", "content": 'Where there are questions around security, links to documents, requests for documents such as SOC2, ISO, compliance, pen testing, etc., please link to https://security.twilio.com and https://www.twilio.com/en-us/security explaing that if they would like to acquire a copy of these documents they must register and request access to the documents.'},
+                    {"role": "system", "content": 'For questions related to HIPAA: https://www.twilio.com/en-us/hipaa and https://www.twilio.com/content/dam/twilio-com/global/en/other/hippa/pdf/Hipaa_eligible_products_and_services-323.pdf'},
+                    {"role": "system", "content": 'For questions related to GDPR: https://www.twilio.com/en-us/gdpr'},
+                    {"role": "system", "content": 'For questions related to SLAs: https://www.twilio.com/en-us/legal/service-level-agreement'},
+                    {"role": "system", "content": f"DO NOT pull answers from other locations. However, you can summarize the answer based on the data found in the answers."},
+                    {"role": "system", "content": 'The answers are formatted like this: {"sheet_name":["Ques Num","Question/Request","Response","Additional Information","Category","Sub-category","SCA Reference","ISO 27002:2013 Relevance"]}'},
+                    {"role": "system", "content": "Cite the sheet and Question Number or numbers used to answer the question at the conclusion of every answer provided in the format [sheet name (first key of each dictionary item): question number (in the ques num)]"},
                     {"role": "user", "content": f"***QUESITION***\n\n{question['question']}"},
                     ]
             )
@@ -163,7 +76,7 @@ def getAnswers2(question,answers):
 # Using airtable as the source of questions from the customer's security assessment.
 # It is important to understand how the questions are structured in the airtable.
 # The questions are stored in the "assessment" sheet of the airtable base.
-def read_airtable_questions():
+def getQuestions():
     # Load the Airtable API token from the environment variables
     airtable_token = os.getenv('AIRTABLE_API_TOKEN')
     
@@ -253,14 +166,14 @@ if answers == 1:
     print("An error occurred while reading the answers from the spreadsheet")
 else:
     print("Number of answers read:", len(answers))    
-    questions = read_airtable_questions()   
+    questions = getQuestions()   
 
     # Test for any errors in reading the questions from airtable
     if questions == 1:
         print("An error occurred while reading the questions from Airtable")
     else:
         print("Number of questions read in:", len(questions))
-        responses = getAnswers2(questions,answers)
+        responses = getAnswers(questions,answers)
         # Test for any errors in reading the questions from airtable
         if responses == 1:
             print("An error occurred while sending the questions to OpenAI")
