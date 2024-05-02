@@ -51,14 +51,16 @@ def getAnswers(_questions,_answers):
             response = client.chat.completions.create(
                 model="gpt-4-turbo",
                 messages=[
-                    {"role": "system", "content": f'\n\n***ANSWERS***\n{_answers}'},
-                    {"role": "system", "content": 'Where there are questions around security, links to documents, requests for documents such as SOC2, ISO, compliance, pen testing, etc., please link to https://security.twilio.com and https://www.twilio.com/en-us/security explaing that if they would like to acquire a copy of these documents they must register and request access to the documents.'},
-                    {"role": "system", "content": 'For questions related to HIPAA: https://www.twilio.com/en-us/hipaa and https://www.twilio.com/content/dam/twilio-com/global/en/other/hippa/pdf/Hipaa_eligible_products_and_services-323.pdf'},
-                    {"role": "system", "content": 'For questions related to GDPR: https://www.twilio.com/en-us/gdpr'},
-                    {"role": "system", "content": 'For questions related to SLAs: https://www.twilio.com/en-us/legal/service-level-agreement'},
-                    {"role": "system", "content": "DO NOT pull answers from other locations. However, you can summarize the answer based on the data found in the answers."},
-                    {"role": "system", "content": 'The answers are formatted like this: {"sheet_name":["Ques Num","Question/Request","Response","Additional Information","Category","Sub-category","SCA Reference","ISO 27002:2013 Relevance"]}'},
-                    {"role": "system", "content": "Cite the sheet and Question Number or numbers used to answer the question at the conclusion of every answer provided in the format [sheet name (first key of each dictionary item): question number (in the ques num)]"},
+                    {"role": "system", "content": f'\n\n***SIG Lite Documentation***\n{_answers}'},
+                    {"role": "system", "content": 'When encountering questions about security, links to documents, requests for documents such as SOC2, ISO, compliance, pen testing, etc., please link to https://security.twilio.com. Explain that to acquire a copy of these documents they must register and request access to the documents from this portal.'},
+                    {"role": "system", "content": 'You can also reference https://www.twilio.com/en-us/security for general security information overviews.'},
+                    {"role": "system", "content": 'Any questions directly related to HIPAA and not found in the SIG Lite Documentation should reference this link for information about what products and how architecting for HIPAA is achieved at Twilio here: https://www.twilio.com/en-us/hipaa and https://www.twilio.com/content/dam/twilio-com/global/en/other/hippa/pdf/Hipaa_eligible_products_and_services-323.pdf'},
+                    {"role": "system", "content": 'Any questions directly related to GDPR and not found in the SIG Lite Documentation should reference this link for information: https://www.twilio.com/en-us/gdpr'},
+                    {"role": "system", "content": 'Any questions directly related to SLA (service level agreements) and not found in the SIG Lite Documentation  should reference this link for information: https://www.twilio.com/en-us/legal/service-level-agreement'},
+                    {"role": "system", "content": "Answers should always be generated from either the SIG Lite Documentation or summarization from that documentation or referencing links listed in this prompt. You can summarize the answer based on the data found in the SIG Lite Documentation."},
+                    {"role": "system", "content": 'The SIG Lite Documentation is formatted as JSON like this: {"sheet_name":["Ques Num","Question/Request","Response","Additional Information","Category","Sub-category","SCA Reference","ISO 27002:2013 Relevance"]}'},
+                    {"role": "system", "content": "If you do not have enough information to generate an appropriate response please respond with 'TODO - UNKNOWN"},
+                    {"role": "system", "content": "When responding to questions please format every response in the following way: [yes/no], [generated response from SIG Lite Documentation or provided links] - SCA reference: [SCA reference number] - ISO 27002:2013 Relevance: [Relevance number] - SIG Lite Reference: [From SIG Light Documentation the SHEET NAME - QUES NUM]"},
                     {"role": "user", "content": f"***QUESITION***\n\n{_question['question']}"},
                     ]
             )
