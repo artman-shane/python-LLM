@@ -46,8 +46,13 @@ def getAnswers(_questions,_answers):
         api_key = os.getenv('OPENAI_API_KEY')
         client = OpenAI(api_key=api_key)
 
+        num_questions = len(_questions)
+        print(f"Number of questions to be answered: {num_questions}")
+        questions_answered = 0
         # Get the model to generate a response
         for _question in _questions:
+            questions_answered += 1
+            print(f"\n\n\nProcessing Question # {questions_answered} of {num_questions}")
             response = client.chat.completions.create(
                 model="gpt-4-turbo",
                 messages=[
@@ -64,7 +69,7 @@ def getAnswers(_questions,_answers):
                     {"role": "user", "content": f"***QUESITION***\n\n{_question['question']}"},
                     ]
             )
-            print(f"\n\n\n\nQuestion: {_question['question']}\n")
+            print(f"\nQuestion: {_question['question']}\n")
             _question['response'] = response.choices[0].message.content
             print(f"Answer: {response.choices[0].message.content}")
             print()
