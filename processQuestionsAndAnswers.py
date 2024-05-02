@@ -59,12 +59,12 @@ def getAnswers(_questions,_answers):
                     {"role": "system", "content": 'Any questions directly related to SLA (service level agreements) and not found in the SIG Lite Documentation  should reference this link for information: https://www.twilio.com/en-us/legal/service-level-agreement'},
                     {"role": "system", "content": "Answers should always be generated from either the SIG Lite Documentation or summarization from that documentation or referencing links listed in this prompt. You can summarize the answer based on the data found in the SIG Lite Documentation."},
                     {"role": "system", "content": 'The SIG Lite Documentation is formatted as JSON like this: {"sheet_name":["Ques Num","Question/Request","Response","Additional Information","Category","Sub-category","SCA Reference","ISO 27002:2013 Relevance"]}'},
-                    {"role": "system", "content": "If you do not have enough information to generate an appropriate response please respond with 'TODO - UNKNOWN"},
-                    {"role": "system", "content": "When responding to questions please format every response in the following way: [yes/no], [generated response from SIG Lite Documentation or provided links] - SCA reference: [SCA reference number] - ISO 27002:2013 Relevance: [Relevance number] - SIG Lite Reference: [From SIG Light Documentation the SHEET NAME - QUES NUM]"},
+                    {"role": "system", "content": "If you do not have enough information to generate an appropriate response, ONLY respond with 'TODO - UNKNOWN' and nothing else so we will know we need to manually respond"},
+                    {"role": "system", "content": "When responding to questions please format every response in the following way: [yes/no], [generated response from SIG Lite Documentation or provided links] (new line)SCA reference: [SCA reference number] (new line) ISO 27002:2013 Relevance: [Relevance number] (new line) SIG Lite Reference: [From SIG Light Documentation the SHEET NAME - QUES NUM] so that formatting is consistent across all responses."},
                     {"role": "user", "content": f"***QUESITION***\n\n{_question['question']}"},
                     ]
             )
-            print(f"Question: {_question['question']}")
+            print(f"\n\n\n\nQuestion: {_question['question']}\n")
             _question['response'] = response.choices[0].message.content
             print(f"Answer: {response.choices[0].message.content}")
             print()
