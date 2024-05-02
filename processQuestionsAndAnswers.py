@@ -24,7 +24,7 @@ def update_airtable(_questions):
             update_url = f'https://api.airtable.com/v0/{base_id}/{sheet_name}/{_question["id"]}'
             update_data = {
                 "fields": {
-                    "Response": question['response']
+                    "Response": _question['response']
                 }
             }
             update_response = requests.patch(update_url, headers=headers, json=update_data)
@@ -65,7 +65,7 @@ def getAnswers(_questions,_answers):
                     {"role": "system", "content": "Answers should always be generated from either the SIG Lite Documentation or summarization from that documentation or referencing links listed in this prompt. You can summarize the answer based on the data found in the SIG Lite Documentation."},
                     {"role": "system", "content": 'The SIG Lite Documentation is formatted as JSON like this: {"sheet_name":["Ques Num","Question/Request","Response","Additional Information","Category","Sub-category","SCA Reference","ISO 27002:2013 Relevance"]}'},
                     {"role": "system", "content": "If you do not have enough information to generate an appropriate response, ONLY respond with 'TODO - UNKNOWN' and nothing else so we will know we need to manually respond"},
-                    {"role": "system", "content": "When responding to questions please format every response in the following way: [yes/no], [generated response from SIG Lite Documentation or provided links] (new line)SCA reference: [SCA reference number] (new line) ISO 27002:2013 Relevance: [Relevance number] (new line) SIG Lite Reference: [From SIG Light Documentation the SHEET NAME - QUES NUM] so that formatting is consistent across all responses."},
+                    {"role": "system", "content": "When responding to questions please format every response in the following way: [yes/no (sourced from the Response field from the SIG Lite Documentation)], [generated response from SIG Lite Documentation or provided links] (new line)SCA reference: [SCA reference number] (new line) ISO 27002:2013 Relevance: [Relevance number] (new line) SIG Lite Reference: [From SIG Light Documentation the SHEET NAME - QUES NUM] so that formatting is consistent across all responses."},
                     {"role": "user", "content": f"***QUESITION***\n\n{_question['question']}"},
                     ]
             )
@@ -73,7 +73,19 @@ def getAnswers(_questions,_answers):
             _question['response'] = response.choices[0].message.content
             print(f"Answer: {response.choices[0].message.content}")
             print()
+
+        # Write responses to file for backup
+        output_dir = os.getenv('OUTPUT_DIR')
+        output_file = os.getenv('OUTPUT_QA_FILE')
+        if not os.path.exists(output_dir):
+            os.makedirs(output_dir)
+        file_path = os.path.join(os.getenv('OUTPUT_DIR'), os.getenv('OUTPUT_QA_FILE'))
+        with open(file_path, 'w') as file:
+            file.write(json.dumps(questions))
+
+        # Return the questions with responses.
         return questions
+    
     
     except Exception as e:
         print(f"An error occurred: {e}")
