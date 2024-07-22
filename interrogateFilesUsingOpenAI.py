@@ -49,6 +49,16 @@ class ChatApp:
                 {"role": "system", "content": "Please ensure that responses are formated for easy reading. Each response should have a clear header."},
                 {"role": "system", "content": self.context}
                 ]
+            if filename=="Twilio-SIG Lite-2023.xlsx":
+                self.messages.append(
+                    {"role": "system", "content": 'When encountering questions about security, links to documents, requests for documents such as SOC2, ISO, compliance, pen testing, etc., please link to https://security.twilio.com. Explain that to acquire a copy of these documents they must register and request access to the documents from this portal.'})
+                self.messages.append({"role": "system", "content": 'You can also reference https://www.twilio.com/en-us/security for general security information overviews.'})
+                self.messages.append({"role": "system", "content": 'Any questions directly related to HIPAA and not found in the SIG Lite Documentation should reference this link for information about what products and how architecting for HIPAA is achieved at Twilio here: https://www.twilio.com/en-us/hipaa and https://www.twilio.com/content/dam/twilio-com/global/en/other/hippa/pdf/Hipaa_eligible_products_and_services-323.pdf'})
+                self.messages.append({"role": "system", "content": 'Any questions directly related to GDPR and not found in the SIG Lite Documentation should reference this link for information: https://www.twilio.com/en-us/gdpr'})
+                self.messages.append({"role": "system", "content": 'Any questions directly related to SLA (service level agreements) and not found in the SIG Lite Documentation  should reference this link for information: https://www.twilio.com/en-us/legal/service-level-agreement'})
+                self.messages.append({"role": "system", "content": "Answers should always be generated from either the SIG Lite Documentation or summarization from that documentation or referencing links listed in this prompt. You can summarize the answer based on the data found in the SIG Lite Documentation."})
+                self.messages.append({"role": "system", "content": 'The SIG Lite Documentation is formatted as JSON like this: {"sheet_name":["Ques Num","Question/Request","Response","Additional Information","Category","Sub-category","SCA Reference","ISO 27002:2013 Relevance"]}'})
+                self.messages.append({"role": "system", "content": "When responding to questions please format every response in the following way: [yes/no (sourced from the Response field from the SIG Lite Documentation)], [generated response from SIG Lite Documentation or provided links] (new line)SCA reference: [SCA reference number] (new line) ISO 27002:2013 Relevance: [Relevance number] (new line) SIG Lite Reference: [From SIG Light Documentation the SHEET NAME - QUES NUM] so that formatting is consistent across all responses."})
         except Exception as e:
             print(f"An error occurred: {e}")
             sys.exit(1)
