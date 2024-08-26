@@ -14,7 +14,7 @@ import json
 load_dotenv()
 
 # Define the filename for reading the document
-filename="Twilio-SIG Lite-2023.xlsx"
+filename="Documents/Stellantis-NV-20231231-Annual-Report.pdf"
 
 
 class ChatApp:

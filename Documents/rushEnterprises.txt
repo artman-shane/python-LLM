@@ -1,0 +1,65 @@
+Meeting with Rush Enterprises
+Daniel - Director of IT
+Matthias - Software stack
+Jason Fransella - 
+
+How is Rush using Twilio today?
+
+Consistent Experience
+Pre-canned messages in the notes
+Text, email (Twilio today)
+They have built out a quick note for their customer
+Matias-at the beginning of this experience.
+
+CRM Focus - Get lead, quote, get invoice
+Data missing - post engagement survey
+SAP is collecting data about interaction and CRM does not have access to this data
+
+SFDC is temp until moved into dynamics
+Jason - Get Dynamics “360º hub” for omni-channel communications
+Multiple places to communicate to the customer
+
+Service Connect (Service app) - data about the interaction stored in snowflake. 
+
+Sales and transactions are in SAP
+
+Challenges with identifying a customer. Multiple sources of data today.
+Want to have data in 1 place to understand customer interaction.
+
+Each branch has their own call centers
+
+Parts Delivery is another service they offer. They feel that they have a handle on this alone. “Because it is automated and put the customer in control of opting in/out”
+
+Want to see the entire customer preferences. Opt-in/out at point of sale changes.
+
+40% of the customer base is large customers
+30% Midsize where the customer is a smaller fleet
+30% that would be owner/operators
+
+Teams for Voice
+Call Queues are through five9s
+Just to the parts counter - Teams
+
+Rush Care Team - Surveys are used to measure customer interaction (Customer Satisfaction)
+Do you record / Transcribe 
+They do not transcribe.
+
+They have been encouraged to provide self service. 
+Analyze calls for sentiment and use this sentiment for driving experience.
+
+Steve, Dan - What is their experience with five9s. Availability (promise 3-9s). Service App is not used in five9s with Dynamics. They have just a phone interface on the dynamics screen.
+
+Dynamics is their preferred single point of data.
+
+Identity when people call in. Daniel suggested that they could prompt for identity. But we should talk through how to silent auth?
+
+Finance - Talk through what others have challenges in and how we can help.
+
+Call Center - Parts
+Rush Care - Concierge - Corporate Driven.
+Mobile Techs - Tech for a day, tech repairs not so much road-side repair.
+
+
+Customer downtime is the goal “Dwell” - how much time the vehicle is in the shop.
+“Service Connect application - Communication to the customer”
+Azure is their preference
