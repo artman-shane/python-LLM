@@ -125,8 +125,7 @@ def getQuestions():
             for record in data['records']:
                 # print("\n\n",record['fields'])
                 _question = record['fields'].get('Question')
-                _description = record['fields'].get('Description')
-                _unique_identifier = record['fields'].get('Unique Identifier')
+                _description = record['fields'].get('Desc')
                 _questionResponse = record['fields'].get('Response')
                 _justification = record['fields'].get('Justification')
                 _referenceUrl = record['fields'].get('URL for Reference')
@@ -134,7 +133,6 @@ def getQuestions():
                 _questions.append({
                     'question': _question,
                     'description': _description,
-                    'unique_identifier': _unique_identifier,
                     'response': _questionResponse,
                     'justification': _justification,
                     'referenceUrl': _referenceUrl,
@@ -159,7 +157,7 @@ def read_xls_answers():
     data_dict = {}
     
     try:
-        dfs = pd.read_excel('Twilio-SIG Lite-2023.xlsx', sheet_name=["A. Risk Management","B. Security Policy","C. Organizational Security","D. Asset and Info Management","E. Human Resource Security","F. Physical and Environmental","G. Operations Mgmt","H. Access Control","I. Application Security","J. Incident Event & Comm Mgmt","K. Business Resiliency","L. Compliance","M. End User Device Security","N. Network Security","P. Privacy","T. Threat Management","U. Server Security","V. Cloud Hosting"], header=3)
+        dfs = pd.read_excel('Documents/Twilio-SIG Lite-2023.xlsx', sheet_name=["A. Risk Management","B. Security Policy","C. Organizational Security","D. Asset and Info Management","E. Human Resource Security","F. Physical and Environmental","G. Operations Mgmt","H. Access Control","I. Application Security","J. Incident Event & Comm Mgmt","K. Business Resiliency","L. Compliance","M. End User Device Security","N. Network Security","P. Privacy","T. Threat Management","U. Server Security","V. Cloud Hosting"], header=3)
         for sheet_name, df in dfs.items():
             # print(sheet_name)
             # print(df)

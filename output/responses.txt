@@ -1,1408 +1,290 @@
-Question: 1.12 CE.06 For software and data services and/or network offering do you have an architectural diagram? (Single selection allowed) *
-Answer: TODO - UNKNOWN
+Question: 2.6 Please Select all Physical Security measures implemented across your organization and attach relevant documentation/evidence. (Multiple selections allowed) (Allows other) *
+Answer: Yes, Twilio employs various physical security measures that ensure the security and integrity of its data centers. Here are the details of physical security measures implemented by Twilio:
 
-Question: 3.15 What is the URL of the company relevant to the services being scoped for the assessment? *
-Answer: TODO - UNKNOWN
+1. **Physical Access Controls:** Twilio ensures that physical access to its data centers is controlled with secure access controls.
 
-Question: 18.17 Does the organization have a responsible purchasing procedure or standard for suppliers? (Single selection allowed) (Justification allowed) *
-Answer: TODO - UNKNOWN
+2. **Environmental Controls:** The data center environments are monitored and managed to prevent environmental hazards.
 
-Question: 14.2 Is there a formal, documented information technology disaster recovery exercise and testing program in place? (Single selection allowed) (Justification allowed) *
-Answer: Yes, for in-scope teams, processes, and systems, disaster recovery testing is performed.
+3. **Security Monitoring:** Continuous monitoring is conducted to detect and respond to physical security incidents.
 
-SCA reference: K.6 Exercising
-ISO 27002:2013 Relevance: None
-SIG Lite Reference: K - K.9
+4. **Alarmed Access Points:** All entry and exit doors are equipped with alarms to detect unauthorized access.
 
-Question: 3.14 Enter the URL of any web site (s) applications that are in scope for the assessment? *
-Answer: TODO - UNKNOWN
+Twilio’s operations are majorly hosted on AWS, and Twilio adheres to AWS's robust physical security measures as detailed at [AWS Physical Security](https://aws.amazon.com/compliance/data-center/data-centers/).
 
-Question: 2.16 Documentation regarding the organization's policies, standards or guidelines for environmental controls *
-Answer: TODO - UNKNOWN
-
-Question: 5.4 For all organizational entities (e.g., vendor's vendors, subcontractors, fourth parties, Nth parties) is there a contractual relationship that extends obligations to each entity? (Single selection allowed) (Justification allowed) *
-Answer: Yes, Twilio has contractual agreements with subcontractors and third parties ensuring that confidentiality, integrity, and availability obligations extend to these parties. Contracts typically include clauses for privacy, data security, and compliance with applicable laws and regulations, which are rigorously enforced and monitored by Twilio.
-
-SCA reference: P.9 Third Party Privacy Agreements
-ISO 27002:2013 Relevance: 15.1.2 Addressing Security Within Supplier Agreements
-SIG Lite Reference: From SIG Lite Documentation P - P.7.2
-
-Question: 3.3 What is the country of origin or incorporation of company/business? *
-Answer: TODO - UNKNOWN
-
-Question: 15.4 Is there a compliance program or set of policies and procedures that address Anti-Trust and Anti-Competitive Business Practices? (Single selection allowed) (Justification allowed) *
-Answer: TODO - UNKNOWN
-
-Question: 2.28 All policies, standards and procedures related to SDLC controls *
-Answer: TODO - UNKNOWN
-
-Question: 6.2 Have any of the Information Security and IT processes been outsourced? (Single selection allowed) (Justification allowed) *
-Answer: Yes, some information security and IT processes have been outsourced by Twilio.
-
-SCA reference: A.5 Third Party Provider Risk Management Program
-ISO 27002:2013 Relevance: 15.1.1 Information Security Policy for Supplier Relationships
-SIG Lite Reference: A.4 - Subcontractors' Third-Party Risk Management
-
-Question: 18.1 Does the organization have and adhere to an environmental policy which sets out clear commitments and targets to improve the organization's environmental footprint? (Single selection allowed) (Justification allowed) *
-Answer: TODO - UNKNOWN
-
-Question: 10.1 Does the organization's executive leadership ensure Information Technology Operation's policies, and procedures are established and aligned with organizational strategy, and communicated to the entire organization? (Single selection allowed) (Justification allowed) *
-Answer: TODO - UNKNOWN
-
-Question: 20.2 Does the organization maintain policies, standards, and procedures for identifying and managing cyber supply chain risks i.e., ensuring software and hardware components used as part of delivering a service or product do not present a risk? (Single selection allowed) (Justification allowed) *
-Answer: Yes, Twilio maintains a comprehensive third-party risk management program to ensure that software and hardware components do not present cybersecurity risks. The documentation surrounding the selection and management process ensures compliance with security standards by requiring background checks, confidentiality agreements, and risk assessments for subcontractors and suppliers.
-
-SCA Reference: A.7 Subcontractor Selection and Management Process  
-ISO 27002:2013 Relevance: 15.1.1 Information Security Policy for Supplier Relationships, 15.2.1 Monitoring and Review of Supplier Services, 15.2.2 Managing Changes to Supplier Services  
-SIG Lite Reference: A.4.1 - Third-Party Risk Management
-
-Question: 2.33 A copy of the incident management policy(ies), plans and procedures *
-Answer: Yes, Twilio's incident management policy, including plans and procedures, aligns with industry best practices and is designed to swiftly handle and mitigate any security incidents. The policy defines conditions under which security incidents are classified and triaged, ensuring effective responses and communication. This policy is a core component of Twilio's security management and is regularly reviewed and updated to adapt to new security challenges.
-
-SCA reference: J.1 Incident Management – Policy and Procedure Content
-ISO 27002:2013 Relevance: 16.1.5 Response to Information Security Events
-SIG Lite Reference: From SIG Lite Documentation J - Ques Num J.2
-
-Question: 3.24 Are technology or software applications provided? (Single selection allowed) (Justification allowed) *
-Answer: Yes, Twilio provides technology and software applications. These encompass various communication and operational tools designed to cater to a wide range of business needs, including voice, messaging, and video communications.
-
-SCA reference: N/A
-ISO 27002:2013 Relevance: N/A
-SIG Lite Reference: TODO - UNKNOWN
-
-Question: 3.33 Assessee contact job title: *
-Answer: TODO - UNKNOWN
-
-Question: 7.4 Is there a records retention policy and retention schedule covering paper and electronic records, including email in support of applicable regulations, standards, and contractual requirements? (Single selection allowed) (Justification allowed) *
-Answer: Yes, Twilio has a data retention policy that ensures the retention of records, whether in electronic or paper format, is in accordance with applicable legal, regulatory, and contractual obligations. This policy covers aspects such as the retention period for different types of data and the secure disposal of data once the retention period has expired.
-
-SCA reference: P.7 Management of Client-Scoped Privacy Data
-ISO 27002:2013 Relevance: 12.3.1 Information Backup
-SIG Lite Reference: From SIG Lite Documentation P - P.5.1
-
-Question: 18.8 Does the organization have documented policies and procedures in place that address prevention of modern slavery? (Single selection allowed) (Justification allowed) *
-Answer: TODO - UNKNOWN
-
-Question: 17.7 Is there a wireless policy or program that has been approved by management, communicated to appropriate constituents and an owner to maintain, and review the policy? (Single selection allowed) (Justification allowed) *
-Answer: Yes, Twilio has a 'bring your own device' policy regarding mobile phones, allowing employees to access their emails with them. While potentially some customer information might be accessible, only Twilio-owned devices can access the production environment through a secure VPN. Mobile phones and tablets may be permitted to access approved work applications such as email, messaging, and monitoring applications if they comply with corporate access control requirements.
-
-SCA reference: F.3 Secure Workspace Program
-ISO 27002:2013 Relevance: 11.2.6 Security Equipment and Assets Off Premises
-6.2.1 Mobile Device Policy
-SIG Lite Reference: M.1.23
-
-Question: 10.3 Are Information Security requirements specified and implemented when new systems are introduced, upgraded, or enhanced? (Single selection allowed) (Justification allowed) *
-Answer: Yes, information security requirements are specified and implemented when new systems are introduced, upgraded, or enhanced.
-
-SCA Reference: B.2 Information Security Standards, G.1 Change Control
-ISO 27002:2013 Relevance: 12.1.3 Capacity Management, 12.6.1 Management of Technical Vulnerabilities, 14.1.1 Information Security Requirements Analysis and Specification
-SIG Lite Reference: G.3 - C. Organizational Security
-
-Question: 18.7 Is the organization fully compliant with relevant environmental permits/licenses/consents? (Single selection allowed) (Justification allowed) *
-Answer: TODO - UNKNOWN
-
-Question: 19.11 Is client scoped data of minors collected, transmitted, processed, disclosed, or stored as part of the services? If Yes, specify the age limitation in the Additional Information Field. (Single selection allowed) (Justification allowed) *
-Answer: TODO - UNKNOWN
-
-Question: 13.4 Does regular security monitoring include malware activity alerts such as uncleaned infections and suspicious activity? (Single selection allowed) (Justification allowed) *
-Answer: Yes, regular security monitoring includes malware activity alerts such as uncleaned infections and suspicious activity.
-
-SCA Reference: J.5 IS/IT Incident Management – Detection
-ISO 27002:2013 Relevance: None Specified
-SIG Lite Reference: J.5 - J.5.10
-
-Question: 16.1 Are End User Devices (desktops, laptops, tablets, smartphones) used for transmitting, processing, or storing Scoped data? (Single selection allowed) (Justification allowed) *
-Answer: Yes, End User Devices such as desktops, laptops, tablets, and smartphones are used for transmitting, processing, or storing Scoped Data.
-
-SCA reference: M.1 End User Device Administrative Activity Logging
-ISO 27002:2013 Relevance: 11.2.8 Unattended User Equipment, 11.2.9 Clear Desk and Clear Screen Policy, 12.1.3 Capacity Management
-SIG Lite Reference: M. End User Device Security - M.1
-
-Question: 1.2 CE.01 Do you have SOC 2, Type 2 Report for your company? (Single selection allowed) *
-Answer: Yes, SOC 2, Type 2 reports are available for Twilio.
-
-To obtain a copy of the SOC 2, Type 2 Report, please register and request access through the Twilio security documents portal at https://security.twilio.com.
-
-SCA reference: TODO - UNKNOWN
-ISO 27002:2013 Relevance: TODO - UNKNOWN
-SIG Lite Reference: TODO - UNKNOWN
-
-Question: 7.5 Is scoped data sent or received electronically? (Single selection allowed) (Justification allowed) *
-Answer: Yes, scoped data is sent or received electronically.
-
-SCA reference: D.5 Data Security Policy - Encryption
-ISO 27002:2013 Relevance: 10.1.1 Policy on the Use of Cryptographic Controls
-SIG Lite Reference: D.6
-
-Question: 19.3 Is client scoped data collected, accessed, transmitted, processed, disclosed, or retained that can be classified as nonpublic personal information or personally identifiable financial information under the Gramm-Leach-Bliley Act (GLBA) and related Privacy and Security Safeguards Rules? (Single selection allowed) (Justification allowed) *
-Answer: TODO - UNKNOWN
-
-Question: 2.6 A copy of the formal criteria and methodology used to identify the inherent and residual risk associated to any third party entity involved in the delivery of the services. *
-Answer: TODO - UNKNOWN
-
-Question: 2.49 Documentation regarding the delivery and schedule of privacy awareness training to the organization and its constituents *
-Answer: Yes, all new Twilio employees and contractors are required to complete "Twilio Security and Privacy" training during the onboarding. Annual privacy and security training covers the Information Security Policies, security best practices, and privacy principles. The Security Team provides continuous updates on emerging threats and phishing awareness campaigns enhancing the overall privacy awareness among employees.
-
-SCA reference: E.3 Security Awareness Training Program
-ISO 27002:2013 Relevance: 7.2 Competence, 7.2.1 Management Responsibilities, 7.2.2 Information Security Awareness, Education and Training, 7.3 Awareness
-SIG Lite Reference: E. Human Resource Security - E.1.3
-
-Question: 3.11 Is the assessment for the entire company, or a particular functional area or risk control topic? (Single selection allowed) (Justification allowed) *
-Answer: TODO - UNKNOWN
-
-Question: 13.3 Are events on scoped systems or systems containing scoped data relevant to supporting incident investigation regularly reviewed using a specific methodology to uncover potential incidents? (Single selection allowed) (Justification allowed) *
-Answer: Yes, events on scoped systems or systems containing scoped data relevant to supporting incident investigation are regularly reviewed using a specific methodology to uncover potential incidents.
-
-SCA reference: J.1 Incident Management – Policy and Procedure Content
-ISO 27002:2013 Relevance: None provided
-SIG Lite Reference: J.5 - Events and Incidents
-
-Question: 2.34 Documentation detailing resources and tools available for information security/information technology incident handling including recommended practices for securing networks, systems and applications *
-Answer: TODO - UNKNOWN
-
-Question: 2.19 Security patch process, including the name of the tool used for patch management *
-Answer: Yes, Twilio employs a comprehensive vulnerability management program that includes regular patching of systems. Patches are evaluated, tested, and applied to maintain security and system integrity. Twilio uses known good images from AWS AMI for deploying patches, aligning with Amazon’s published best practices.
-
-SCA reference: T.4 Application Vulnerability Assessments/Ethical Hacking  
-ISO 27002:2013 Relevance: 12.6.1 Management of Technical Vulnerabilities  
-SIG Lite Reference: T.2
-
-Question: 2.13 Documentation regarding the organizations encryption key management policy, procedures or standards *
-Answer: Yes, encryption key management policies, procedures, and standards are documented and maintained securely.
-
-SCA reference: D.5 Data Security Policy - Encryption
-ISO 27002:2013 Relevance: 10.1.1 Policy on the Use of Cryptographic Controls
-SIG Lite Reference: D.6.12
-
-Question: 3.5 Is the ownership structure private or public? (Single selection allowed) (Justification allowed) *
-Answer: TODO - UNKNOWN
-
-Question: 16.5 Can constituents access corporate e-mail using mobile devices? (Single selection allowed) (Justification allowed) *
-Answer: Yes, constituents can access corporate email using mobile devices. This access aligns with Twilio's 'bring your own device' policy, allowing employees to use their personal mobile devices for accessing work-related emails, under strict compliance with the company's security protocols.
-
-SCA reference: F.3 Secure Workspace Program  
-ISO 27002:2013 Relevance: Not specifically listed  
-SIG Lite Reference: M.1.22.5
-
-Question: 2.20 A list of application security risks that are documented as part of the application security program, and review the most recent application security report *
-Answer: TODO - UNKNOWN
-
-Question: 3.32 Lead Assessee contact name: *
-Answer: TODO - UNKNOWN
-
-Question: 2.15 Documentation of its process for handling involuntary/voluntary separations *
-Answer: TODO - UNKNOWN
-
-Question: 12.2 Are development, test, and staging environment separate from the production environment? (Single selection allowed) (Justification allowed) *
-Answer: Yes, development, test, and staging environments are maintained separately from the production environment to ensure that they do not affect the stability and security of the production systems. This separation is critical for maintaining the integrity and availability of the production environment, as it prevents potential disruptions and security risks that could arise from untested or unstable changes.
-
-SCA reference: A.5 Third Party Provider Risk Management Program  
-ISO 27002:2013 Relevance: 12.1.2 Change Management  
-SIG Lite Reference: C. Organizational Security - C.2
-
-Question: 15.6 Are documented policies and procedures maintained to enforce applicable legal, regulatory, or contractual cybersecurity compliance obligations? (Single selection allowed) (Justification allowed) *
-Answer: Yes, Twilio maintains documented policies and procedures that enforce applicable legal, regulatory, or contractual cybersecurity compliance obligations. These policies and procedures are reviewed and updated to reflect current compliance requirements and are supported by Twilio's comprehensive security frameworks.
-
-SCA reference: L.1 Monitoring and Reporting – Compliance/organization
-ISO 27002:2013 Relevance: 18.1.1 Identification of Applicable Legislation and Contractual Requirements
-SIG Lite Reference: L. Compliance - L.3
-
-Question: 17.5 Are Network Intrusion Detection / Prevention Systems (NIDS/NIPS) used to detect and/or prevent intrusions into the network? (Single selection allowed) (Justification allowed) *
-Answer: Yes, Twilio employs a network-based intrusion detection system (IDS) provided by Amazon Web Services, GuardDuty. Amazon GuardDuty analyzes AWS CloudTrail, VPC Flow Logs, and AWS DNS logs. The service is optimized to consume large volumes of data for near real-time processing of security detections. It uses threat intelligence feeds, such as lists of malicious IPs and domains, and machine learning to identify unexpected and potentially unauthorized and malicious activity within the Twilio AWS environment.
-
-Twilio also utilizes OpenDNS Umbrella to assess the threat of all relevant vulnerabilities or security incidents and establishes remediation and mitigation actions for all events.
-
-SCA reference: N.3 Network Security – IDS/IPS Attributes
-ISO 27002:2013 Relevance: None
-SIG Lite Reference: N - N.3.3
-
-Question: 13.2 Is there a formal Incident Response Plan that includes an escalation procedure? (Single selection allowed) *
-Answer: Yes, Twilio maintains an incident reporting policy that defines conditions under which security incidents will be responded to and reported, including levels of severity/risk for various types of vulnerabilities. The Security Incident Response Team receives alerts from upstream vendors and is capable of responding 24x7. The team assesses the threat of all relevant vulnerabilities and establishes remediation actions and timelines for all events.
-
-Twilio maintains an incident response program in accordance with NIST SP 800-61. The program defines conditions under which security incidents are classified and triaged. Twilio Security Incident Response Team (T-SIRT) assesses the threat of all relevant vulnerabilities or security incidents and establishes remediation and mitigation actions for all events.
-
-SCA reference: J.1 Incident Management – Policy and Procedure Content
-ISO 27002:2013 Relevance: 10.1 Nonconformity and Corrective Action Plan
-                        16.1.4 Assessment and Decision on Information Security Events
-                        16.1.5 Response to Information Security Events
-                        16.1.7 Collection of Evidence
-                        6.1.3 Contact with Authorities
-                        7.4 Communication
-SIG Lite Reference: From SIG Lite Documentation J - J.2
-
-Question: 3.8 Enter the type of legal entity and location of incorporation. *
-Answer: TODO - UNKNOWN
-
-Question: 3.10 Comments:
-Answer: TODO - UNKNOWN
-
-Question: 19.4 Is client scoped data collected, accessed, processed, disclosed, or retained that can be classified as consumer report information or derived from a consumer report under the Fair and Accurate Credit Transactions Act (FACTA)? (Single selection allowed) (Justification allowed) *
-Answer: No, Twilio does not collect, access, process, disclose, or retain data that can be classified as consumer report information or derived from a consumer report under the Fair and Accurate Credit Transactions Act (FACTA).
-
-SCA reference: P.1 Privacy Program Management
-ISO 27002:2013 Relevance: 
-SIG Lite Reference: From SIG Lite Documentation - P.12
-
-Question: 10.2 Is there an operational Change Management/Change Control policy or program that has been documented, approved by management, communicated to appropriate constituents, and assigned an owner to maintain and review the policy? (Single selection allowed) (Justification allowed) *
-Answer: Yes, there is an operational change management/change control policy or program at Twilio. All change requests must be documented using a formal, auditable, system of record. The change management process includes an assessment of impact and risk of change requested, evidence acknowledging applicable testing was performed successfully, approval for deployment into production by appropriate approver(s), communication of change to all relevant people/departments, and rollback procedures.
-
-SCA reference: G.1 Change Control
-ISO 27002:2013 Relevance: 12.1.2 Change Management, 8.1 Operational Planning and Control
-SIG Lite Reference: G. Operations Mgmt - G.2
-
-Question: 2.52 Documentation of policies, procedures or guidelines that describe the privacy incident reporting, notification, communications and post-incident handling regarding unauthorized disclosure or breach of personal information *
-Answer: Yes, Twilio maintains a privacy incident response program that outlines the processes for reporting, notifying, communicating, and handling post-incident activities related to unauthorized disclosure or breaches of personal information. This ensures that privacy incidents are managed in a structured manner, adhering to legal requirements and best practices for minimizing impact.
-
-SCA Reference: P.8 Data Protection, Privacy Incident Notification and Response Management
-ISO 27002:2013 Relevance: 7.5.1 General
-SIG Lite Reference: From SIG Lite Documentation P - P.1.6.3
-
-Question: 18.9 Does the organization ensure that sub-contractors are treated fairly, ethically and in accordance with local standards and regulations? (Single selection allowed) (Justification allowed) *
-Answer: TODO - UNKNOWN
-
-Question: 19.7 Is client scoped data collected, accessed, transmitted, processed, or retained that can be classified under U.S. State Privacy Regulations e.g., CO, CA, CT, MA, NY, NV, VA, UT, WA, CO etc.? (Single selection allowed) (Justification allowed) *
-Answer: Yes, client scoped data may be collected, accessed, transmitted, processed, or retained which could be classified under U.S. State Privacy Regulations. Twilio ensures compliance with various state privacy laws by implementing robust privacy and security measures aligned with industry best practices. Clients should consult specific documentation related to state laws for detailed information.
-
-SCA reference: Unknown
-ISO 27002:2013 Relevance: Unknown
-SIG Lite Reference: TODO - UNKNOWN
-
-Question: 14.8 Is there a data retention policy or process with a retention schedule for scoped data? (Single selection allowed) (Justification allowed) *
-Answer: Yes, Twilio has a data retention policy that includes a detailed retention schedule, ensuring that data is only kept for as long as necessary in accordance with legal and regulatory requirements. This policy outlines specific timeframes for the retention and disposal of information, adhering to best practices in data management to protect user data and maintain compliance.
-
-SCA Reference: P.7 Management of Client-Scoped Privacy Data
-ISO 27002:2013 Relevance: 18.1.1 Identification of Applicable Legislation and Contractual Requirements
-SIG Lite Reference: From SIG Lite Documentation the P.5 - P.5.1
-
-Question: 18.4 Does the organization have processes in place to ensure that there are no material discharges to land or water as a direct result of business operations? (Single selection allowed) (Justification allowed) *
-Answer: TODO - UNKNOWN
-
-Question: 1.29 Attach the documents that define the organization's SDLC requirements, criteria, and the process to conduct security reviews (polices) *
-Answer: Yes, Twilio has established and documented Secure Systems Development Life Cycle (SDLC) processes. These include formal reviews, testing, and security requirements to ensure that applications are secure by design. For further details or access to these documents, interested parties should register at https://security.twilio.com to request access and obtain the necessary documentation.
-
-SCA reference: I.2 Secure Systems Development Life Cycle (SDLC) Policies, Standards and Procedures
-ISO 27002:2013 Relevance: 14.2.1 Secure Development Policy, 14.2.5 Secure System Engineering Principles
-SIG Lite Reference: From SIG Lite Documentation I.2.1
-
-Question: 19.14 Is privacy awareness training conducted for new workers (e.g., officers, directors, employees, contractors) at the time of onboarding? (Single selection allowed) *
-Answer: Yes, all new Twilio employees and contractors are required to complete "Twilio Security and Privacy" training during the onboarding. This training is crucial and covers the Information Security Policies, security best practices, and privacy principles.
-
-SCA reference: E.3 Security Awareness Training Program
-ISO 27002:2013 Relevance: 7.2 Competence
-SIG Lite Reference: E. Human Resource Security - E.1.3
-
-Question: 17.1 Is there an established Network Security Program policy that defines enterprise network security requirements that is approved by management, communicated to constituents, and has an owner to maintain and review? (Single selection allowed) (Justification allowed) *
-Answer: Yes, Twilio has a well-defined Network Security Program policy that clearly outlines enterprise network security requirements. This policy is approved by management, communicated to all relevant parties, and has a designated owner responsible for its maintenance and review. The policy sets the standards for managing and securing network devices, including firewalls, switches, routers, and wireless access points, as per industry best practices.
-
-SCA reference: N.9 Network Security – Authorized Network Traffic
-ISO 27002:2013 Relevance: 13.1.1 Network Controls
-SIG Lite Reference: From SIG Lite Documentation N.1
-
-Question: 19.6 Are there documented policies and procedures to detect and report unauthorized acquisition, use, or disclosure of PHI client scoped data? (Single selection allowed) (Justification allowed) *
-Answer: Yes, Twilio has documented policies and procedures in place for detecting and reporting unauthorized acquisition, use, or disclosure of PHI and client scoped data. Twilio complies with HIPAA regulations, which includes maintaining proper safeguards for protecting PHI. These policies ensure that any potential security incidents involving PHI are properly logged, analyzed, and reported accordingly, adhering to legal and regulatory standards.
-
-SCA reference: P.8 Data Protection, Privacy Incident Notification and Response Management 
-ISO 27002:2013 Relevance: 7.5.1 General 
-SIG Lite Reference: From SIG Lite Documentation P - P.1.6.1
-
-Question: 1.6 Do you have your company's most recent penetration test results? (Single selection allowed) *
-Answer: Yes, Twilio maintains a robust security program which includes regular penetration tests conducted by reputable third-party security firms. These results are confidential but can be shared under a non-disclosure agreement (NDA) with specific stakeholders. For more information and to request access to these documents, please register at our security documentation portal: [Twilio Security Portal](https://security.twilio.com).
-
-SCA reference: TODO - UNKNOWN
-ISO 27002:2013 Relevance: TODO - UNKNOWN
-SIG Lite Reference: TODO - UNKNOWN
-
-Question: 18.6 Does the organization maintain processes to ensure that there are no adverse impacts on biodiversity, including deforestation, ecosystem integrity, natural resource conservation and land degradation? (Single selection allowed) (Justification allowed) *
-Answer: TODO - UNKNOWN
-
-Question: 7.1 Is there an asset management program approved by management, communicated to constituents and an owner to maintain, review, and manage asset controls? (Single selection allowed) (Justification allowed) *
-Answer: Yes, there is an asset management program approved by management, communicated to constituents, and an owner assigned to maintain and review the program.
-
-SCA reference: D.1 Asset Accounting and Inventory  
-ISO 27002:2013 Relevance: 8.1.1 Inventory of Assets  
-SIG Lite Reference: From SIG Lite Documentation D.1
-
-Question: 2.25 Documentation regarding the policies and procedures to prevent unauthorized access to unattended systems *
-Answer: Yes, Twilio has implemented policies and procedures to prevent unauthorized access to unattended systems. These include requiring secure log-on procedures, user authentication mechanisms, and the automatic locking of inactive sessions. Controls also enforce that users log off or lock their sessions when systems are unattended.
-
-SCA reference: H.5 Controls for Unattended Systems  
-ISO 27002:2013 Relevance: 11.1.5 Working in Secure Areas, 11.2.8 Unattended User Equipment, 9.3.1 Use of Secret Authentication Information, 9.4.2 Secure Log-on Procedure  
-SIG Lite Reference: C. Organizational Security - C.3.6
-
-Question: 3.25 List the applications provided that are in scope. *
-Answer: TODO - UNKNOWN
-
-Question: 23.1 Thank you for completing the questionnaire. Please add any additional information.
-Answer: TODO - UNKNOWN
-
-Question: 1.9 Attach your industry standard completed security assessments (i.e SIG CORE/FULL, ISO, NIST, CAIQ) *
-Answer: TODO - UNKNOWN
-
-Question: 1.26 CE.13 Do you have an Access control policy and procedure documentation? (Single selection allowed) *
-Answer: Yes, Twilio has an access control policy and procedure in place which is approved by management, communicated to appropriate constituents, and an owner is assigned to maintain and review the program. This encompasses user registration, deregistration, user access provisioning, and restriction of access to information based on business and security requirements.
-
-SCA Reference: H.1, H.3 Logical Access Authorization
-ISO 27002:2013 Relevance: 9.1.1 Access Control Policy, 9.2.1 User Registration and De-registration, 9.4.1 Information Access Restriction
-SIG Lite Reference: H.1.1
-
-Question: 14.4 Is there a pandemic/infectious disease outbreak plan? (Single selection allowed) (Justification allowed) *
-Answer: TODO - UNKNOWN
-
-Question: 18.11 Has the organization established formal community relations programs to promote its involvement in the community? (Single selection allowed) (Justification allowed) *
-Answer: TODO - UNKNOWN
-
-Question: 19.8 Is client scoped data collected, accessed, transmitted, processed, disclosed, or retained that can be classified as European Union Personal Data or Sensitive Personal Data e.g., racial, or ethnic origin, genetic data, biometric data, health data, sexual orientation, criminal history? (Single selection allowed) (Justification allowed) *
-Answer: Yes, Twilio processes various types of data, including communications content and metadata, which may include personal data subject to privacy protections under laws such as GDPR. Customers are responsible for ensuring the legality of their use of Twilio's services, including compliance with GDPR. Twilio does not purposely collect or process sensitive personal data in the provision of its services. However, such data may be processed if included by customers in the communications data they handle through Twilio's services.
-
-SCA reference: P.13 European Privacy & Data Protection
-ISO 27002:2013 Relevance: Not Directly Listed
-SIG Lite Reference: From SIG Lite Documentation P - P.13
-
-Question: 3.26 What type of technology or software is being provided? Select all that apply from the list below. (Multiple selections allowed) (Justification allowed) (Allows other) *
-Answer: TODO - UNKNOWN
-
-Question: 1.23 Attach the documentation that defines Information Asset Management Program e.g., policies, procedures or standards *
-Answer: TODO - UNKNOWN
-
-Question: 2.12 Organization documentation of its process for restricting the use of removable devices *
-Answer: TODO - UNKNOWN
-
-Question: 14.6 Is there a formal process focused on identifying and addressing risks of disruptive events to business operations e.g. operational risk assessment? (Single selection allowed) (Justification allowed) *
-Answer: Yes, the Twilio Security Risk Management Program (RMP) provides a flexible and scalable framework to assess and manage risks in the Twilio environment. This addresses the need to identify and address risks of disruptive events that could impact business operations. The RMP is continuously refined and adapted to the organizational context and current priorities, which includes addressing operational risks.
-
-SCA reference: A.1 IT and Infrastructure Risk Governance
-ISO 27002:2013 Relevance: 6.1.2 Information Security Risk Asssessment
-SIG Lite Reference: A. Risk Management - A.1
-
-Question: 3.37 Location(s) where the assessment was performed: *
-Answer: TODO - UNKNOWN
-
-Question: 1.32 Do you have any "end of life and end of support" supported policies and notification procedures? (Single selection allowed) *
-Answer: TODO - UNKNOWN
-
-Question: 2.14 Documentation reflecting the current human resource security and background investigation policy and procedures, including but not limited to evidence of completion of background checks prior to employment *
-Answer: Yes, Twilio has established human resource policies which include a comprehensive background investigation process. All candidates in the USA must pass stringent background checks conducted by a specialized third party before being offered a position. These checks include SSN trace, criminal county search (covering a 7-year address history), multi-state instant criminal check, National Sex Offenders Public Registry, OFAC list screening, professional references, and education verification. For international new hires, the background check process includes, where legal, international criminal searches and education verification.
-
-SCA reference: E.1 Background Investigation Policy Content
-ISO 27002:2013 Relevance: 7.1.1 Screening, 7.2 Competence
-SIG Lite Reference: E. Human Resource Security - E.1.1
-
-Question: 22.3 Does the Cloud Hosting Provider provide independent audit reports for their cloud hosting services e.g., Service Operational Control - SOC? (Single selection allowed) (Justification allowed) *
-Answer: Yes, the Cloud Hosting Provider does provide independent audit reports for their cloud hosting services. These include Service Operational Control (SOC) reports and others to ensure compliance and maintain transparency about their security practices. More information about these reports, including specifications and availability, can be accessed through the provider's compliance resources.
-
-SCA reference: V.3 Cloud Audit Program
-ISO 27002:2013 Relevance: None specified
-SIG Lite Reference: From SIG Lite Documentation V.6
-
-Question: 3.23 Do the products, services, or systems include any classification of personally identifiable information? (Single selection allowed) (Justification allowed) *
-Answer: Yes, Twilio processes communications content which may include personal data if end users choose to include it and communications metadata.
-
-SCA reference: P.1 Privacy Program Management
-ISO 27002:2013 Relevance: 
-SIG Lite Reference: P.1 - P.1.1
-
-Question: 1.5 Attach your company's ISO/IEC certificates. *
-Answer: Yes, to acquire a copy of the ISO/IEC certificates, please register and request access via our security portal here: [Twilio Security Documents](https://security.twilio.com).
-
-SCA reference: N/A
-ISO 27002:2013 Relevance: N/A
-SIG Lite Reference: TODO - UNKNOWN
-
-Question: 21.6 Are Windows servers used to process, store or used for scoped services? (Single selection allowed) (Justification allowed) *
-Answer: Yes, Windows servers are used as part of the Scoped Services.
-
-SCA reference: None
-ISO 27002:2013 Relevance: None
-SIG Lite Reference: T.1 - Malware Protection
-
-Question: 21.9 Are AS/400s used to process, store or used for scoped services? (Single selection allowed) (Justification allowed) *
-Answer: No, AS/400s are not used as part of the Scoped Services.
-
-SCA reference: U.1 System Configuration and Hardening Standards
-ISO 27002:2013 Relevance: null
-SIG Lite Reference: U - U.1.7
-
-Question: 12.5 Is a web site or web application supported, hosted, or maintained that processes scoped systems and data? (Single selection allowed) (Justification allowed) *
-Answer: Yes, a web site is supported, hosted, or maintained that processes scoped systems and data.
-SCA reference: Not directly provided
-ISO 27002:2013 Relevance: Not directly provided
-SIG Lite Reference: I.3 - Scoping
-
-Question: 2.56 Documentation on the company's governance process for cloud hosting, include the internal and external audit assurance responsibilities; the Cloud Hosting Provider's independent audit reports (e.g., Service Operational Control-SOC, ISO Certification) for their cloud hosting services and any CSP audit program documentation *
-Answer: Yes, Twilio conforms to rigorous security standards and continuously evaluates its cloud hosting services for compliance with industry standards. As part of our commitment to security, Twilio’s cloud hosting services, provided by Amazon Web Services (AWS), are regularly assessed through independent audits. These include SOC (Service Organization Control) reports and certifications under ISO standards, ensuring that our cloud hosting practices meet high security and privacy benchmarks. Customers can acquire detailed audit reports and certifications by registering and requesting access through Twilio's dedicated security portal at: https://security.twilio.com
-
-SCA reference: V.3 Cloud Audit Program
-ISO 27002:2013 Relevance: null
-SIG Lite Reference: From SIG Lite Documentation V.6 - Does the Cloud Hosting Provider provide independent audit reports (e.g., Service Operational Control - SOC) for their cloud hosting services?
-
-Question: 3.7 If public, what is the trading symbol? *
-Answer: TODO - UNKNOWN
-
-Question: 1.17 Attach the documentation that defines the requirements for selection, due diligence and management of any 3rd and Fourth-Nth parties *
-Answer: TODO - UNKNOWN
-
-Question: 19.18 Is personal information collected directly from an individual by the organization on behalf of the client? (Single selection allowed) (Justification allowed) *
-Answer: Yes, Twilio processes communications content, which may include personal data if end users choose to include it, and communications metadata. This is carried out in a manner consistent with privacy regulations and is essential for providing effective communication services as described in our Privacy Policy.
-
-SCA reference: P.5 DATA COLLECTION, NOTICE, CHOICE & CONSENT
-ISO 27002:2013 Relevance: Not directly specified
-SIG Lite Reference: From SIG Lite Documentation P - P.4
-
-Question: 18.15 Does the organization have a formal diversity, equity, and inclusion (DEI) statement or policy? (Single selection allowed) (Justification allowed) *
-Answer: TODO - UNKNOWN 
-
-This specific question regarding a formal diversity, equity, and inclusion (DEI) statement or policy is not covered in the provided documentation. Further clarification or additional resources are required to accurately respond.
-
-Question: 11.1 Is there an access control program that has been approved by management, communicated to constituents and an owner to maintain, and review the program? (Single selection allowed) (Justification allowed) *
-Answer: Yes, Twilio maintains a formally approved access control program that is communicated to relevant parties and has an appointed owner responsible for its maintenance and periodic review. This program ensures that access to sensitive data and systems is appropriately managed and controlled across the organization, aligning with best security practices and compliance requirements.
-
-SCA reference: N/A
-ISO 27002:2013 Relevance: 9.1.1 Access Control Policy, 9.2.1 User Registration and De-registration, 9.4.1 Information Access Restriction
-SIG Lite Reference: From SIG Lite Documentation H.1.1
-
-Question: 3.9 How long has the company been in business? *
-Answer: TODO - UNKNOWN
-
-Question: 16.4 Is there a mobile device management program in place that has been approved by management and communicated to appropriate constituents? (Single selection allowed) (Justification allowed) *
-Answer: Yes, Twilio has a 'bring your own device' policy regarding mobile phones, allowing employees access to approved work applications such as email, messaging, and monitoring applications if they comply with corporate access control requirements. However, only Twilio-owned devices can access production environments through a secure VPN.
-
-SCA reference: F.3 Secure Workspace Program
-ISO 27002:2013 Relevance: 11.2.6 Security Equipment and Assets Off Premises
-SIG Lite Reference: From SIG Lite Documentation M.1.23
-
-Question: 16.2 Does the organization facilitate the implementation of endpoint security controls? (Single selection allowed) (Justification allowed) *
-Answer: Yes, Twilio employs endpoint security controls as part of its comprehensive security program.
-
-SCA reference: 
-ISO 27002:2013 Relevance: 
-SIG Lite Reference: TODO - UNKNOWN
-
-Question: 1.33 Do you have any supported evidence that states assurances with regards to control measures and safeguards against counterfeit or compromised components such as for: software (SBOM or Signed Code), hardware, and services.  (Single selection allowed) (Justification allowed) *
-Answer: TODO - UNKNOWN
-
-Question: 1.25 Attach the documentation regarding the organizations encryption key management policy, procedures or standards? *
-Answer: TODO - UNKNOWN
-
-Question: 9.1 Is there a physical security program approved by management, communicated to constituents, and has an owner been assigned to maintain and review? (Single selection allowed) (Justification allowed) *
-Answer: Yes, there is a physical security program at Twilio that is approved by management, communicated to constituents, and maintains an assigned owner for review and maintenance. You can learn more details about our specific controls and procedures at [AWS Data Centers](https://aws.amazon.com/compliance/data-center/data-centers/).
+**Documentation/Evidence:**
+For detailed information and access to specific documentation regarding physical security, please register and request access at [Twilio's Security website](https://security.twilio.com).
 
 SCA reference: F.2 Physical Security Controls
-ISO 27002:2013 Relevance: 11.1.3 Securing Offices, Rooms, and Facilities
-SIG Lite Reference: F.1
+ISO 27002:2013 Relevance: 11.1.1 Physical Security Perimeter
+SIG Lite Reference: F. Physical and Environmental - F.1
 
-Question: 2.45 Documentation regarding the deployment of firewalls or devices to protect the organization from outside entities, including a network diagram of the target systems or applications *
-Answer: TODO - UNKNOWN
+Question: 2.10 Please Select all Software Devlopment Life Cycle (SDLC) measures in place at your organization and attach relevant documentation/evidence. (Multiple selections allowed) (Allows other) *
+Answer: Yes, there is a formal Software Development Life Cycle (SDLC) process in place that adheres to secure software development principles.
 
-Question: 1.22 CE.11 Do you have documentation that defines Information Asset Management Program e.g., policies, procedures or standards? (Single selection allowed) *
-Answer: Yes, Twilio has a formalized Information Asset Management Program which encompasses policies, procedures, and standards aimed at managing and protecting information assets. The program ensures assets are appropriately maintained and reviewed within the organizational requirements and security frameworks.
+- **Documented SDLC Process**: All change requests must be documented using a formal, auditable, system of record. The change management process includes assessment of impact and risk, evidence of successful testing, approval for deployment into production, relevant communication, and established rollback procedures. 
+- **Secure Code Review**: A Secure Code Review is performed regularly, employing both automated static and dynamic code analysis tools, as well as manual code reviews.
+- **Compliance with Security Policies**: The SDLC process ensures compliance with security policies before promotion to production. Identified security vulnerabilities are remediated or assessed for potential risk mitigation strategies.
 
-SCA Reference: D.1 Asset Accounting and Inventory
-ISO 27002:2013 Relevance: 8.1.1 Inventory of Assets
-SIG Lite Reference: D. Asset and Info Management - D.1
-
-Question: 3.13 Provide a brief description of the types of services being performed by the third party? *
-Answer: TODO - UNKNOWN
-
-Question: 14.7 Are formal business continuity procedures developed and documented? (Single selection allowed) (Justification allowed) *
-Answer: Yes, for in-scope teams, processes, and systems, business continuity procedures are developed and documented.
-
-SCA reference: K.4 Business Activity level Recovery Planning
-ISO 27002:2013 Relevance: null
-SIG Lite Reference: K.5 - K.5
-
-Question: 1.31 Attach your documentation on policy and procedures for end user or endpoint security configuration standards (BYOD or Company Issued Devices) *
-Answer: Yes, Twilio has established policies and procedures to maintain endpoint security standards. All end-user devices, whether BYOD (bring your own device) or company-issued, must comply with Twilio's strict security requirements. These standards emphasize secure configurations, regular updates, and secure usage practices. For more detailed information on these policies and to access specific documents, you must register and request access at [Twilio's security documentation portal](https://security.twilio.com).
-
-SCA reference: E.1 Background Investigation Policy Content
-ISO 27002:2013 Relevance: 7.2.1 Management Responsibilities
-SIG Lite Reference: From SIG Lite Documentation M.1 - M.1.22.5
-
-Question: 2.51 Privacy Notice documentation that includes a sample of the current web privacy notice(s) applicable to the services provided; description of the mechanism to provide access to the Notice and documentation regarding the policies, procedures or guidelines for maintenance of the notice *
-Answer: Yes, Twilio maintains publicly available privacy notices. As Twilio does not have a direct relationship with customers' end users, customers are responsible for ensuring its end users are provided adequate notice of Twilio's processing activities. Twilio's privacy notices include information about the collection, use, and sharing of personal data and comply with applicable legal requirements. You can access detailed privacy notices and related policies at https://www.twilio.com/legal/privacy.
-
-SCA reference: P.5 DATA COLLECTION, NOTICE, CHOICE & CONSENT
-ISO 27002:2013 Relevance: N/A
-SIG Lite Reference: From SIG Lite Documentation P.6
-
-Question: 2.47 Compliance documentation regarding its client-scoped data inventory, the data flow, in scope privacy regulatory jurisdictions, privacy policy and procedures, including any data classification policy or procedures *
-Answer: Yes, Twilio has a formal documentation and management process regarding client-scoped data inventory, data flow, privacy regulatory jurisdictions, and related policies and procedures. Documentation includes data classification policies and procedures to ensure compliance with relevant privacy regulations. The process ensures accurate, relevant, and timely records of personal information, as necessary for privacy protection.
-
-SCA reference: P.7 Management of Client-Scoped Privacy Data
-ISO 27002:2013 Relevance: 7.5.1 General, 7.5.2 Creating and Updating
-SIG Lite Reference: From SIG Lite Documentation P - P.7
-
-Question: 21.4 Are vendor default passwords removed, disabled, or changed prior to placing any device or system into production? (Single selection allowed) (Justification allowed) *
-Answer: Yes, vendor default passwords are removed, disabled, or changed prior to placing any device or system into production.
-
-SCA reference: U.1 System Configuration and Hardening Standards
-ISO 27002:2013 Relevance: 
-SIG Lite Reference: U.1.2.5
-
-Question: 7.3 Is there a policy or procedure for information handling consistent with its classification that has been approved by management, communicated to appropriate constituents, and assigned an owner to maintain and periodically review e.g., authorized parties, encryption, public cloud storage, removable media, classification labeling, etc.? (Single selection allowed) (Justification allowed) *
-Answer: Yes, there is a policy for information handling consistent with its classification. Twilio maintains a Data Classification and Handling Standard, which insists that data must have a specified Data Owner responsible for ensuring data is classified correctly and that the classification is sufficiently documented. If data has not been classified, it should be treated as 'Internal'. This policy covers various aspects such as encryption, the use of public cloud storage, and removable media.
-
-SCA reference: D.1 Asset Accounting and Inventory
-ISO 27002:2013 Relevance: 10.1.1 Policy on the Use of Cryptographic Controls; 14.1.2 Securing Application Services on Public Networks; 7.5.3 Control of Documented Information; 8.2.2 Labelling of Information; 8.2.3 Handling of Assets; 8.3.1 Management of Removable Media
-SIG Lite Reference: D. Asset and Info Management - D.4.4
-
-Question: 2.46 Documentation regarding the policies and procedures for deployment of IDS/IPS systems *
-Answer: Yes, Twilio employs a network-based intrusion detection system (IDS) provided by Amazon Web Services, GuardDuty. Amazon GuardDuty analyzes AWS CloudTrail, VPC Flow Logs, and AWS DNS logs. The service is optimized to consume large volumes of data for near real-time processing of security detections. It uses threat intelligence feeds, such as lists of malicious IPs and domains, and machine learning to identify unexpected and potentially unauthorized and malicious activity within the Twilio AWS environment.
-
-We also use OpenDNS Umbrella.
-
-SCA reference: N.3 Network Security – IDS/IPS Attributes  
-ISO 27002:2013 Relevance: Not provided  
-SIG Lite Reference: From SIG Lite Documentation N.3.3
-
-Question: 18.2 Does the organization's environmental policy cover climate change issues that could be material to the organization? (Single selection allowed) (Justification allowed) *
-Answer: TODO - UNKNOWN
-
-Question: 1.30 CE.15 Do you have documentation on policy and procedures for end user or endpoint security configuration standards (BYOD or Company Issued Devices)? (Single selection allowed) *
-Answer: Yes, Twilio has documented policies and procedures for endpoint security configuration standards which apply to both BYOD (Bring Your Own Device) and company-issued devices. These guidelines ensure the security of all devices that access corporate resources, maintaining the integrity and confidentiality of the data managed.
-
-SCA reference: E.2 Agreements for Constituents
-ISO 27002:2013 Relevance: 8.1.3 Acceptable Use of Assets
-SIG Lite Reference: From SIG Lite Documentation D. Security Policy - B.1.1
-
-Question: 13.1 Is there an established Cybersecurity Incident Management Program that has been approved by management, communicated to appropriate constituents and an owner to maintain, and review the program? (Single selection allowed) (Justification allowed) *
-Answer: Yes, Twilio maintains a comprehensive Cybersecurity Incident Management Program that has been formally approved by management and is communicated effectively to all relevant stakeholders. An owner is designated for the ongoing maintenance and periodic review of the program. The program includes defined conditions for incident response, including levels of severity and risk, ensuring a structured and prompt response to security threats. This ensures that all incident management processes are regularly updated to align with evolving cybersecurity practices and compliance requirements.
-
-SCA reference: J.1 Incident Management – Policy and Procedure Content
-ISO 27002:2013 Relevance: 16.1.6 Learning from Information Security Incidents
-SIG Lite Reference: J. Cybersecurity Incident Management - Ques Num J.1
-
-Question: 1.21 Attach the documentation that defines the Enterprise Risk Management program requirements (e.g., Enterprise risk governance plan, policies and procedures) *
-Answer: TODO - UNKNOWN
-
-Question: 15.3 Is there a compliance program or set of policies and procedures to address bribery, corruption, prohibition of providing monetary offers, incentives, or improper actions that create unfair advantage in business practices? (Single selection allowed) (Justification allowed) *
-Answer: TODO - UNKNOWN
-
-Question: 19.9 Is client scoped data collected, transmitted, processed, disclosed, or retained that can be classified as Personal Information as defined by Canadian Personal Information Protection and Electronic Documents Act (PIPEDA) or Canadian Provincial Privacy Regulations? (Single selection allowed) (Justification allowed) *
-Answer: Yes, Twilio processes communications content and metadata which may include personal data if end users choose to include it. Twilio ensures compliance with applicable privacy laws concerning personal data.
-
-SCA reference: P.7 Management of Client-Scoped Privacy Data
-ISO 27002:2013 Relevance: None specified
-SIG Lite Reference: From SIG Lite Documentation P - P.1.1
-
-Question: 3.27 Does this assessment include Cloud Hosting Services? (Single selection allowed) (Justification allowed) *
-Answer: Yes, Twilio is hosted on AWS which provides Infrastructure as a Service (IaaS). However, Twilio itself does not provide Cloud Hosting Services directly to clients.
-
-SCA reference: V.1 Service and Deployment Models  
-ISO 27002:2013 Relevance: null  
-SIG Lite Reference: V.1 - V.1
-
-Question: 18.10 Does the organization have a documented policy on Health and Safety? (Single selection allowed) (Justification allowed) *
-Answer: TODO - UNKNOWN
-
-Question: 19.15 Are there documented policies and procedures that define limits to the collection and use of personal information to authorized users regarding limiting the personal information collected and used by authorized users e.g., minimum necessary, need to know, job role? (Single selection allowed) (Justification allowed) *
-Answer: Yes, documented policies and procedures are in place with defined limits on the collection and use of personal information to authorized users. These policies ensure that personal information is limited to the minimum necessary and is only accessed by users based on need to know and job role criteria. This is to uphold the integrity and confidentiality of personal data as per compliance with applicable privacy laws and regulations.
-
-SCA reference: P.7 Management of Client-Scoped Privacy Data
-ISO 27002:2013 Relevance: 
-SIG Lite Reference: From SIG Light Documentation P.5 - P.5.2
-
-Question: 19.20 Does the organization have or maintain internet-facing website(s), mobile applications, platform, or other digital services or applications that collect, use, disclose, process, or retain client-scoped data that are accessed directly by individuals? (Single selection allowed) (Justification allowed) *
-Answer: Yes, Twilio operates internet-facing websites and platforms that may handle client-scoped data, directly interacting with individuals as required by the services provided. Clients can directly interact with Twilio's communication platforms and APIs to manage their communications needs, although Twilio does not directly manage or store personal data unless it's necessary for providing services.
-
-SCA reference: P.10 Authorizations, Monitoring & Enforcement
-ISO 27002:2013 Relevance: None provided
-SIG Lite Reference: From SIG Lite Documentation P - P.14
-
-Question: 1.18 CE.09 Do you have an information Security Policy? (Single selection allowed) *
-Answer: Yes, Twilio has a set of information security policies that have been approved by management, published, and communicated to constituents.
-
-SCA reference: B.1 Information Security Policy Maintenance
-ISO 27002:2013 Relevance: 5.1.1 Policies for Information Security
-SIG Lite Reference: B. Security Policy - B.1
-
-Question: 2.29 Documents that define the organization's SDLC requirements, criteria, and the process to conduct security reviews *
-Answer: Yes, Twilio employs a formal Software Development Life Cycle (SDLC) process that includes documented policies and standards addressing security reviews and requirements. These policies and procedures are designed to ensure the development of secure systems and software. The SDLC includes steps such as requirements definition, design, implementation, testing, and maintenance. Security requirements are incorporated from the project's inception through its release and beyond, aligning with best practices for secure software development.
+All relevant details are documented and maintained as part of the organization’s continuously reviewed policies and practices.
 
 SCA reference: G.1 Change Control
-ISO 27002:2013 Relevance: 14.2.1 Secure Development Policy, 14.2.5 Secure System Engineering Principles
-SIG Lite Reference: From SIG Lite Documentation U.1 - U.1.1
+ISO 27002:2013 Relevance: 12.1.2 Change Management, 14.1.1 Information Security Requirements Analysis and Specification, 14.2.5 Secure System Engineering Principles
+SIG Lite Reference: SDLC - G.2.1, G.2.2, I.2.1, I.2.4, I.2.6
 
-Question: 2.9 A copy of its current, approved Information Security (IS) organizational document, including IS roles and responsibilities *
-Answer: TODO - UNKNOWN
+Question: 3.2 Please detail the purpose of use for your product or service *
+Answer: Yes, Twilio provides a cloud communications platform enabling developers to build messaging, voice, and video capabilities into their applications. This elevates customer engagement and streamlines communications channels for a wide variety of industries.
 
-Question: 1.24 CE.12 Do you have documentation regarding the organizations encryption key management policy, procedures or standards? (Single selection allowed) *
-Answer: TODO - UNKNOWN
+SCA reference: Not directly available
+ISO 27002:2013 Relevance: Not directly available
+SIG Lite Reference: Not directly available in SIG Lite Documentation
 
-Question: 12.8 Is there a formal security program established to include API security reviews? (Single selection allowed) (Justification allowed) *
-Answer: Yes, Twilio maintains a robust security program that includes API security reviews to ensure the security and integrity of our APIs. This program involves regular security assessments, penetration testing, and adherence to best practices in API security.
-
-SCA reference: A.1 IT and Infrastructure Risk Governance  
-ISO 27002:2013 Relevance: 12.6.1 Management of Technical Vulnerabilities  
-SIG Lite Reference: From SIG Lite Documentation the SHEET NAME - QUES NUM 
-
-Question: 2.42 A copy of its professional ethics and business practices program and related operational procedures and/or guidelines *
-Answer: TODO - UNKNOWN
-
-Question: 1.7 Attach your most recent Penetration Test results/report *
-Answer: For security reasons, Twilio does not directly distribute penetration test reports. However, registered users can request access to such documents through our secure portal. Please register and request the necessary documents at https://security.twilio.com.
-
-SCA reference: TODO - UNKNOWN
-ISO 27002:2013 Relevance: TODO - UNKNOWN
-SIG Lite Reference: TODO - UNKNOWN
-
-Question: 2.31 Documentation regarding the policies and procedures for performing a privacy impact assessment, including the lists of projects in development or completed in the last 12 months *
-Answer: TODO - UNKNOWN
-
-Question: 1.3 Attach the SOC 2, Type 2 Report for your company *
-Answer: Yes, to access the SOC 2, Type 2 Report for our company, you can register and request access to the document through the Twilio security documents portal. Please visit [https://security.twilio.com](https://security.twilio.com) to register and gain access to the desired compliance documentation.
-
-SCA reference: N/A  
-ISO 27002:2013 Relevance: N/A  
-SIG Lite Reference: TODO - UNKNOWN
-
-Question: 2.11 Documentation regarding the policies, procedures, and logs used for tracking inbound and outbound media shipments *
-Answer: TODO - UNKNOWN
-
-Question: 2.23 Corporate password policy and procedures documentation *
-Answer: TODO - UNKNOWN
-
-Question: 5.3 Are there documented third party risk management standards or procedures in place for the selection, oversight, and assessment of fourth Parties in scope for the services provided? (Single selection allowed) (Justification allowed) *
-Answer: Yes, there is a documented third-party risk management program in place for the selection, oversight, and risk assessment of subcontractors, which would include fourth parties. This program ensures that all subcontractors comply with the required security standards and practices.
-
-SCA Reference: A.7 Subcontractor Selection and Management Process
-ISO 27002:2013 Relevance: 15.1.1 Information Security Policy for Supplier Relationships; 15.2.1 Monitoring and Review of Supplier Services; 15.2.2 Managing Changes to Supplier Services
-SIG Lite Reference: From SIG Lite Documentation A.4.1
-
-Question: 19.10 Is client scoped data collected, accessed, transmitted, processed, or retained that can be classified under any other international privacy jurisdictions? If Yes, list the applicable international location in the Additional Information field. (Single selection allowed) (Justification allowed) *
-Answer: Yes, Twilio processes communications content which may include personal data, depending on the clients' use of the services. Such data handling adheres to international privacy regulations relevant to the regions in which Twilio operates.
-
-SCA reference: None
-ISO 27002:2013 Relevance: None
-SIG Lite Reference: P.7 - Disclosures to Third Parties
-
-Question: 19.2 Is client scoped data collected, accessed, transmitted, processed, disclosed, or retained that can be classified as client-scoped employee data? (Single selection allowed) (Justification allowed) *
-Answer: Yes, Twilio processes communications content which may include personal data if end users choose to include it, as well as communications metadata. This includes data that might be classified as client-scoped employee data depending on the content of the communications and the purposes for which it is used by the client.
-
-SCA Reference: P.1 Privacy Program Management
-ISO 27002:2013 Relevance: 
-SIG Lite Reference: P.1 - P.1.1
-
-Question: 3.6 If public, what is the name of the Exchange? *
-Answer: TODO - UNKNOWN
-
-Question: 8.1 Are Human Resource policies and/or procedures approved by management, communicated to constituents and an owner to maintain, and review? (Single selection allowed) (Justification allowed) *
-Answer: Yes, Human Resource policies are approved by management, communicated to constituents, and an owner is assigned to maintain and review them. This ensures that the policies are kept up to date and relevant in accordance with the organization's requirements and compliance standards.
-
-SCA reference: E.1 Background Investigation Policy Content
-ISO 27002:2013 Relevance: 7.2 Competence; 7.2.1 Management Responsibilities; 7.2.3 Disciplinary Process; 7.3 Awareness; 7.3.1 Termination or Change of Employment Responsibilities
-SIG Lite Reference: E. Human Resource Security - E.1
-
-Question: 19.19 Is personal information provided to the organization directly by the client? (Single selection allowed) (Justification allowed) *
-Answer: Yes, Twilio processes communications content which may include personal data if end users choose to include it, and communications metadata. This processing is contingent on the operational use of the service by customers who may elect to include such data in the communications transmitted using Twilio's products and services.
-
-SCA reference: P.10 Authorizations, Monitoring & Enforcement
-ISO 27002:2013 Relevance: None
-SIG Lite Reference: P.4 - Ques Num: P.4
-
-Question: 19.21 Is there a Third Party Risk Management Program (including ongoing monitoring) in place to address data protection safeguards (administrative, technical, and physical safeguards for the security of the client scoped data? (Single selection allowed) (Justification allowed) *
-Answer: Yes, Twilio has implemented a comprehensive Third Party Risk Management Program designed to address a wide range of security concerns, including the implementation and maintenance of administrative, technical, and physical safeguards for the security of client-scoped data. The program encapsulates policies and procedures to ensure due diligence and ongoing monitoring of third-party service providers that may have access to Twilio's scoped data.
-
-SCA reference: A.5 Third Party Provider Risk Management Program  
-ISO 27002:2013 Relevance: 15.1.1 Information Security Policy for Supplier Relationships
-SIG Lite Reference: A.4.2
-
-Question: 2.27 Documentation related to the use of a remote desktop support function *
-Answer: Yes, Twilio employs remote desktop technologies as part of its operational capabilities. These functions are controlled via strict access and security controls in conjunction with industry best practices to ensure secure management of remote sessions. Specific policies govern the secure setup, maintenance, and auditing of these connections to prevent unauthorized access and ensure privacy and security compliance.
+Question: 2.5 Do you have Cyber Insurance cover? (Single selection allowed) *
+Answer: Yes, Twilio maintains cyber liability insurance that covers consumer notification costs, forensics, legal expertise, fines and penalties, and credit monitoring for impacted individuals as a response to data breaches and cyberattacks.
 
 SCA reference: Not available
 ISO 27002:2013 Relevance: Not available
-SIG Lite Reference: TODO - UNKNOWN
+SIG Lite Reference: Not available in SIG Lite Documentation
 
-Question: 7.2 Is there an acceptable use policy for information and associated assets that has been approved by management, communicated to appropriate constituents, and assigned an owner to maintain and periodically review the policy? (Single selection allowed) (Justification allowed) *
-Answer: Yes, there is an acceptable use policy in place for information and associated assets that has been approved by management, communicated to appropriate constituents, and assigned an owner for maintenance and periodic review.
+Question: 1.9 What is your organizations primary contact telephone number? *
+Answer: This type of request does not pertain to the SIG Lite Documentation or the available resources I can provide. For general inquiries or contact information, please visit Twilio's official website or customer support page.
 
-SCA reference: E.2 Agreements for Constituents
-ISO 27002:2013 Relevance: 8.1.3 Acceptable Use of Assets
-SIG Lite Reference: D.2
+Question: 4.2 Finished!
+Answer: Yes, there is a documented change management/change control process for applications containing Scoped Data. This process includes change control procedures required for all changes to the production environment. It ensures that changes are tested prior to deployment, and involves stakeholder communication and/or approvals. The process also mandates the documentation of all system changes, including the use of version control for all software.
 
-Question: 22.1 Are Cloud Hosting services provided? (Single selection allowed) (Justification allowed) *
-Answer: Yes, Twilio does not directly provide Cloud Hosting services (IaaS) but utilizes Amazon Web Services (AWS) for hosting.
+SCA Reference: G.1 Change Control
+ISO 27002:2013 Relevance: 14.2.2 System Change Control Procedures, 14.2.3 Technical Review of Applications After Operating Platform Changes
+SIG Lite Reference: I.2.3 - U.1.9.5
 
-SCA reference: V.1 Service and Deployment Models
-ISO 27002:2013 Relevance: None
-SIG Lite Reference: Cloud Hosting - V.1
+Question: 1.13 Please provide details of person or team responsible for data protection within your organisation? *
+Answer: Yes, Twilio does designate responsibility for data protection to specific roles or teams within the organization.
 
-Question: 12.3 Is application development performed? (Single selection allowed) (Justification allowed) *
-Answer: Yes, application development is performed. This process is managed as part of a formal Software Development Life Cycle (SDLC) process which ensures that security and compliance standards are integrated throughout the development, upgrade, and enhancement of systems.
+SCA reference: Not applicable
+ISO 27002:2013 Relevance: Not applicable
+SIG Lite Reference: Not directly referenced in the SIG Lite Documentation
 
-SCA reference: I.1 Application Security Program Governance
-ISO 27002:2013 Relevance: Not specified in the documentation
-SIG Lite Reference: I.2
+For further details on specific contacts within our data protection team, please refer to our official privacy policy available at [Twilio Privacy Information](https://www.twilio.com/legal/privacy). This document provides insight into how Twilio manages and secures personal data, including details about governance and specific personnel dedicated to the privacy of data.
 
-Question: 1.8 CE.04 Do you have any industry standard completed security assessments (i.e SIG CORE/FULL, ISO, NIST, CAIQ)? (Single selection allowed) *
-Answer: Yes, Twilio has completed various industry standard security assessments including adherence to frameworks and standards such as ISO and NIST. For specific documentation such as SOC2, ISO, compliance, and pen-testing reports, or for further details on completed assessments, interested parties can register and request access through the Twilio Security Document portal at https://security.twilio.com.
+Question: 1.14 Please select all policies that your organization currently enforces. (Multiple selections allowed) (Allows other) *
+Answer: Yes, numerous policies are enforced at our organization.
+
+1. **Information Security Policy**: Comprehensive guidelines ensuring the security of information systems and data.
+2. **Access Control Policy**: Standards for access rights to systems and data within the organization.
+3. **Risk Management Policy**: Framework for identifying, assessing, and mitigating risks.
+4. **Privacy Policy**: Guidelines regarding the handling, transmission, and storage of personal and sensitive data, ensuring compliance with relevant privacy laws and regulations.
+5. **Incident Response Policy**: Procedures for managing and responding to security incidents.
+6. **Change Management Policy**: Processes for handling changes to system and software configurations, ensuring stability and security.
+7. **Business Continuity and Disaster Recovery Policy**: Plans and procedures to continue operations and recover from disruptive incidents.
+8. **Data Protection Policy**: Ensures proper handling, processing, and safeguarding of sensitive data.
+9. **Human Resources Security Policy**: Security measures applied to hiring, training, managing, and terminating employees.
+10. **Environmental Security Policy**: Protecting physical and environmental security to prevent unauthorized physical access, damage, and interference to the organization’s premises and information.
+
+These policies are part of a broader framework designed to maintain the security and integrity of our information systems and data, adhere to regulatory requirements, and safeguard stakeholder interests.
+
+SCA reference: [Not specified in the provided documentation]
+ISO 27002:2013 Relevance: [Not specified in the provided documentation]
+SIG Lite Reference: [Not specified in the provided documentation]
+
+Question: 1.1 What is your Organization's Registered Name & Trading Name? (Single selection allowed) *
+Answer: Yes, Twilio Inc.
+
+SCA reference: Not applicable.
+ISO 27002:2013 Relevance: Not applicable.
+SIG Lite Reference: Not applicable.
+
+Question: 4.1 Do you have any feedback or further information you would like to share with us that we may not have specifically covered in our assessment? (Single selection allowed) (Justification allowed) *
+Answer: No, all relevant information regarding Twilio's security practices, compliance, and regulatory adherence is detailed in provided documentation and specific links, including the SIG Lite Documentation, for a thorough assessment of security protocols.
+
+SCA Reference: N/A  
+ISO 27002:2013 Relevance: N/A  
+SIG Lite Reference: N/A
+
+Question: 2.7 Please Select all Network Security measures implemented within your organization and attach relevant documentation/evidence. (Multiple selections allowed) (Allows other) *
+Answer: Yes, Twilio employs several network security measures to ensure the protection and integrity of our network and the data it handles. Here are the measures implemented:
+
+1. **Firewall/ACL Management**: Twilio uses firewalls to create a barrier between trusted internal networks and untrusted external networks, such as the internet. Access control lists (ACLs) are used to enforce the principle of least privilege by specifying allowed services for each network segment.
+   
+2. **Intrusion Detection Systems (IDS)/Intrusion Prevention Systems (IPS)**: Network-based IDS/IPS are used to monitor network traffic for suspicious activity and known threats, allowing for quick response to potential incidents.
+
+3. **Secure Configuration**: All network devices are securely configured to harden and protect against unauthorized access. Default passwords are changed, and unnecessary services are disabled.
+
+4. **Encrypted Communications**: All sensitive data transmitted across networks is encrypted to safeguard the confidentiality and integrity of data in transit.
+
+5. **Regular Patching and Updates**: Network devices are regularly updated and patched to protect against known vulnerabilities.
+
+6. **Network Segmentation**: Networks are segmented to isolate and secure sensitive data. This limits the potential impact of security breaches by restricting access to critical segments of the network.
+
+7. **Remote Access Management**: Secure remote access methods are used, including VPNs with strong authentication and encryption, to ensure secure connectivity for remote employees and systems.
+
+Attached documentation and evidence of the implemented network security measures can be obtained from the Twilio Security website, specifically designed for handling such requests. Please register at the provided link to request access to the security documents: [Twilio Security Documents Portal](https://security.twilio.com).
+
+SCA reference: N.9 Network Security – Authorized Network Traffic
+ISO 27002:2013 Relevance: 13.1.1 Network Controls
+SIG Lite Reference: N. Network Security - Multiple Entries
+
+Question: 1.11 Does your organization have a data protection officer (DPO)? (Single selection allowed) *
+Answer: Yes, Twilio has designated a Data Protection Officer (DPO) as required for compliance with relevant data protection regulations.
 
 SCA reference: N/A
 ISO 27002:2013 Relevance: N/A
-SIG Lite Reference: TODO - UNKNOWN
+SIG Lite Reference: Not directly available from the SIG Lite Documentation. For detailed information, please reference Twilio's data protection policy and GDPR compliance details here: [Twilio GDPR Compliance](https://www.twilio.com/en-us/gdpr)
 
-Question: 2.4 Documentation that defines the organization's guidelines and process for management and approval of exception handling for required contract terms *
-Answer: TODO - UNKNOWN
+Question: 2.4 If no certifications are held, Please indicate rational or highlight certification you are working toward with expected completion dates. *
+Answer: Yes, Twilio holds various certifications and complies with multiple standards and frameworks.
 
-Question: 2.21 Documentation of the policies, procedures, and standards that are in place for website setup and security, including architecture diagrams for any in scope web applications *
-Answer: Yes, Twilio complies with industry best practices for website setup and security. We follow a robust security framework that involves outlined policies, procedures, and standards that ensure secure architecture and operations. Specific details regarding our security practices and configurations are available upon request through the security portal. Additionally, for architecture diagrams and more granular security details, registered users may need to obtain permission to access confidential documents from the Twilio security portal.
-
-SCA reference: G.4 Website Setup, Operation and Security
-ISO 27002:2013 Relevance: null
-SIG Lite Reference: From SIG Lite Documentation the G - Ques Num23
-
-Question: 20.1 Is there and centrally managed Vulnerability Management Program and associated Policy that has been approved by management, communicated to appropriate constituent and an owner assigned to maintain and review the policy? (Single selection allowed) (Justification allowed) *
-Answer: Yes, Twilio has a centrally managed Vulnerability Management Program and associated policy that has been approved by management, communicated to appropriate constituents, and has an assigned owner who maintains and reviews the policy. This program includes weekly vulnerability scans, with results from external network scans that report vulnerabilities in common services like web servers that have ports exposed to the Internet. Application level vulnerabilities are detected via pentests tailored for the application in question. Operating system level vulnerabilities are detected when the base AMI used to deploy hosts is created. These processes are not run through a standard tool but rather are part of Twilio's internal vulnerability management systems. 
-
-SCA reference: T.4 Application Vulnerability Assessments/Ethical Hacking
-ISO 27002:2013 Relevance: 12.6.1 Management of Technical Vulnerabilities
-SIG Lite Reference: T.2
-
-Question: 2.48 Documentation regarding organizational structure and scope of the data privacy or data protection program, including policies, standards and procedures related to privacy program management functions. *
-Answer: Yes, documentation regarding the organizational structure and scope of the data privacy or data protection program is maintained. This includes comprehensive policies, standards, and procedures related to the management functions of the privacy program, ensuring alignment with applicable privacy laws and regulations.
-
-SCA reference: P.7 Management of Client-Scoped Privacy Data
-ISO 27002:2013 Relevance: None specified 
-SIG Lite Reference: Privacy - P.1
-
-Question: 3.31 Comments:
-Answer: TODO - UNKNOWN
-
-Question: 3.22 Do the products, services, or systems require system to system integration? (Single selection allowed) (Justification allowed) *
-Answer: TODO - UNKNOWN
-
-Question: 12.6 Are security configuration standards documented for web server software? (Single selection allowed) (Justification allowed) *
-Answer: Yes, Twilio complies with Amazon’s published best practices for web server software security configuration. The Cloud Infrastructure team at Twilio constructs a standard hardened image, which engineering teams then utilize to boot their own instances, ensuring adherence to security standards.
-
-SCA reference: U.1 System Configuration and Hardening Standards
-ISO 27002:2013 Relevance: 13.1.1 Network Controls
-SIG Lite Reference: U.1.1
-
-Question: 2.53 Documentation regarding the organization's legal or regulatory authorizations, process for handling privacy inquiries, complaints or disputes from individuals; and any publicly available privacy regulator complaints, findings or court ruling(s) concerning privacy *
-Answer: TODO - UNKNOWN
-
-Question: 3.1 What is the company/business name? (Single selection allowed) *
-Answer: TODO - UNKNOWN
-
-Question: 1.11 Attach the white paper(s) authored by your company *
-Answer: TODO - UNKNOWN
-
-Question: 1.13 Attach the architecture diagram for software and data services and/or network offering *
-Answer: TODO - UNKNOWN
-
-Question: 21.5 Are all systems and applications patched regularly? (Single selection allowed) (Justification allowed) *
-Answer: Yes, Twilio applies patches proactively. As part of Twilio's regular development and deployment cycle, critical software patches are evaluated and applied proactively. Operating system patches are applied through the regeneration of a base virtual-machine image and deployed to all nodes in the Twilio cluster over a predefined schedule, which is generally within two weeks. For high-risk patches, Twilio will deploy directly to existing nodes through internally developed orchestration tools.
-
-SCA reference: U.1 System Configuration and Hardening Standards  
-ISO 27002:2013 Relevance: None  
-SIG Lite Reference: U.1.5
-
-Question: 21.1 Are Servers used for transmitting, processing, or storing scoped data? (Single selection allowed) (Justification allowed) *
-Answer: Yes, servers are used for transmitting, processing, or storing scoped data.
-
-SCA reference: U.1 System Configuration and Hardening Standards
-ISO 27002:2013 Relevance: 
-SIG Lite Reference: U. Server Security - U.1
-
-Question: 3.2 What is the corporate office physical address? *
-Answer: TODO - UNKNOWN
-
-Question: 3.34 Assessee business contact information: *
-Answer: TODO - UNKNOWN
-
-Question: 2.30 Documentation regarding the standard policies and procedures to address security in the development process, including code reviews for target systems or applications *
-Answer: Yes, Twilio maintains a formal Software Development Life Cycle (SDLC) process that incorporates security review and testing protocols to ensure the security of the development process. This includes secure coding practices, code reviews, and vulnerability assessments. 
-
-SCA reference: I.2 Secure Systems Development Life Cycle (SDLC) Policies, Standards and Procedures  
-ISO 27002:2013 Relevance: 14.2.1 Secure Development Policy, 14.2.5 Secure System Engineering Principles  
-SIG Lite Reference: SDLC - I.2.2
-
-Question: 18.14 Are the organization's Environmental, Social and Governance (ESG) policies regularly reviewed and approved by executive management and the Board of Directors? (Single selection allowed) (Justification allowed) *
-Answer: TODO - UNKNOWN
-
-Question: 3.12 What is the name of the product, service, or system being provided by the vendor, processor, or third party? *
-Answer: TODO - UNKNOWN
-
-Question: 12.7 Is an Application Programming Interface (API) available to clients? (Single selection allowed) (Justification allowed) *
-Answer: Yes, an API is available to clients. Twilio provides extensive API documentation available at https://www.twilio.com/docs/usage/api, which clients can use to interact with various Twilio services securely and effectively.
-
-SCA reference: H.3 Logical Access Authorization
-ISO 27002:2013 Relevance: None provided 
-SIG Lite Reference: I.3.6
-
-Question: 2.36 The results of the latest enterprise and location level risk assessment(s) performed *
-Answer: TODO - UNKNOWN
-
-Question: 2.17 Documentation regarding its visitor management program and a copy of the organization's visitor logs from the past 90 days *
-Answer: TODO - UNKNOWN
-
-Question: 1.15 Attach a list of your suppliers *
-Answer: TODO - UNKNOWN
-
-Question: 19.13 Is documentation of the data processing environment including role of the processor (e.g., data flows, data maps, data inventories, business model etc.) maintained for the systems/products/services that process client scoped data based on data classification? (Single selection allowed) (Justification allowed) *
-Answer: Yes, Twilio maintains documentation of the data processing environment tailored to roles such as data processors, which includes elements like data flows, data inventories, and the business model relevant to client scoped data. This approach ensures alignment with data classification requirements and compliance obligations.
-
-SCA reference: P.7 Management of Client-Scoped Privacy Data
-ISO 27002:2013 Relevance: 18.1.1 Identification of Applicable Legislation and Contractual Requirements
-SIG Lite Reference: From SIG Lite Documentation P - P.1.3.1
-
-Question: 17.9 Are default passwords changed or disabled prior to placing network devices into production? (Single selection allowed) (Justification allowed) *
-Answer: Yes, default passwords are changed or disabled prior to placing network devices into production. This ensures that all network devices adhere to security standards to prevent unauthorized access.
-
-SCA reference: U.1 System Configuration and Hardening Standards
-ISO 27002:2013 Relevance: None
-SIG Lite Reference: U.1.2.5
-
-Question: 3.30 What type of Cloud Deployment Models are provided? Select all that apply from the list below. (Single selection allowed) *
-Answer: Yes, Twilio does provide cloud hosting services.
-
-SCA reference: V.1 Service and Deployment Models
-ISO 27002:2013 Relevance: None
-SIG Lite Reference: Cloud Hosting - V.1
-
-Question: 2.18 Obtain the policies/procedures related to operational procedures. Include a recent copy of the master change log for all target systems for the past six months *
-Answer: TODO - UNKNOWN
-
-Question: 17.3 Are all network devices patched with all, available high-risk security patches applied and verified? (Single selection allowed) (Justification allowed) *
-Answer: Yes, all available high-risk security patches are applied and verified on network devices. This process is a part of Twilio's comprehensive Vulnerability Management Program. The program includes weekly vulnerability scans, leveraging tools and methods that evaluate both internal and external network settings. By default, Nessus scans provide reports on external network vulnerabilities, showing what an attacker outside the network could potentially exploit. Additionally, critical software patches are evaluated and proactively applied as part of Twilio's regular development and deployment cycle. Operating system patches are deployed through a base virtual-machine image regeneration and distributed to all nodes in the cluster generally within a two-week schedule. For high-priority updates, Twilio directly deploys patches using internally developed orchestration tools.
-
-SCA reference: T.4 Application Vulnerability Assessments/Ethical Hacking
-ISO 27002:2013 Relevance: 12.6.1 Management of Technical Vulnerabilities
-SIG Lite Reference: From SIG Light Documentation V.1 - V.1.5
-
-Question: 11.2 Are constituents able to access Scoped data? (Single selection allowed) (Justification allowed) *
-Answer: Yes, constituents are able to access Scoped Data.
-
-SCA reference: H.3 Logical Access Authorization
-ISO 27002:2013 Relevance: Not specified
-SIG Lite Reference: H.2
-
-Question: 3.36 Date of Assessment: (Import expects YYYY-MM-DD format) *
-Answer: TODO - UNKNOWN
-
-Question: 21.7 Is there an anti-malware policy or program that has been approved by management, communicated to appropriate constituents and an owner to maintain, and review the policy? (Single selection allowed) (Justification allowed) *
-Answer: Yes, Twilio has an established anti-malware policy or program that has been approved by management and communicated to the appropriate constituents. This program includes defined operating systems that require antivirus measures, and ensures that updates for antivirus signatures are deployed within 24 hours of availability to maintain security effectiveness.
-
-SCA reference: T.1 Anti-malware Protection Policy and Program
-ISO 27002:2013 Relevance: 12.2.1 Controls Against Malware
-SIG Lite Reference: T.1.1
-
-Question: 3.17 Does the company provide personnel or staff augmentation? (Single selection allowed) (Justification allowed) *
-Answer: No, Twilio does not provide personnel or staff augmentation services. Twilio is a cloud communications platform and does not offer staffing services. 
-
-SCA reference: None  
-ISO 27002:2013 Relevance: None  
-SIG Lite Reference: TODO - UNKNOWN
-
-Question: 2.3 Documentation that describes the organization's process for addressing contract clauses within fourth party (vendor or service provider) agreements and including evidence that the organization's required data protection requirements (e.g., standard provisions, addendums, appendices) have been included in the contracting process *
-Answer: Yes, the subcontractor risk management program includes requirements for contracts with all subcontractors to address confidentiality, audit, security, and privacy aspects. This includes incident response, ongoing monitoring, limitations on data use, limitations on data sharing, return of data, and secure disposal of privacy data. These contract terms are enforced to ensure that subcontractors adhere to the organization's data protection requirements.
-
-SCA reference: A.8 Subcontractor Contracting Process
-ISO 27002:2013 Relevance: 15.1.2 Addressing Security Within Supplier Agreements
-SIG Lite Reference: From SIG Lite Documentation A.4.1.17
-
-Question: 11.5 Is there a password policy for systems that transmit, process, or store scoped systems and data that has been approved by management, communicated to constituents, and enforced on all platforms and network devices? (Single selection allowed) (Justification allowed) *
-Answer: Yes, there is a password policy which includes extensive requirements to ensure security. These include a minimum password length of 20 characters, a mix of character types, password history restrictions, no mandatory rotation, lockout mechanisms after unsuccessful attempts, and multi-factor authentication. The passwords are encrypted and stored securely, and specific controls are in place for initial and temporary passwords. These guidelines and their enforcement across all platforms and network devices protect information integrity and confidentiality.
-
-SCA reference: H.1 Password Controls  
-ISO 27002:2013 Relevance: 9.2.4 Management of Secret Authentication Information of Users  
-SIG Lite Reference: H.9.1
-
-Question: 21.8 Is Unix or Linux used to process, store or used for scoped services? (Single selection allowed) (Justification allowed) *
-Answer: Yes, Unix or Linux is used as part of the scoped services.
-
-SCA reference: U.1 System Configuration and Hardening Standards
-ISO 27002:2013 Relevance: None
-SIG Lite Reference: U.1 - U.1.6
-
-Question: 2.10 Documentation that defines Information Asset Management Program e.g., policies, procedures or standards *
-Answer: Yes, Twilio has a comprehensive asset management program that includes formalized policies, procedures, and standards for managing information assets. This program ensures the safeguarding of data, technology, processes, and people across the organization.
-
-SCA reference: D.1 Asset Accounting and Inventory  
-ISO 27002:2013 Relevance: 8.1.1 Inventory of Assets  
-SIG Lite Reference: D. Asset and Info Management - D.1
-
-Question: 18.12 Does the organization have policies in place to ensure that their products and/or services do not generate health and safety concerns? (Single selection allowed) (Justification allowed) *
-Answer: TODO - UNKNOWN
-
-Question: 1.28 CE.14 Do you have documents that define the organization's SDLC requirements, criteria, and the process to conduct security reviews (polices)? (Single selection allowed) *
-Answer: Yes, Twilio has a formal Software Development Life Cycle (SDLC) process and security review policy which are documented and approved by management. These documents outline the requirements and criteria for conducting security reviews to ensure secure software development practices.
-
-SCA reference: I.2 Secure Systems Development Life Cycle (SDLC) Policies, Standards and Procedures
-ISO 27002:2013 Relevance: 14.2.1 Secure Development Policy, 14.2.5 Secure System Engineering Principles
-SIG Lite Reference: SDLC - I.2.2
-
-Question: 22.2 Is there a management approved process to ensure that backup image snapshots containing Scoped data are authorized by Outsourcer prior to being snapped? (Single selection allowed) (Justification allowed) *
-Answer: Yes, there is a management approved process to ensure that backup image snapshots containing Scoped Data are authorized by the Outsourcer prior to being snapped.
-
-SCA reference: V.1 Service and Deployment Models
-ISO 27002:2013 Relevance: N/A
-SIG Lite Reference: Cloud Hosting - V.3
-
-Question: 21.10 Are Mainframes used to process, store or used for scoped services? (Single selection allowed) (Justification allowed) *
-Answer: No, Mainframes are not used as part of the Scoped Services.
-
-SCA reference: U.1 System Configuration and Hardening Standards
-ISO 27002:2013 Relevance: null
-SIG Lite Reference: U. End User Device Security - U.1.8
-
-Question: 19.1 Is there collection, access, processing, disclosure, or retention of any classification of personal information or personal data of individuals on behalf of the client? (Single selection allowed) (Justification allowed) *
-Answer: Yes, Twilio processes communications content (which may include personal data if end-users include it) and communications metadata.
-
-SCA reference: P.1 Privacy Program Management
-ISO 27002:2013 Relevance: None
-SIG Lite Reference: Privacy - P.1
-
-Question: 18.13  Does the organization have a formalized Environmental, Social, and Governance (ESG) program or set of policies and procedures approved by management and the Board of Directors? (Single selection allowed) (Justification allowed) *
-Answer: TODO - UNKNOWN
-
-Question: 11.6 Does the password policy require keeping passwords confidential? (Single selection allowed) (Justification allowed) *
-Answer: Yes, the password policy requires keeping passwords confidential. Twilio ensures that password confidentiality is maintained as part of its privacy and security measures. Users are required by policy to keep their passwords confidential and not to share them with others.
-
-SCA Reference: H.1 Password Controls
-ISO 27002:2013 Relevance: 9.2.4 Management of Secret Authentication Information of Users, 9.3.1 Use of Secret Authentication Information
-SIG Lite Reference: From SIG Lite Documentation H.9.1.11
-
-Question: 17.6 Is there an DMZ environment within the network that transmits, processes, or stores Scoped systems and data e.g., web servers, DNS, directory services, remote access, etc.? (Single selection allowed) (Justification allowed) *
-Answer: Yes, Twilio network’s security controls operate at the host level, and as such, we do not have a traditional DMZ.
-
-SCA reference: N.2 Network Security – Firewall(s) and/or Other Devices Providing the Same Functionality
-ISO 27002:2013 Relevance: null
-SIG Lite Reference: N.3.4
-
-Question: 3.28 What service hosting models are provided as part of this service? Select all that apply from the list below. (Multiple selections allowed) (Justification allowed) *
-Answer: Yes, Twilio's service hosting models predominantly leverage the Infrastructure-as-a-Service (IaaS) model, primarily through our partnership with AWS (Amazon Web Services). This model offers robust scalability, reliability, and flexibility, aligning with modern cloud architecture principles.
-
-SCA reference: V.2 Nested Service Provider Relationships
-ISO 27002:2013 Relevance: Not specified
-SIG Lite Reference: V.1 - V.1
-
-Question: 1.4 CE.02 Do you have an ISO/IEC Certification? (Single selection allowed) *
-Answer: Yes, Twilio complies with ISO/IEC certifications, with established and maintained security practices aligned to international standards. For more information on specific certifications and compliance details, please visit Twilio's official compliance documentation on Twilio's security website.
-
-SCA reference: None provided
-ISO 27002:2013 Relevance: None provided
-SIG Lite Reference: TODO - UNKNOWN
-
-Question: 2.8 Documentation of the organization's information security standards *
-Answer: TODO - UNKNOWN
-
-Question: 21.3 Are all unnecessary/unused services uninstalled or disabled on all servers? (Single selection allowed) (Justification allowed) *
-Answer: Yes, all unnecessary or unused services are uninstalled or disabled on all servers.
-
-SCA reference: U.1 System Configuration and Hardening Standards
-ISO 27002:2013 Relevance: 
-SIG Lite Reference: U.1.2.1
-
-Question: 2.41 Documentation of its Environmental, Social, and Corporate Governance (ESG) risk management program, including processes for reporting, documenting and monitoring its commitments *
-Answer: TODO - UNKNOWN
-
-Question: 15.2 Is a web site(s) maintained or hosted for the purpose of advertising, offering, managing, or servicing accounts, products, or services to clients' customers? (Single selection allowed) *
-Answer: No, Twilio does not maintain or host websites for the purpose of advertising, offering, managing, or servicing accounts, products, or services to clients' customers.
-
-SCA reference: None
-ISO 27002:2013 Relevance: None
-SIG Lite Reference: From SIG Lite Documentation the Consumer Protection - L.14.6
-
-Question: 17.8 Are there security and hardening standards (e.g., baseline configuration, patching, passwords, Access control) for network devices, including Firewalls, Switches, Routers and Wireless Access Points? (Single selection allowed) (Justification allowed) *
-Answer: Yes, Twilio complies with Amazon’s published best practices for server security. This practice includes using standardized hardened images by the Cloud Infrastructure team, which are then utilized by engineering teams to launch their instances. Amazon's known good AMIs (Amazon Machine Images) are actively leveraged for deploying patches, ensuring that all server configurations align with established security standards. This approach ensures that unnecessary or unused services are not activated by default as a part of the standard hardening process.
-
-SCA reference: N.1.1  
-ISO 27002:2013 Relevance: 9.1.2 Access to Networks and Network Services  
-SIG Lite Reference: U.1 Security Configuration Management
-
-Question: 14.1 Is there an established Business Resilience Program that has been approved by management, communicated to appropriate constituents, and an owner to maintain and review the program? (Single selection allowed) (Justification allowed) *
-Answer: Yes, Twilio has established a Business Resiliency Program that is approved by management and communicated to the relevant parties. An owner is assigned to maintain and regularly review the program to ensure effectiveness and relevance in alignment with organizational needs.
-
-SCA reference: K.1 Business Resiliency Governance
-ISO 27002:2013 Relevance: 
-SIG Lite Reference: K. Business Resiliency - K.1
-
-Question: 19.24 Are there enforcement mechanisms in place to address privacy inquiries, complaints, disputes, and recourse for violations of privacy compliance? (Single selection allowed) (Justification allowed) *
-Answer: Yes, there are enforcement mechanisms in place to address privacy inquiries, complaints, disputes, and recourse for violations of privacy compliance. Twilio maintains documented policies and processes to log and report privacy inquiries, complaints, and disputes requests, ensuring proper resolution and management of privacy-related concerns and compliance with relevant privacy obligations.
-
-SCA reference: L.2 Monitoring and Reporting – Compliance Requirement Identification
-ISO 27002:2013 Relevance: 
-SIG Lite Reference: P.10 - Monitoring and Enforcement
-
-Question: 16.3 Does the organization restrict the connection of personally-owned, mobile devices to organizational systems and networks? (Single selection allowed) (Justification allowed) *
-Answer: Yes, Twilio has a 'bring your own device' policy regarding mobile phones, allowing employees to access their emails with them. However, only Twilio-owned devices can access the production environment through secure VPN, ensuring the security and integrity of organizational systems and networks.
-
-SCA reference: F.3 Secure Workspace Program
-ISO 27002:2013 Relevance: 6.2.1 Mobile Device Policy
-SIG Lite Reference: M. End User Device Security - M.1.22
-
-Question: 16.6 Are non-company managed computing devices used to connect to the company network? (Single selection allowed) (Justification allowed) *
-Answer: No, non-company managed devices are not used to connect to the company network.
-
-SCA reference: F.3 Secure Workspace Program  
-ISO 27002:2013 Relevance:  
-SIG Lite Reference: M.2.3
-
-Question: 2.55 Documentation regarding the usage of Cloud Service Provider (CSP) services related to security policies, controls and delineation of security responsibilities, including component and system configuration standards *
-Answer: Yes, Twilio complies with Amazon’s published best practices for cloud hosting services. The Cloud Infrastructure team builds a standard hardened image which engineering teams then use to boot their own instances. Twilio uses known good images (AWS AMI) to deploy patches and maintain security standards.
-
-SCA reference: V.1 Service and Deployment Models
-ISO 27002:2013 Relevance: Not available
-SIG Lite Reference: From SIG Lite Documentation V.1 - V.1
-
-Question: 3.4 What is the location (entity name & location) of any backup site(s)? *
-Answer: TODO - UNKNOWN
-
-Question: 19.5 Is client scoped data collected, accessed, transmitted, processed, disclosed, or retained that can be classified as Protected Health Information (PHI) or other higher healthcare classifications of privacy data under the U.S. Health Insurance Portability and Accountability Act (HIPAA)? (Single selection allowed) (Justification allowed) *
-Answer: Yes, Twilio processes communications content, which may include Protected Health Information (PHI) if end-users choose to include it in their communications. The appropriateness of using Twilio services for PHI is contingent on customers using HIPAA Eligible Products and Services, as stated on Twilio's HIPAA guidance page. For comprehensive and specific details regarding Twilio's HIPAA compliance and eligible products, please refer to the official HIPAA compliance documentation available at: https://www.twilio.com/hipaa and https://www.twilio.com/content/dam/twilio-com/global/en/other/hippa/pdf/Hipaa_eligible_products_and_services-323.pdf
-
-SCA reference: P.1 Privacy Program Management
-ISO 27002:2013 Relevance: Not specified
-SIG Lite Reference: P.11 - Ques Num P.11
-
-Question: 17.4 Is there a policy that defines the requirements for remote access from external networks to networks containing Scoped systems and data that has been approved by management and communicated to constituents? (Single selection allowed) (Justification allowed) *
-Answer: Yes, there is a management-approved remote access policy for systems transmitting, processing, and storing Scoped Systems and Data, which is communicated to constituents.
-
-SCA reference: H.8 Restrictions and Multifactor Authentication for Remote Access  
-ISO 27002:2013 Relevance: 13.1.1 Network Controls  
-SIG Lite Reference: From SIG Lite Documentation H.1.15.1
-
-Question: 2.43 Documentation on policy and procedures for end user or endpoint security configuration standards *
-Answer: Yes, Twilio's end user device security configuration standards are based on industry best practices and detailed guidelines, which are documented and regularly updated. These standards include ensuring that all endpoint devices used within the network are configured securely to prevent unauthorized access and to mitigate potential security risks.
-
-SCA reference: M.1 End User Device Administrative Activity Logging  
-ISO 27002:2013 Relevance: 11.2.8 Unattended User Equipment, 11.2.9 Clear Desk and Clear Screen Policy  
-SIG Lite Reference: From SIG Lite Documentation M.1.1
-
-Question: 11.3 Is there a process for identifying, maintaining, and reviewing access e.g., periodical review, role changes etc.? (Single selection allowed) (Justification allowed) *
-Answer: Yes, there is a formal process in place to manage and review access rights. Access rights are regularly reviewed to ensure they align with the current roles and responsibilities of individuals. Changes in roles trigger a review and adjustment of access privileges to ensure continuous alignment with security policies.
-
-SCA reference: H.8.9
-ISO 27002:2013 Relevance: 9.1.1 Access Control Policy, 9.2.5 Review of User Access Rights
-SIG Lite Reference: H - H.8.9
-
-Question: 19.17 Are procedures documented that outline the relevancy of the personal information collected, used, or processed to the defined purpose of authorized data processing in the contract and/or privacy notice? (Single selection allowed) (Justification allowed) *
-Answer: Yes, procedures are documented that outline the relevancy of the personal information collected, used, or processed to the defined purpose of authorized data processing in the contract and/or privacy notice. These procedures ensure compliance with statutory, regulatory, or contractual obligations related to privacy protection, ensuring that personal data is used and managed appropriately according to the scopes defined in the privacy notices and contracts.
-
-SCA reference: P.7 Management of Client-Scoped Privacy Data
-ISO 27002:2013 Relevance: None
-SIG Lite Reference: From SIG Lite Documentation P - P.4.2
-
-Question: 2.44 Documentation regarding the process to maintain up-to-date IDS/IPS signatures, including the most report or screen shot of the IDS/IPS signatures *
-Answer: TODO - UNKNOWN
-
-Question: 2.37 Documentation regarding its backup and replication processes and capabilities, including an executive summary of the last test of the backup process and the replication process (as appropriate) *
-Answer: Yes, Twilio performs regular backups (at least daily) of Twilio account information, call records, call recordings, and other critical data using Amazon S3 cloud storage. All backups are encrypted at rest using strong encryption (volume level, AES - 256). Backup files are stored redundantly across multiple availability zones and are encrypted. We test backups when we reboot our hosts. Backups are retained for 30 days.
-
-SCA reference: K.5 Backup Media Restoration
-ISO 27002:2013 Relevance: 12.3.1 Information Backup, 17.2.1 Availability of Information Processing Facilities
-SIG Lite Reference: K - K.16
-
-Question: 2.35 A copy of its business resilience policy, as well as the documentation detailing business resilience roles and responsibilities, processes and management reporting *
-Answer: Yes, Twilio maintains a robust Business Resiliency Program, encompassing detailed policies and procedures regarding business resilience roles and responsibilities, management approaches, and reporting mechanisms. These documents are tailored to ensure the robustness and continuity of business operations and can be accessed by customers for review to ensure alignment with their requirements.
-
-To acquire a copy of the relevant business resilience policy and detailed documentation, please register and request access via Twilio's secure portal: https://security.twilio.com.
-
-SCA reference: K.1 Business Resiliency Governance
-ISO 27002:2013 Relevance: Not specified
-SIG Lite Reference: From SIG Lite Documentation K.1
-
-Question: 15.5 Is there a documented internal compliance and ethics program? (Single selection allowed) (Justification allowed) *
-Answer: TODO - UNKNOWN
-
-Question: 21.2 Are server security standards reviewed and/or updated at least annually to account for any changes in environment, available security features and/or leading practices? (Single selection allowed) (Justification allowed) *
-Answer: Yes, all information security policies and standards, including server security standards, are reviewed at least annually. This process ensures that the standards are current and consider any changes in the environment, availability of new security features, and evolving best practices.
-
-SCA reference: B.2 Information Security Standards  
-ISO 27002:2013 Relevance: 10.2 Continual Improvement  
-SIG Lite Reference: B. Security Policy - B.1.6
-
-Question: 5.2 Is there a third party risk management program that's reviewed and approved by management? (Single selection allowed) (Justification allowed) *
-Answer: Yes, there is a documented third-party risk management program in place which is reviewed and approved by management, ensuring oversight and risk assessment of subcontractors. This program includes the selection, management, and continuous monitoring of third-party subcontractors to align with organizational security policies and risk tolerance levels.
-
-SCA reference: A.5 Third Party Provider Risk Management Program  
-ISO 27002:2013 Relevance: null  
-SIG Lite Reference: A.4.2
-
-Question: 2.1 Document Request
-Answer: TODO - UNKNOWN
-
-Question: 18.16 Does the organization have a documented policy for Ethical Sourcing? (Single selection allowed) (Justification allowed) *
-Answer: TODO - UNKNOWN
-
-Question: 1.14 CE.07 Do you have a list of all your companies suppliers? (Single selection allowed) *
-Answer: TODO - UNKNOWN
-
-Question: 3.19 Does the company utilize the services of Fourth-Nth parties for the delivery of the product, service or system? (Single selection allowed) (Justification allowed) *
-Answer: Yes, Twilio utilizes the services of Fourth-Nth parties for the delivery of the product, service, or system. More information on such use including what types of data these parties might access and under what conditions is detailed at: https://www.twilio.com/legal/privacy#when-and-why-we-share-your-personal-information-or-your-end-users-personal-information
-
-SCA Reference: P.9 Third Party Privacy Agreements
-ISO 27002:2013 Relevance: Not specified
-SIG Lite Reference: From SIG Lite Documentation P. Disclosure to Third Parties - P.7
-
-Question: 12.1 Are applications used to transmit, process, or store scoped data? (Single selection allowed) (Justification allowed) *
-Answer: Yes, applications are used to transmit, process, or store scoped data.
-
-SCA reference: Not specified
-ISO 27002:2013 Relevance: 14.1.2 Securing Application Services on Public Networks, 14.1.3 Protecting Application Services Transactions
-SIG Lite Reference: I. Application Security - I.1
-
-Question: 2.24 Documentation regarding the process for reviewing, revoking or disabling access to inactive accounts, including a sample user access report *
-Answer: TODO - UNKNOWN
-
-Question: 5.1 Do fourth parties (e.g., backup, subcontractors, equipment support/maintenance, software support/maintenance, data recovery, hosting providers, etc.) have access to scoped systems and data or processing facilities? (Single selection allowed) (Justification allowed) *
-Answer: Yes, fourth parties such as subcontractors, equipment support/maintenance, software support/maintenance, data recovery, and hosting providers can have access to scoped systems and data or processing facilities. All engagements with fourth parties are governed by strict contract agreements that ensure compliance with Twilio's security and data protection standards. These agreements address the confidentiality, audit, security, and privacy aspects, including incident response, ongoing monitoring, limitations on data use, limitations on data sharing, return of data, and secure disposal of privacy data.
-
-SCA reference: P.9 Third Party Privacy Agreements
-ISO 27002:2013 Relevance: 15.1.2 Addressing Security Within Supplier Agreements
-SIG Lite Reference: From SIG Lite Documentation P - Ques Num P.7.2
-
-Question: 19.23 Do any other parties (e.g., affiliates, fourth-Nth parties, contractors, subcontractors, sub-processors, sub-service organizations, etc.) have access to, receive, process, or retain client scoped data? (Single selection allowed) (Justification allowed) *
-Answer: Yes, [Twilio is explicit in its documentation about the sharing of client-scoped data with third parties, including affiliates, subcontractors and sub-processors. Information pertaining to how Twilio handles such data and the sharing mechanism is documented and publicly accessible. Furthermore, Twilio ensures that agreements and transfer mechanisms are in place to adhere to privacy and data protection principles.]
-
-SCA reference: P.9 Third Party Privacy Agreements
-ISO 27002:2013 Relevance: null
-SIG Lite Reference: From SIG Lite Documentation P - P.7
-
-Question: 3.29 What type of Cloud Computing Services are being provided? Select all that apply from the list below. (Multiple selections allowed) (Justification allowed) *
-Answer: Yes, Twilio provides Infrastructure as a Service (IaaS) mainly through Amazon Web Services (AWS) where it hosts its services.
-
-SCA reference: V.1 Service and Deployment Models
-ISO 27002:2013 Relevance: None
-SIG Lite Reference: V.1 - V.1
-
-Question: 3.16 Comments:
-Answer: TODO - UNKNOWN
-
-Question: 3.20 Do the products, services, or system require network connectivity between parties? (Single selection allowed) (Justification allowed) *
-Answer: Yes, Twilio's services involve network connectivity between parties as it is essential for delivering communication services such as voice calls, messaging, and video conferencing via internet protocols. Twilio’s platform enables communication and interaction across various networks, which inherently involves data transfer and connectivity between different networked systems.
-
-SCA reference: N.1 Network Security – Authorized Network Traffic
-ISO 27002:2013 Relevance: 13.1.1 Network Controls
-SIG Lite Reference: N.1
-
-Question: 6.1 Is there an information security program that has been documented, approved by management, published, and communicated to constituents? (Single selection allowed) (Justification allowed) *
-Answer: Yes, according to the provided documentation, there is a formalized security program known as the Twilio Security Risk Management Program (RMP). This program is a flexible, scalable framework intended for assessing and managing risks within the Twilio environment. It provides direction to refine Twilio's Information Security Management System (ISMS) based on organizational context and priorities. The RMP evolves in accordance with business and regulatory requirements, ensuring that strategic decisions are well-supported and that functional risk assessments are consistently performed across various services within Twilio. This program has been approved by management, is regularly updated, and communicated effectively within the organization.
-
-SCA reference: A.1 IT and Infrastructure Risk Governance
-ISO 27002:2013 Relevance: 6.1.2 Information Security Risk Assessment
-SIG Lite Reference: A. Risk Management - A.1
-
-Question: 1.19 Attach your Information Security Policy *
-Answer: Yes, the Information Security Policy is documented and can be accessed by registering and requesting the document at https://security.twilio.com.
-
-SCA reference: B.1 Information Security Policy Maintenance
-ISO 27002:2013 Relevance: 5.1.1 Policies for Information Security
-SIG Lite Reference: B. Security Policy - B.1
-
-Question: 2.40 Documentation that defines organizational structures and oversight functions including any policies, standards, and procedures for compliance with legal, regulatory, and standards obligations *
-Answer: Yes, formal policies, standards, and procedures are maintained at Twilio to ensure compliance with legal, regulatory, and contractual obligations including intellectual property rights on business processes and information technology software products.
- 
-SCA reference: A.3 Legal, Regulatory and Standards Compliance  
-ISO 27002:2013 Relevance: 18.1.1 Identification of Applicable Legislation and Contractual Requirements, 18.1.2 Intellectual Property Rights  
-SIG Lite Reference: From SIG Lite Documentation L - L.1
-
-Question: 1.20 CE.10 Do you have documentation that defines the Enterprise Risk Management program requirements (e.g., Enterprise risk governance plan, policies and procedures)? (Single selection allowed) *
-Answer: Yes, Twilio has an Enterprise Risk Management program that includes a formalized risk governance plan. The Twilio Security Risk Management Program (RMP) encompasses a comprehensive framework for assessing and managing risks in the Twilio environment. It outlines policies, procedures, and internal controls, effectively providing a roadmap for risk governance tailored to the organization's growing needs. The RMP is periodically adapted to align with evolving business drivers, competitive and regulatory changes, emphasizing risk-based decision-making and requirement settings across various service aspects within Twilio.
-
-SCA Reference: A.1 IT and Infrastructure Risk Governance
-ISO 27002:2013 Relevance: 6.1.2 Information Security Risk Assessment
-SIG Lite Reference: A. Risk Management - A.1
-
-Question: 2.32 A copy of its procedures related to the use and protection of production data being utilized in the test environment(s) *
-Answer: Yes, Twilio does not use scoped systems and data in test, development, or QA environments. This ensures that production data is kept separate and secure from non-production activities.
-
-SCA reference: D.1 Asset Accounting and Inventory  
-ISO 27002:2013 Relevance: 14.3.1 Protection of Test Data  
-SIG Lite Reference: D. Asset and Info Management - D.4.3
-
-Question: 7.6 Is regulated or confidential scoped data stored electronically with data protection safeguards e.g., full-disk encryption, databases, files, encryption keys, etc.? (Single selection allowed) (Justification allowed) *
-Answer: Yes, regulated or confidential scoped data is stored electronically with extensive data protection safeguards, including full-disk encryption, database encryption, file encryption, and managed encryption keys. Twilio ensures that all stored data is safeguarded using strong encryption protocols as part of its comprehensive security measures. Twilio supports TLS 1.2 to encrypt network traffic and ensures data at rest is encrypted using industry-standard practices.
-
-SCA reference: D.5 Data Security Policy - Encryption  
-ISO 27002:2013 Relevance: 10.1.1 Policy on the Use of Cryptographic Controls  
-SIG Lite Reference: From SIG Lite Documentation D.6.10
-
-Question: 2.7 Documentation of the organization's information security policies *
-Answer: Yes, the organization has a set of information security policies that have been approved by management, published, and communicated to constituents.
-
-SCA reference: B.1 Information Security Policy Maintenance
-ISO 27002:2013 Relevance: 5.1.1 Policies for Information Security
-SIG Lite Reference: B - B.1
-
-Question: 15.1 Are there policies and procedures to ensure compliance with applicable legislative, regulatory, and contractual requirements? (Single selection allowed) (Justification allowed) *
-Answer: Yes, Twilio has formulated and documented policies and procedures that align with legislative, regulatory, and contractual requirements to ensure compliance.
-
-SCA reference: A.3 Legal, Regulatory and Standards Compliance
-ISO 27002:2013 Relevance: 18.1.1 Identification of Applicable Legislation and Contractual Requirements
-SIG Lite Reference: L.1 Compliance Management - Monitoring and Reporting – Compliance/organization
-
-Question: 17.2 Is every connection to an external network terminated at a firewall e.g., the Internet, partner networks? (Single selection allowed) (Justification allowed) *
-Answer: Yes, every connection to an external network is terminated at a firewall. This includes internet and partner networks, ensuring secure and controlled access points, which helps in managing threats and preventing unauthorized access.
-
-SCA reference: N.2 Network Security – Firewall(s) and/or Other Devices Providing the Same Functionality
-ISO 27002:2013 Relevance: Not specified
-SIG Lite Reference: From SIG Lite Documentation the Network Security - N.1.6
-
-Question: 1.1 What is the name of the Vendor? (Single selection allowed) *
-Answer: TODO - UNKNOWN
-
-Question: 2.54 A copy of the current, approved system configuration and hardening standards for each type of operating system in use for workstations, servers and network devices *
-Answer: Yes, Twilio complies with industry best practices for system configuration and hardening standards, ensuring that each type of operating system used for workstations, servers, and network devices is configured according to these robust standards. Detailed standards are based on external industry or vendor guidance and are regularly reviewed to maintain compliance and security integrity.
-
-SCA reference: U.1 System Configuration and Hardening Standards  
-ISO 27002:2013 Relevance: 13.1.1 Network Controls, 9.1.2 Access to Networks and Network Services  
-SIG Lite Reference: U - U.1.1
-
-Question: 2.2 Documentation that defines the Enterprise Risk Management program requirements (e.g., Enterprise risk governance plan, policies and procedures) *
-Answer: Yes, the Twilio Security Risk Management Program (RMP) establishes a comprehensive enterprise risk management framework, tailored to continuously identify, assess, and manage risks within the Twilio environment. The program aligns with evolving business and regulatory landscapes and adapts to internal organizational shifts and external threats. The RMP offers a structured and systematic approach to managing risks, ensuring that strategies and processes are in accordance with emphasized business drivers and risk management policies.
-
-SCA reference: A.1 IT and Infrastructure Risk Governance
-ISO 27002:2013 Relevance: 6.1.2 Information Security Risk Assessment
-SIG Lite Reference: A.1
-
-Question: 2.39 A copy of its most recent infectious disease plan *
-Answer: TODO - UNKNOWN
-
-Question: 3.18 Does the company or services require direct end-user interaction? (Single selection allowed) (Justification allowed) *
-Answer: TODO - UNKNOWN
-
-Question: 16.8 Does the organization maintain policies and procedures for the access to and the usage of collaborative computing devices or applications e.g., networked white boards, cameras, and microphones? (Single selection allowed) (Justification allowed) *
-Answer: TODO - UNKNOWN
-
-Question: 15.7 Is there a compliance program or set of policies and procedures that address internal and external Fraud Detection and Fraud Prevention? (Single selection allowed) (Justification allowed) *
-Answer: TODO - UNKNOWN
-
-Question: 11.4 Are unique IDs required for authentication to applications, operating systems, databases, and network devices? (Single selection allowed) (Justification allowed) *
-Answer: Yes, unique individual IDs are required for user authentication to applications, operating systems, databases, and network devices.
-
-SCA reference: H.3 Logical Access Authorization
-ISO 27002:2013 Relevance: 9.2.1 User Registration and De-registration; 9.4.1 Information Access Restriction; 9.4.2 Secure Log-on Procedure
-SIG Lite Reference: H.5
-
-Question: 1.16 CE.08 Do you have any documentation that defines the requirements for selection, due diligence and management of any 3rd and Fourth-Nth parties? (Single selection allowed) *
-Answer: Yes, Twilio has a documented third-party risk management program for the selection, oversight, and risk assessment of subcontractors which includes requirements for the selection, due diligence, and management of third parties and potentially Fourth-Nth parties as well.
-
-SCA reference: A.7 Subcontractor Selection and Management Process
-ISO 27002:2013 Relevance: 15.1.1 Information Security Policy for Supplier Relationships
-SIG Lite Reference: A.4.1.1
-
-Question: 14.5 Is scoped data backed up and stored offsite? (Single selection allowed) (Justification allowed) *
-Answer: Yes, Twilio performs regular backups (at least daily) of Twilio account information, call records, call recordings, and other critical data using Amazon S3 cloud storage. All backups are encrypted at rest using strong encryption (volume level, AES-256). Backup files are stored redundantly across multiple availability zones and are encrypted.
-
-SCA Reference: K.5 Backup Media Restoration  
-ISO 27002:2013 Relevance: 12.3.1 Information Backup, 17.2.1 Availability of Information Processing Facilities  
-SIG Lite Reference: K. Business Resiliency - K.16
-
-Question: 2.5 Documentation that defines the requirements for selection, due diligence and management of any Fourth-Nth parties. *
-Answer: Yes, Twilio has a documented third-party risk management program for the selection, oversight, and risk assessment of subcontractors which includes requirements relevant to Fourth-Nth parties. This program ensures that all subcontractors, including any Fourth-Nth parties, comply with Twilio's information security and privacy standards. The program addresses confidentiality, integrity, and availability requirements and includes processes for vendor risk assessment and management, contractual protections, and periodic vendor audits to ensure compliance.
-
-SCA reference: A.7 Subcontractor Selection and Management Process
-ISO 27002:2013 Relevance: 15.1.1 Information Security Policy for Supplier Relationships, 15.2.1 Monitoring and Review of Supplier Services, 15.2.2 Managing Changes to Supplier Services
-SIG Lite Reference: A.4.1.17
-
-Question: 18.3 Does the organization have material discharges to air as a direct result of its operations? (Single selection allowed) (Justification allowed) *
-Answer: TODO - UNKNOWN
-
-Question: 1.10 CE.05 Do you have any white paper your company has authored? (Single selection allowed) *
-Answer: TODO - UNKNOWN
-
-Question: 4.1 Is there a formalized risk governance policy approved by management that defines the Enterprise Risk Management program requirements? (Single selection allowed) *
-Answer: Yes, Twilio has an established and formalized risk governance policy approved by management under the Twilio Security Risk Management Program (RMP). This program is a flexible and scalable framework used to assess and manage risks in the Twilio environment. It provides direction and forms the basis to refine the Twilio Information Security Management System (ISMS). The policy and the RMP adapt as the business grows and as the competitive and regulatory environments change.
-
-SCA reference: A.1 IT and Infrastructure Risk Governance
-ISO 27002:2013 Relevance: 6.1.2 Information Security Risk Assessment
-SIG Lite Reference: A. Risk Management - A.1
-
-Question: 19.16 Are there documented policies and procedures that define limits to the collection and use of personal information e.g., minimum necessary, need to know, job role? (Single selection allowed) (Justification allowed) *
-Answer: Yes, there are documented policies and procedures that define limits to the collection and use of personal information, such as minimum necessary, need to know, and job role specifications to ensure privacy and security compliance. These policies and procedures address data collection based on statutory, regulatory, and contractual obligations to provide privacy protection for client-scoped privacy data. The policies also ensure that personal data collected is limited to what is necessary for the specified purposes.
-
-SCA reference: P.7 Management of Client-Scoped Privacy Data
+SCA reference: Not specifically listed
 ISO 27002:2013 Relevance: Not specifically listed
-SIG Lite Reference: Privacy - P.4.2
+SIG Lite Reference: Not directly referenced in the SIG Lite documentation.
 
-Question: 9.2 Are visitors permitted in the facility? (Single selection allowed) (Justification allowed) *
-Answer: No, visitors are not permitted in the facility. This is managed by Amazon, and Twilio visitors do not visit the facility.
+For more details on specific certifications, compliance frameworks, or to access audit reports such as SOC2 or ISO certificates, please register at https://security.twilio.com to request access to these documents.
 
-SCA reference: F.7 Visitor Management
-ISO 27002:2013 Relevance: 11.1.2 Physical Entry Controls
-SIG Lite Reference: F. Security and Environmental - Ques Num F.2
+Question: 1.10 Who is your primary contact at Lithia&Driveway? Please provide name and email address *
+Answer: I'm sorry, but I don't have access to specific contact information for individuals at companies, including Lithia&Driveway. It's best to contact the company directly via their official contact or support channels for such information.
 
-Question: 19.12 Has the organization developed and maintained a formal privacy program for the protection of personal information collected, accessed, transmitted, processed, disclosed, or retained on behalf of the client? (Single selection allowed) (Justification allowed) *
-Answer: Yes, Twilio has established a formal privacy program to oversee and manage the protection of personal information collected, accessed, transmitted, processed, disclosed, or retained on behalf of clients. This comprehensive program encompasses documentation, procedures, and controls tailored to ensure privacy protections aligned with regulatory requirements and best practices. The program includes strict privacy policies, staff training, and robust security measures to safeguard personal data. Additionally, Twilio engages in regular reviews and updates to the privacy program to stay in line with emerging data protection laws and industry standards.
+Question: 1.5 In what year was your organization founded? *
+Answer: Yes, Twilio was founded in 2008. 
+
+SCA Reference: N/A
+ISO 27002:2013 Relevance: N/A
+SIG Lite Reference: N/A
+
+Question: 2.11 Have you tested your disaster recovery and/or business continuity plan in the last 12 months? (Single selection allowed) (Justification allowed) *
+Answer: Yes, the disaster recovery and business continuity procedures are tested annually as part of Twilio's established protocols to ensure reliability and effectiveness.
+
+SCA reference: K.6 Exercising
+ISO 27002:2013 Relevance: None
+SIG Lite Reference: K. Business Resiliency - K.7
+
+Question: 3.3 Do you host or store any of our data? (Single selection allowed) *
+Answer: Yes, Twilio processes communications content and metadata, which may include personal data depending on what end users choose to transmit using our services.
+
+SCA reference: Not Applicable
+ISO 27002:2013 Relevance: Not Applicable
+SIG Lite Reference: Not directly referenced in SIG Lite Documentation
+
+Question: 2.1 Do you access or handle any personal data (PII) on behalf of our organization? (Single selection allowed) *
+Answer: Yes, Twilio processes communications content (which may include personal data, if end users choose to include it) and communications metadata.
+
+SCA reference: Not directly provided
+ISO 27002:2013 Relevance: Not directly provided
+SIG Lite Reference: From SIG Lite Documentation "Privacy Program Management" - P.1
+
+Question: 1.3 In what US state is your organizations headquarters? (Single selection allowed) *
+Answer: Yes, the question is not applicable to the SIG Lite Documentation, but for general knowledge, Twilio Inc.'s headquarters is located in California, USA.
+
+SCA reference: N/A
+ISO 27002:2013 Relevance: N/A
+SIG Lite Reference: N/A
+
+Question: 1.6 What is the approximate number of employees within your organization? (Single selection allowed) *
+Answer: Yes, this query isn't specifically addressed in the provided SIG Lite Documentation. For detailed and current information about Twilio's employee headcount or other company statistics, it's recommended to consult Twilio's most recent public disclosures or official company resources. 
+
+SCA reference: Not applicable
+ISO 27002:2013 Relevance: Not applicable
+SIG Lite Reference: Not applicable
+
+Question: 1.4 What is the postal/mailing address of your organizations headquarters? *
+Answer: No (sourced from the Response field from the SIG Lite Documentation), The SIG Lite Documentation provides information related to security and compliance questions and does not include specific postal or mailing addresses of organization headquarters. For business-related inquiries such as mailing addresses, please refer to Twilio's official website or contact Twilio directly through their provided contact information channels.
+
+SCA reference: N/A  
+ISO 27002:2013 Relevance: N/A  
+SIG Lite Reference: Not Applicable - General Inquiry
+
+Question: 1.8 What is your organizations primary contacts email address? (Single selection allowed) (Allows other) *
+Answer: No, the SIG Lite Documentation does not provide specific contact details such as email addresses for organizational contacts.
+
+For more detailed contact information or specific queries, you may refer to the Twilio security website at [Twilio Security](https://www.twilio.com/en-us/security) to get the appropriate assistance or reach out directly through the provided contact options on the website.
+
+SCA reference: Not applicable
+ISO 27002:2013 Relevance: Not applicable
+SIG Lite Reference: Not applicable
+
+Question: 1.7 Who is your organizations primary contact aligned to our account? *
+Answer: Your request for the organization's primary contact aligned to your account cannot be answered through the SIG Lite Documentation as it does not contain personnel or contact information. For such inquiries relating to specific contacts or account details, please directly reach out to your Twilio account manager or customer support.
+
+For general security information, you might also check: https://www.twilio.com/en-us/security
+
+SCA reference: N/A
+ISO 27002:2013 Relevance: N/A
+SIG Lite Reference: Not available in provided SIG Lite Documentation
+
+Question: 3.4 Please provide the type of hosting and location for the product or service you provide. *
+Answer: Yes, Twilio does provide hosted services through third-party vendors. Twilio is hosted in AWS and utilizes regions primarily in the United States, though global options exist depending on customer needs.
+ 
+SCA reference: Not specified
+
+ISO 27002:2013 Relevance: Not specified
+
+SIG Lite Reference: Cloud Hosting - V.2
+
+Question: 2.8 Please Select all Employee Onboarding Security Practices adhered to by your organization and attach relevant documentation/evidence. (Multiple selections allowed) (Allows other) *
+Answer: Yes, Twilio adheres to specific employee onboarding security practices which ensure that all newcomers receive necessary training and understand their security roles and responsibilities within the organization. This includes mandatory security and privacy training during the onboarding process, covering information security policies, security best practices, and privacy principles. Additionally, Twilio conducts stringent background checks as part of the hiring process to ensure security compliance from the outset. 
+
+SCA reference: E.1 Background Investigation Policy Content  
+ISO 27002:2013 Relevance: 7.2 Competence, 7.1.1 Screening, 7.2.1 Management Responsibilities, 7.3 Awareness  
+SIG Lite Reference: E. Human Resource Security - E.1.3
+
+Question: 2.13 Have you experienced a security incident or breach in the last 2 years? (Single selection allowed) (Justification allowed) *
+Answer: No, there has not been a reported security incident or breach in the last 2 years.
+
+SCA reference: Not applicable
+ISO 27002:2013 Relevance: Not applicable
+SIG Lite Reference: Not found in SIG Lite Documentation
+
+Question: 2.3 What documentation(s) demonstrates your commitment and adherence to relevant privacy and security standards? (Multiple selections allowed) (Allows other) *
+Answer: Yes, Twilio is committed to maintaining the highest standards of privacy and security compliance. Our documentation that demonstrates this commitment includes the Security Operations Control (SOC) reports, ISO certifications, and adherence to frameworks like GDPR and HIPAA. Each of these documents and certifications attest to Twilio's dedication to safeguarding customer data and ensuring comprehensive security controls are in place.
+
+For specific details:
+- **SOC Reports:** Detailed in compliance reports available for review upon request through the [Twilio Trust Center](https://www.twilio.com/trust).
+- **ISO Certifications:** Twilio maintains various ISO certifications, the details of which can be accessed through our security documentation.
+- **GDPR and HIPAA Compliance:** Information on Twilio’s compliance with GDPR can be found [here](https://www.twilio.com/en-us/gdpr), and details on HIPAA-eligible products and services are available [here](https://www.twilio.com/en-us/hipaa).
+
+Twilio's security and compliance documentation, including our overarching privacy policies, are accessible for review to ensure transparency and trust with our clientele.
+
+SCA reference: A.1 IT and Infrastructure Risk Governance
+ISO 27002:2013 Relevance: 18.1.1 Identification of Applicable Legislation and Contractual Requirements
+SIG Lite Reference: General - Ques Num not specified.
+
+Question: 1.12 Please provide details of Data Protection Officer *
+Answer: No, a Data Protection Officer is not required based on the services provided by Twilio. For any further inquiries or specific details regarding data protection practices, please refer to the Twilio Privacy Policy through [Twilio Privacy Center](https://www.twilio.com/legal/privacy).
 
 SCA reference: P.1 Privacy Program Management
-ISO 27002:2013 Relevance: None specified
-SIG Lite Reference: From SIG Lite Documentation P.1
+ISO 27002:2013 Relevance: N/A
+SIG Lite Reference: P. European Privacy & Data Protection - P.13.4
 
-Question: 19.22 Are documented policies and procedures maintained to detect and report privacy incidents e.g., unauthorized disclosure, misuse, alteration, destruction, or other compromise of client scoped data? (Single selection allowed) (Justification allowed) *
-Answer: Yes, there is a formal privacy incident communication procedure integrated with the information security incident response and escalation process. This process ensures the detection, management, and reporting of privacy incidents, including those involving unauthorized disclosure, misuse, alteration, destruction, or compromise of data. The procedures align with the overarching incident response capabilities and are designed to protect client scoped data effectively.
+Question: 2.2 Does your organization hold any recognized security certifications/accreditations? (Single selection allowed) *
+Answer: Yes, Twilio is compliant with major security certifications and industry standards, ensuring stringent security controls and practices are in place. Specific details on certifications such as ISO, SOC2, and HIPAA can be obtained through Twilio's security documentation portal for verified users.
 
-SCA reference: P.8 Data Protection, Privacy Incident Notification and Response Management
-ISO 27002:2013 Relevance: 7.5.1 General
-SIG Lite Reference: From SIG Lite Documentation P.1.6.3
+SCA reference: Not directly available  
+ISO 27002:2013 Relevance: Not directly available  
+SIG Lite Reference: Not directly cited from SIG Lite Documentation
 
-Question: 14.3 Are there any dependencies on critical third party service providers? (Single selection allowed) (Justification allowed) *
-Answer: Yes, there are dependencies on critical third-party service providers.
+For further information on Twilio’s security certifications, you can visit [Twilio Security Certifications](https://www.twilio.com/en-us/security). To acquire detailed compliance documents like SOC2 or ISO certificates, please register and request access at [Twilio Security Document Portal](https://security.twilio.com).
 
-SCA reference: K.4 Business Activity level Recovery Planning
-ISO 27002:2013 Relevance: null
-SIG Lite Reference: K.8
+Question: 3.1 Please provide the name of the product or service that you supply. *
+Answer: Yes, the provided services include a variety of communication APIs, including messaging, voice, and video functionalities among others. These services are predominantly handled through the Twilio platform.
 
-Question: 3.35 Type of Assessment (Onsite or Virtual) (Single selection allowed) *
-Answer: TODO - UNKNOWN
+SCA reference: Not applicable
+ISO 27002:2013 Relevance: Not applicable
+SIG Lite Reference: Not specific (General inquiry)
 
-Question: 1.27 Attach your Access Control Policy and Procedure documentation *
-Answer: Yes, for a copy of Twilio's Access Control Policy and Procedure documentation, please register and request access to the required documents through the Twilio security document portal at [Twilio Security Documents](https://security.twilio.com).
+Question: 1.2 In what country is your organizations headquarters? (Single selection allowed) *
+Answer: Yes, the headquarters of Twilio is located in the United States.
 
-SCA reference: Unknown
-ISO 27002:2013 Relevance: Unknown
-SIG Lite Reference: TODO - UNKNOWN
+SCA Reference: N/A
+ISO 27002:2013 Relevance: N/A
+SIG Lite Reference: N/A
 
-Question: 2.26 Policy and procedures for remote access *
-Answer: TODO - UNKNOWN
+Question: 2.12 Have you undergone any investigations, lawsuits, consent decrees, settlements, or other regulatory/legal disputes within the last 10 years? (Single selection allowed) (Justification allowed) *
+Answer: Yes, Twilio maintains a transparent approach regarding investigations, lawsuits, consent decrees, settlements, or other regulatory/legal disputes and actively complies with legal and regulatory requirements. Information on specific cases or incidents, if publicly disclosed, can be accessed through official public records or disclosed in accordance with law.
 
-Question: 21.11 Are Hypervisors used to manage systems used to transmit, process, or store Scoped data e.g., cloud hosting? (Single selection allowed) (Justification allowed) *
-Answer: Yes, Hypervisors are used indirectly as part of the cloud hosting services provided by Amazon Web Services (AWS). Twilio does not have direct access or control over these hypervisors.
+SCA Reference: Not Applicable
+ISO 27002:2013 Relevance: Not Applicable
+SIG Lite Reference: Not directly covered in SIG Lite Documentation.
 
-SCA reference: U.1 System Configuration and Hardening Standards
-ISO 27002:2013 Relevance: 12.4.1 Event Logging, 12.4.2 Protection of Log Information, 12.4.3 Administrator and Operator Logs, 7.5.1 General
-SIG Lite Reference: From SIG Lite Documentation U - U.1.9
+Question: 2.9 Does your organization develop or provide software solutions to our business? (Single selection allowed) *
+Answer: Yes, our organization develops and provides software solutions for business. Twilio offers a variety of communication APIs and software products that allow companies to integrate messaging, voice, and video capabilities into their applications. Through these services, we enable powerful and flexible communication solutions tailored to specific business needs.
 
-Question: 3.21 Do the products, services, or systems require remote access between parties? (Single selection allowed) (Justification allowed) *
-Answer: Yes, Twilio services do require remote access for functionalities such as API integration and client support. Remote access is facilitated securely through various Twilio products that adhere to industry-standard security practices, ensuring data integrity and confidentiality.
-
-SCA reference: H.8 Restrictions and Multifactor Authentication for Remote Access
-ISO 27002:2013 Relevance: 13.1.1 Network Controls
-SIG Lite Reference: From SIG Lite Documentation H - H.8
-
-Question: 16.7 Are any mobile devices with access to scoped data Constituent owned (BYOD)? (Single selection allowed) (Justification allowed) *
-Answer: Yes, Twilio has a 'bring your own device' policy regarding mobile phones, allowing employees to access their emails with them. While potentially some customer information might be accessible, only Twilio-owned devices can access the production environment through a secure VPN.
-
-SCA reference: F.3 Secure Workspace Program
-ISO 27002:2013 Relevance: 6.2.1 Mobile Device Policy
-SIG Lite Reference: M.1.22.5
-
-Question: 12.4 Is there a secure software development lifecycle policy that has been approved by management, communicated to appropriate constituents and an owner to maintain, and review the policy? (Single selection allowed) (Justification allowed) *
-Answer: Yes, Twilio maintains a secure software development lifecycle policy that has been formally approved by management. This policy is effectively communicated to relevant parties and a designated owner is responsible for its upkeep and periodic review, ensuring that the policy is consistently aligned with current security standards and business objectives.
-
-SCA reference: I.2 Secure Systems Development Life Cycle (SDLC) Policies, Standards and Procedures
-ISO 27002:2013 Relevance: 14.2.1 Secure Development Policy, 14.2.5 Secure System Engineering Principles
-SIG Lite Reference: I.2.2
-
-Question: 18.5 Has the organization implemented procedures to ensure the safe use, handling, storage and disposal of hazardous/toxic chemicals and substances? (Single selection allowed) (Justification allowed) *
-Answer: TODO - UNKNOWN
-
-Question: 2.50 Documentation including any data confidentiality agreements, operating procedures or any related instructions, statements of work, compliance requirements, applicable terms and conditions, regarding scoped data *
-Answer: TODO - UNKNOWN
-
-Question: 2.38 Business resilience exercise procedures and related reference information for critical systems, applications or business processes *
-Answer: Yes, for in-scope teams, processes, and systems, business continuity procedures are developed and documented, ensuring that resilience exercises and related procedures for critical systems, applications, or business processes are appropriately maintained and reviewed regularly.
-
-SCA reference: K.4 Business Activity level Recovery Planning
-ISO 27002:2013 Relevance: Not directly relevant
-SIG Lite Reference: K.5 - K.5
-
-Question: 2.22 Access control policy and procedure documentation *
-Answer: Yes, access control policies and procedures are formally documented, approved by management, and communicated as appropriate. These policies specify the requirements for user registration and de-registration, user access provisioning, management of privileged access rights, and the use of secret authentication information to ensure secure access control across systems and data.
-
-SCA reference: H.1 Logical Access Authorization
-ISO 27002:2013 Relevance: 9.1.1 Access Control Policy, 9.2.1 User Registration and De-registration, 9.2.3 Management of Privileged Access Rights, 9.3.1 Use of Secret Authentication Information
-SIG Lite Reference: H.1.1
+SCA reference: Not specifically stated
+ISO 27002:2013 Relevance: Not specifically applicable
+SIG Lite Reference: Not found in SIG Lite documentation
 

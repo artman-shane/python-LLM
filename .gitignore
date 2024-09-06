@@ -4,3 +4,7 @@
 # Data output files
 data/
 output/
+Documents/
+
+# Deprecated files
+deprecated_*
