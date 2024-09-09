@@ -1,0 +1,7 @@
+To access the command line interface, run the application "commandLineInterface.py" by issuing the command:
+`python3 commandLineInterface.py`
+
+You will be required to input a filename which must be a file in Documents.
+
+.env configuration
+ensure that .env is populated using the .env.example as an example.
