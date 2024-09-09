@@ -4,8 +4,8 @@ import os
 import sys
 
 # Custom libraries
-import handleFiles
-import chatApp
+from tools.handleFiles import HandleFiles
+from tools.chatApp import ChatApp
 
 # Third-party libraries
 from openai import OpenAI # Used to interact with the OpenAI API
@@ -19,11 +19,11 @@ os.system('cls' if os.name == 'nt' else 'clear')
 # Main code block
 try:
     # Create an instance of the ChatApp class
-    fileHandler = handleFiles.HandleFiles()
+    fileHandler = HandleFiles()
     folder_path = fileHandler.folder_path
     filename = fileHandler.getFilename(folder_path)
     # print(f"Filename: {filename}")
-    app = chatApp.ChatApp(fileHandler, folder_path,filename)
+    app = ChatApp(fileHandler, folder_path,filename)
 
     # Loop to keep asking the user for questions
     while True:
