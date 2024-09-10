@@ -5,3 +5,6 @@ You will be required to input a filename which must be a file in Documents.
 
 .env configuration
 ensure that .env is populated using the .env.example as an example.
+
+To read in PDF or XLS for questions to format and output into XLSX:
+`python3 createXLSfromQuestionnaire.py`
