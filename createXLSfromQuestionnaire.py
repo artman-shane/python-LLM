@@ -14,15 +14,6 @@ from tools.llm import LLM
 # Load environment variables from .env file
 load_dotenv()
 
-# check for flag
-# Read the flags set at the command line
-flags = sys.argv[1:]
-
-# Check if multiple flags are present
-if all(flag in flags for flag in ["--flag1", "--flag2"]):
-    # Do something if both flags are present
-    print("Flags --flag1 and --flag2 are set!")
-
 # Main function
 
 try:
