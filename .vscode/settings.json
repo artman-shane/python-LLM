@@ -1,0 +1,12 @@
+{
+  "logFileHighlighter.customPatterns": [
+    {
+      "pattern": "*.log.*",
+      "language": "log"
+    },
+    {
+      "pattern": "*.log",
+      "language": "log"
+    }
+  ]
+}

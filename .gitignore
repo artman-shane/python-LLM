@@ -5,6 +5,7 @@
 data/
 output/
 Documents/
+logs/
 
 # Deprecated files
 deprecated_*

@@ -1,10 +1,18 @@
-To access the command line interface, run the application "commandLineInterface.py" by issuing the command:
+There are multiple tools to use. One is the ability to input ANY document and ask OpenAI to extrapolate the answers from the input file you specify. To access the command line interface, run the application "commandLineInterface.py" by issuing the command:
 `python3 commandLineInterface.py`
 
-You will be required to input a filename which must be a file in Documents.
+Another tool is used to interrogate PDF or XLS for questions and process those questions using OpenAI and prompting including another input file source. To use this too, createXLSfromQuestionnaire.py is an app that will
+- Take PDF or XLS as input
+- With PDF, it will look for questions and store the questions for processing or writing
+- Take input for how to answer the questions
+- Pass the questions and input into open AI and generate a response
+- Output the response (if process questions is enabled) of the LLM into an XLS spreadsheet for further use
+
+Input is required in the form of a filename which must exist in the Documents folder specified in the .env.
 
 .env configuration
 ensure that .env is populated using the .env.example as an example.
+Note that the LLM prompting is modified in the .env for ease
 
 To read in PDF or XLS for questions to format and output into XLSX:
 `python3 createXLSfromQuestionnaire.py`
@@ -12,17 +20,20 @@ To read in PDF or XLS for questions to format and output into XLSX:
 usage: <python3 createXLSfromQuestionnaire.py [-pq or --processQuestions | -h or --help | -lp or --llmPrompt]>
 -h = Help
 -pq = Process questions while running.
--lp = Add prompt to adjust LLM prompting
+-lp = Add dynamic detail to the prompt. This goes into the LLM as "Special Consideration" to help form better responses to questions.
 
-example:
+example: in our PDF sample, choice were provided for many answers. The output will populate with these choices in a separate colum or in the response directly.
 <python3 createXLSfromQuestionnaire.py -pq -lp Pay attention to the choices for how to answer questions if it has relavent values.>
 
 Notes:
-Questions File: When reading the xlsx:
+Questions File (INPUT): When reading the xlsx:
 
-Ensure that the first row is the header row. You can specify another row but this needs to be consistent throughout the sheets you are getting the tool to read.
-While it does not matter the number of columns or rows, any colums that are missing data or missing headers will make it more difficult to understand the question.
-We use the fields to populate the LLM so the more succinct the better. You can also add your own instructions using the llmPrompt feature.
+Ensure that the first row is the header row. You can specify another row but this needs to be consistent throughout the sheets you are getting the tool to read. Modification of the headers from the first row to another row will require modification to the line:   <questions = fileHandler.read_xlsx(os.path.join(folder_path, inputFilename))> in the createXLSfromQuestionnaire.py file. Add another parameter if you wanted the 2nd rom to be used for headers like this: <questions = fileHandler.read_xlsx(os.path.join(folder_path, inputFilename), 1)>. The final "1" is the 0-indexed reference for the header. By default it is "0" or the first row.
+
+While it does not matter the number of columns or rows, any colums that are missing data in the middle of the processed area or headers missing with data populated will make it more difficult to understand the question for the LLM and may result in unexpected results.
+
+We use the values in the columns to populate the LLM so the more succinct the better. You can also add your own instructions using the llmPrompt feature.
+
 An example of a question file would include the following columns:
 
     ID: Question ID to be used to update the question
@@ -32,6 +43,8 @@ An example of a question file would include the following columns:
 
 While it is not strictly necessary it will help to direct the answers from the LLM.
 
-Answers File - The Answer File is used to provide knowledge to the LLM. This will be used to answers the questions you provide.
-The answers file should be clear. Currently we are using the SIG lite document for 2024. You can specify this file and have the LLM answer the questions while processing.
-You should ensure that the Twilio SIG lite document (current version is 2024) is loaded into the Documents folder.
+Answers File (This is NOT the final output) this is the file used to provide knowledge to the LLM. This will be used to answers the questions you provide. An example of this would be the "Twilio-SIG Lite-2024.xlsx". This file is used heavily to respond to security questions.
+
+The answers file should be clear. Currently we are using the SIG lite document for 2024. You can specify this file and have the LLM answer the questions while processing. The prompting should be changed in the .env to reflect a different type of answers file.
+
+You should ensure that the Twilio SIG lite document (current version is 2024) is loaded into the Documents folder if you are going to answer questions about security or privacy.

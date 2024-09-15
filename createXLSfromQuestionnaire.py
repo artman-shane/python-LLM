@@ -25,19 +25,11 @@ os.system('cls' if os.name == 'nt' else 'clear')
 if not os.path.exists(os.getenv("LOGGING_FOLDER")):
     os.makedirs(os.getenv("LOGGING_FOLDER"), exist_ok=True)
 log_file = os.path.join(os.getenv("LOGGING_FOLDER"),os.getenv("LOGGING_FILE"))
-
-handler = RotatingFileHandler(log_file, maxBytes=5*1024, backupCount=10) # 5MB log files, 10 files
+handler = RotatingFileHandler(log_file, maxBytes=5*1024*1024, backupCount=10) # 5MB log files, 10 files
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 handler.setFormatter(formatter)
 logging.getLogger().addHandler(handler)
 logging.getLogger().setLevel(logging.DEBUG)
-
-# logging.basicConfig(
-#     filename=log_file,  # Log file name
-#     filemode='a',        # Append mode
-#     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-#     level=logging.DEBUG  # Log level debug, critical, error, warning, info
-# )
 
 systemTools = SystemTools(logging)
 
