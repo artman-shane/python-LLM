@@ -8,3 +8,30 @@ ensure that .env is populated using the .env.example as an example.
 
 To read in PDF or XLS for questions to format and output into XLSX:
 `python3 createXLSfromQuestionnaire.py`
+
+usage: <python3 createXLSfromQuestionnaire.py [-pq or --processQuestions | -h or --help | -lp or --llmPrompt]>
+-h = Help
+-pq = Process questions while running.
+-lp = Add prompt to adjust LLM prompting
+
+example:
+<python3 createXLSfromQuestionnaire.py -pq -lp Pay attention to the choices for how to answer questions if it has relavent values.>
+
+Notes:
+Questions File: When reading the xlsx:
+
+Ensure that the first row is the header row. You can specify another row but this needs to be consistent throughout the sheets you are getting the tool to read.
+While it does not matter the number of columns or rows, any colums that are missing data or missing headers will make it more difficult to understand the question.
+We use the fields to populate the LLM so the more succinct the better. You can also add your own instructions using the llmPrompt feature.
+An example of a question file would include the following columns:
+
+    ID: Question ID to be used to update the question
+    Question: Question to be asked
+    Description: A description of the question including relevant answer choices
+    Choices: Potential relevant answer choices
+
+While it is not strictly necessary it will help to direct the answers from the LLM.
+
+Answers File - The Answer File is used to provide knowledge to the LLM. This will be used to answers the questions you provide.
+The answers file should be clear. Currently we are using the SIG lite document for 2024. You can specify this file and have the LLM answer the questions while processing.
+You should ensure that the Twilio SIG lite document (current version is 2024) is loaded into the Documents folder.
