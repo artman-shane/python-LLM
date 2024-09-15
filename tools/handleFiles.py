@@ -319,7 +319,7 @@ class HandleFiles:
     # llm - the LLM class reference
     def process_pdf(self, inputFilename, outputFilename, flagMgmt, llm):
         if self.debug: print("Reading pdf file")
-        question_pages = self.read_pdf_pages(self.folder_path, inputFilename)
+        question_pages = self.read_pdf_pages(os.path.join(self.folder_path, inputFilename))
         if self.debug_data_output: print(f"Found {len(question_pages)} pages")
         questions = {}
         for page_num,page_text in enumerate(question_pages):
@@ -359,10 +359,10 @@ class HandleFiles:
                 questions[f"Page {page_num + 1}"] = json.loads(cleanedJson)
                 if self.debug: print(f"VarType (questions): {type(questions)}")
                 # Create an end time to determine the processing time in minutes:seconds
-                print(f"Processed page {page_num+1} in {(datetime.datetime.now() - currentTime).total_seconds()} seconds\n")
+                if self.debug: print(f"Processed page {page_num+1} in {(datetime.datetime.now() - currentTime).total_seconds()} seconds\n")
 
             except Exception as e:
-                print(f"The data was not json. Skipping page {page_num + 1}")
+                print(f"We could not discern any questions on page {page_num + 1}. Skipping...")
 
 
         if self.debug_data_output: print(f"\n***** QUESTIONS BEGIN *****\n{questions}\n***** QUESTIONS END *****\n")
