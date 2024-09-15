@@ -1,0 +1,380 @@
+2024-09-15 16:49:57,331 - root - DEBUG - ***** BEGIN class init HandleFiles *****
+2024-09-15 16:49:57,331 - root - INFO - Documents folder path: Documents
+2024-09-15 16:49:57,331 - root - DEBUG - ***** END class init HandleFiles *****
+2024-09-15 16:49:57,332 - root - CRITICAL - 
+An error occurred: Traceback (most recent call last):
+  File "/Users/sartman/Documents/Development/python-LLM/createXLSfromQuestionnaire.py", line 47, in <module>
+    flagMgmt = FlagsMgmt(logging,sys.argv[1:])
+  File "/Users/sartman/Documents/Development/python-LLM/tools/flagManagement.py", line 13, in __init__
+    systemTools = SystemTools()
+TypeError: __init__() missing 1 required positional argument: 'logging'
+
+
+__init__() missing 1 required positional argument: 'logging'
+
+2024-09-15 16:50:44,245 - root - DEBUG - ***** BEGIN class init HandleFiles *****
+2024-09-15 16:50:44,245 - root - INFO - Documents folder path: Documents
+2024-09-15 16:50:44,245 - root - DEBUG - ***** END class init HandleFiles *****
+2024-09-15 16:50:44,245 - root - INFO - Initializing handle flags
+2024-09-15 16:50:44,245 - root - DEBUG - ***** BEGIN class init FlagsMgmt *****
+2024-09-15 16:50:44,245 - root - DEBUG - Flags: ['-pq', '-lp', 'Pay', 'attention', 'to', 'the', 'choices', 'for', 'how', 'to', 'answer', 'questions', 'if', 'it', 'has', 'relavent', 'values.', '-sl']
+2024-09-15 16:50:44,245 - root - DEBUG - Default Process Questions: False
+2024-09-15 16:50:44,245 - root - DEBUG - Avail Flasge: ['--processQuestions', '-pq', '--help', '-h', '--llmPrompt', '-lp', '--sigLite', '-sl']
+2024-09-15 16:50:44,245 - root - DEBUG - ***** BEGIN class init HandleFiles *****
+2024-09-15 16:50:44,245 - root - INFO - Documents folder path: Documents
+2024-09-15 16:50:44,245 - root - DEBUG - ***** END class init HandleFiles *****
+2024-09-15 16:50:44,245 - root - INFO - Processing flag: -pq
+2024-09-15 16:50:44,245 - root - INFO - Found flag.
+2024-09-15 16:50:44,245 - root - DEBUG - Process Questions: True
+2024-09-15 16:50:44,245 - root - INFO - Processing flag: -lp
+2024-09-15 16:50:44,245 - root - INFO - Found flag.
+2024-09-15 16:50:44,245 - root - INFO - Request to add LLM Custom Prompt
+2024-09-15 16:50:44,245 - root - INFO - LLM Prompt: Pay attention to the choices for how to answer questions if it has relavent values.
+2024-09-15 16:50:44,245 - root - INFO - Processing flag: Pay
+2024-09-15 16:50:44,245 - root - INFO - Processing flag: attention
+2024-09-15 16:50:44,245 - root - INFO - Processing flag: to
+2024-09-15 16:50:44,245 - root - INFO - Processing flag: the
+2024-09-15 16:50:44,245 - root - INFO - Processing flag: choices
+2024-09-15 16:50:44,245 - root - INFO - Processing flag: for
+2024-09-15 16:50:44,245 - root - INFO - Processing flag: how
+2024-09-15 16:50:44,245 - root - INFO - Processing flag: to
+2024-09-15 16:50:44,245 - root - INFO - Processing flag: answer
+2024-09-15 16:50:44,245 - root - INFO - Processing flag: questions
+2024-09-15 16:50:44,245 - root - INFO - Processing flag: if
+2024-09-15 16:50:44,245 - root - INFO - Processing flag: it
+2024-09-15 16:50:44,245 - root - INFO - Processing flag: has
+2024-09-15 16:50:44,245 - root - INFO - Processing flag: relavent
+2024-09-15 16:50:44,245 - root - INFO - Processing flag: values.
+2024-09-15 16:50:44,245 - root - INFO - Processing flag: -sl
+2024-09-15 16:50:44,245 - root - INFO - Found flag.
+2024-09-15 16:50:44,245 - root - INFO - Requesting processing with SIG Lite
+2024-09-15 16:50:44,245 - root - INFO - Checking for file: Documents/Twilio-SIG Lite-2024.xlsx
+2024-09-15 16:50:44,245 - root - INFO - File Exists: True
+2024-09-15 16:50:44,245 - root - INFO - Answer Source: Twilio-SIG Lite-2024.xlsx
+2024-09-15 16:50:44,245 - root - DEBUG - ***** END class init FlagsMgmt *****
+2024-09-15 16:50:44,245 - root - INFO - Folder path: Documents
+2024-09-15 16:50:44,245 - root - DEBUG - ***** BEGIN class init LLM *****
+2024-09-15 16:50:44,255 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-09-15 16:50:44,257 - httpx - DEBUG - load_verify_locations cafile='/Users/sartman/.pyenv/versions/3.9.19/lib/python3.9/site-packages/certifi/cacert.pem'
+2024-09-15 16:50:44,264 - root - DEBUG - ***** BEGIN class init HandleFiles *****
+2024-09-15 16:50:44,264 - root - INFO - Documents folder path: Documents
+2024-09-15 16:50:44,264 - root - DEBUG - ***** END class init HandleFiles *****
+2024-09-15 16:50:44,264 - root - DEBUG - ***** END class init LLM *****
+2024-09-15 16:50:44,264 - root - DEBUG - ***** BEGIN func getFilename *****
+2024-09-15 16:50:47,092 - root - INFO - ***** END func getFilename *****
+2024-09-15 16:50:47,093 - root - INFO - Input Filename: wbsec.pdf
+2024-09-15 16:50:47,093 - root - DEBUG - ***** BEGIN func get_input *****
+2024-09-15 16:50:54,159 - root - DEBUG - ***** END func get_input *****
+2024-09-15 16:50:54,159 - root - INFO - Output Filename: wbsec_responses.xlsx
+2024-09-15 16:50:54,159 - root - INFO - Folder and file: Documents/wbsec.pdf
+2024-09-15 16:50:54,159 - root - INFO - Reading pdf file
+2024-09-15 16:50:54,159 - root - INFO - Input Filename: wbsec.pdf
+2024-09-15 16:50:54,159 - root - INFO - Output Filename: wbsec_responses.xlsx
+2024-09-15 16:50:54,159 - root - DEBUG - ***** BEGIN func process_pdf *****
+2024-09-15 16:50:54,159 - root - INFO - Reading pdf file
+2024-09-15 16:50:54,159 - root - DEBUG - ***** BEGIN func read_pdf_pages *****
+2024-09-15 16:50:55,165 - root - DEBUG - ***** END func read_pdf_pages *****
+2024-09-15 16:50:55,165 - root - DEBUG - Found 34 pages
+2024-09-15 16:50:55,165 - root - INFO - LLM processing page 1
+2024-09-15 16:50:55,165 - root - DEBUG - ***** BEGIN func query *****
+2024-09-15 16:50:55,173 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': '***Special Considerations*** Pay attention to the choices for how to answer questions if it has relavent values.'}, {'role': 'system', 'content': '***General Instructions*** The input is a questionnaire. We need to get the questions into a different format. You are NOT answering questions, only extracting them. The questions maybe in a list similar to an excel sheet or as a paragraph. There may be heading pages, headers and footers and links to other documents as well as definitions. Some of the questions may be mingled with approapriate resposes and should be numbered but may not be.'}, {'role': 'system', 'content': '***Response Format*** Output must be formated as a JSON list with each question separated as an item in the list. Please then extract each question as follows: [Page Number] if one is provided, [ID] or [Question Number] - but only if one is provided. Do not add one if it is not there, [Question] - We are looking for the literal text of the question. DO NOT embellish the question, [Description] - ONLY if one is provided, [Choices] - If there are supplied suggested answers, please put them in this item.'}, {'role': 'system', 'content': "***Input to Process*** WELCOME TO WARNER BROS. DISCOVERY'S DUE DILIGENCE QUESTIONNAIRE.\nIMPORTANT: Providing detailed responses helps to reduce follow-up questions and to expedite the\nassessment process. \nQuestions should be directed to the WBD Global Information and Content Security Vendor Risk\nManagement Team (GICS-VRM):\ngics-vendorsubmissions@wbd.com\nDue Diligence Questionnaire\n9/9/2024Page 1 of 34"}], 'model': 'gpt-4-turbo'}}
+2024-09-15 16:50:55,214 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/chat/completions
+2024-09-15 16:50:55,215 - httpcore.connection - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+2024-09-15 16:50:55,283 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x106dc27f0>
+2024-09-15 16:50:55,283 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x104299540> server_hostname='api.openai.com' timeout=5.0
+2024-09-15 16:50:55,308 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x106dc27c0>
+2024-09-15 16:50:55,308 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-09-15 16:50:55,308 - httpcore.http11 - DEBUG - send_request_headers.complete
+2024-09-15 16:50:55,308 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-09-15 16:50:55,308 - httpcore.http11 - DEBUG - send_request_body.complete
+2024-09-15 16:50:55,308 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-09-15 16:50:55,827 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 15 Sep 2024 20:50:55 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-expose-headers', b'X-Request-ID'), (b'openai-organization', b'twilio'), (b'openai-processing-ms', b'357'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15552000; includeSubDomains; preload'), (b'x-ratelimit-limit-requests', b'10000'), (b'x-ratelimit-limit-tokens', b'2000000'), (b'x-ratelimit-remaining-requests', b'9999'), (b'x-ratelimit-remaining-tokens', b'1999612'), (b'x-ratelimit-reset-requests', b'6ms'), (b'x-ratelimit-reset-tokens', b'11ms'), (b'x-request-id', b'req_07712ae6869fc187273a96a4c43e0bb8'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=l6jWldfaFlYoorxlMy9Kk2efbzMH58lOxhwr.TTZqFI-1726433455-1.0.1.1-FjiBbq.HMzh.dbnWlthfBYqvMWVTqvRBHiFQ1G.9A3.Jx5WXrlv_jMItBJHgdOXg.fJnpJxN2pUAxfa8aInlJg; path=/; expires=Sun, 15-Sep-24 21:20:55 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'X-Content-Type-Options', b'nosniff'), (b'Set-Cookie', b'_cfuvid=.MtRx89Z.YjS9T_lp2R_jkoZb9k_FjkVPrY8kDyFvJk-1726433455810-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8c3b7de7eda56763-ATL'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2024-09-15 16:50:55,828 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-15 16:50:55,828 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-09-15 16:50:55,828 - httpcore.http11 - DEBUG - receive_response_body.complete
+2024-09-15 16:50:55,828 - httpcore.http11 - DEBUG - response_closed.started
+2024-09-15 16:50:55,828 - httpcore.http11 - DEBUG - response_closed.complete
+2024-09-15 16:50:55,828 - openai._base_client - DEBUG - HTTP Response: POST https://api.openai.com/v1/chat/completions "200 OK" Headers([('date', 'Sun, 15 Sep 2024 20:50:55 GMT'), ('content-type', 'application/json'), ('transfer-encoding', 'chunked'), ('connection', 'keep-alive'), ('access-control-expose-headers', 'X-Request-ID'), ('openai-organization', 'twilio'), ('openai-processing-ms', '357'), ('openai-version', '2020-10-01'), ('strict-transport-security', 'max-age=15552000; includeSubDomains; preload'), ('x-ratelimit-limit-requests', '10000'), ('x-ratelimit-limit-tokens', '2000000'), ('x-ratelimit-remaining-requests', '9999'), ('x-ratelimit-remaining-tokens', '1999612'), ('x-ratelimit-reset-requests', '6ms'), ('x-ratelimit-reset-tokens', '11ms'), ('x-request-id', 'req_07712ae6869fc187273a96a4c43e0bb8'), ('cf-cache-status', 'DYNAMIC'), ('set-cookie', '__cf_bm=l6jWldfaFlYoorxlMy9Kk2efbzMH58lOxhwr.TTZqFI-1726433455-1.0.1.1-FjiBbq.HMzh.dbnWlthfBYqvMWVTqvRBHiFQ1G.9A3.Jx5WXrlv_jMItBJHgdOXg.fJnpJxN2pUAxfa8aInlJg; path=/; expires=Sun, 15-Sep-24 21:20:55 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('x-content-type-options', 'nosniff'), ('set-cookie', '_cfuvid=.MtRx89Z.YjS9T_lp2R_jkoZb9k_FjkVPrY8kDyFvJk-1726433455810-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('server', 'cloudflare'), ('cf-ray', '8c3b7de7eda56763-ATL'), ('content-encoding', 'gzip'), ('alt-svc', 'h3=":443"; ma=86400')])
+2024-09-15 16:50:55,828 - openai._base_client - DEBUG - request_id: req_07712ae6869fc187273a96a4c43e0bb8
+2024-09-15 16:50:55,830 - root - DEBUG - ***** END func query *****
+2024-09-15 16:50:55,830 - root - DEBUG - 
+***** RAW BEGIN *****
+[
+]
+***** RAW END *****
+
+2024-09-15 16:50:55,830 - root - DEBUG - ***** BEGIN func clean_json *****
+2024-09-15 16:50:55,830 - root - INFO - Is JSON dirty?
+2024-09-15 16:50:55,830 - root - INFO - 
+***** BEGIN DIRTY *****
+[
+]
+***** END DIRTY *****
+
+2024-09-15 16:50:55,831 - root - INFO - Match Found. Cleaning JSON...
+2024-09-15 16:50:55,831 - root - INFO - JSON cleaned:
+*****BEGIN CLEANED*****
+[
+]
+***** END CLENAED *****
+
+2024-09-15 16:50:55,831 - root - DEBUG - ***** END func clean_json *****
+2024-09-15 16:50:55,831 - root - DEBUG - 
+***** CLEANSED BEGIN *****
+[
+]
+***** CLEANSED END *****
+
+2024-09-15 16:50:55,831 - root - INFO - VarType: (cleanedJson): <class 'str'>
+2024-09-15 16:50:55,831 - root - INFO - VarType (questions): <class 'dict'>
+2024-09-15 16:50:55,831 - root - INFO - Processed page 1 in 0.665756 seconds
+
+2024-09-15 16:50:55,831 - root - INFO - LLM processing page 2
+2024-09-15 16:50:55,831 - root - DEBUG - ***** BEGIN func query *****
+2024-09-15 16:50:55,836 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': '***Special Considerations*** Pay attention to the choices for how to answer questions if it has relavent values.'}, {'role': 'system', 'content': '***General Instructions*** The input is a questionnaire. We need to get the questions into a different format. You are NOT answering questions, only extracting them. The questions maybe in a list similar to an excel sheet or as a paragraph. There may be heading pages, headers and footers and links to other documents as well as definitions. Some of the questions may be mingled with approapriate resposes and should be numbered but may not be.'}, {'role': 'system', 'content': '***Response Format*** Output must be formated as a JSON list with each question separated as an item in the list. Please then extract each question as follows: [Page Number] if one is provided, [ID] or [Question Number] - but only if one is provided. Do not add one if it is not there, [Question] - We are looking for the literal text of the question. DO NOT embellish the question, [Description] - ONLY if one is provided, [Choices] - If there are supplied suggested answers, please put them in this item.'}, {'role': 'system', 'content': '***Input to Process*** Definitions\n"Warner Bros. Discovery" or "WBD"  means (a) the Warner Bros. Discovery entity identified in\nand who is a party to the Agreement; and (b) any affiliate or subsidiary that controls, is controlled by\nor is under common control with the Warner Bros. Discovery entity named in the Agreement.\n \n"Warner Bros. Discovery Content"  or "WBD Content"  means any forms of film, video, audio,\nadvertisements, photographs, scripts, text and/or digital elements containing audio, visual, text,\nand/or metadata content from publications, theatrical motion pictures, television shows, video\ngames, animation and other programming, as well as marketing and promotional content relating\nthereto and other works created, owned and/or controlled by or being created and/or\nproduced for WBD , regardless of the form in which such WBD Content exists.\n \n"Warner Bros. Discovery Data"  or "WBD Data"  means and includes any and all WBD Content\nand data  (including test data), materials and/or information, in any form or media if :\n(a) provided, made accessible or submitted by WBD, or on behalf of or in conjunction with\nWBD, to you;\n(b) collected or processed by you that identifies or allows identification of WBD or its\nemployees, vendors, customers, properties, websites or mobile applications, and/or any of\nWBD\'s brands, consumers, content and context;\n(c) generated, collected, processed or received by you in connection with WBD’s access to\nor use of your services, Systems or Facility, including but not limited to comments or notes\nthat WBD insert s or and in connection with any content uploaded and stored or otherwise\nProcessed via your Systems or Facilities, and includes without limitation, data stored in\ncookies or functionally similar technologies, analytics, statistics, trending and any and all data\ncontained in reports prepared for, generated by and/or accessible by WBD; and/or\n(d) derived from any of the WBD Data described in subsections ( a), (b) and ( c) above. WBD\nData shall be deemed to include any and all copies, meta-data, analyses, excerpts,\nabstracts, modifications, summaries, enhancements, aggregations, machine\nlearning /artificial intelligence training efforts,  or other derivative works thereof.\nName of Survey Respondent\nJake Feuer\nDue Diligence Questionnaire\n9/9/2024Page 2 of 34'}], 'model': 'gpt-4-turbo'}}
+2024-09-15 16:50:55,837 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/chat/completions
+2024-09-15 16:50:55,837 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-09-15 16:50:55,837 - httpcore.http11 - DEBUG - send_request_headers.complete
+2024-09-15 16:50:55,838 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-09-15 16:50:55,838 - httpcore.http11 - DEBUG - send_request_body.complete
+2024-09-15 16:50:55,838 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-09-15 16:50:56,425 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 15 Sep 2024 20:50:56 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-expose-headers', b'X-Request-ID'), (b'openai-organization', b'twilio'), (b'openai-processing-ms', b'467'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15552000; includeSubDomains; preload'), (b'x-ratelimit-limit-requests', b'10000'), (b'x-ratelimit-limit-tokens', b'2000000'), (b'x-ratelimit-remaining-requests', b'9999'), (b'x-ratelimit-remaining-tokens', b'1999128'), (b'x-ratelimit-reset-requests', b'6ms'), (b'x-ratelimit-reset-tokens', b'26ms'), (b'x-request-id', b'req_968870543304ee1184fe41915400be6f'), (b'CF-Cache-Status', b'DYNAMIC'), (b'X-Content-Type-Options', b'nosniff'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8c3b7deb29956763-ATL'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2024-09-15 16:50:56,426 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-15 16:50:56,426 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-09-15 16:50:56,427 - httpcore.http11 - DEBUG - receive_response_body.complete
+2024-09-15 16:50:56,427 - httpcore.http11 - DEBUG - response_closed.started
+2024-09-15 16:50:56,427 - httpcore.http11 - DEBUG - response_closed.complete
+2024-09-15 16:50:56,427 - openai._base_client - DEBUG - HTTP Response: POST https://api.openai.com/v1/chat/completions "200 OK" Headers({'date': 'Sun, 15 Sep 2024 20:50:56 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'access-control-expose-headers': 'X-Request-ID', 'openai-organization': 'twilio', 'openai-processing-ms': '467', 'openai-version': '2020-10-01', 'strict-transport-security': 'max-age=15552000; includeSubDomains; preload', 'x-ratelimit-limit-requests': '10000', 'x-ratelimit-limit-tokens': '2000000', 'x-ratelimit-remaining-requests': '9999', 'x-ratelimit-remaining-tokens': '1999128', 'x-ratelimit-reset-requests': '6ms', 'x-ratelimit-reset-tokens': '26ms', 'x-request-id': 'req_968870543304ee1184fe41915400be6f', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'server': 'cloudflare', 'cf-ray': '8c3b7deb29956763-ATL', 'content-encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400'})
+2024-09-15 16:50:56,427 - openai._base_client - DEBUG - request_id: req_968870543304ee1184fe41915400be6f
+2024-09-15 16:50:56,428 - root - DEBUG - ***** END func query *****
+2024-09-15 16:50:56,428 - root - DEBUG - 
+***** RAW BEGIN *****
+```json
+[]
+```
+***** RAW END *****
+
+2024-09-15 16:50:56,428 - root - DEBUG - ***** BEGIN func clean_json *****
+2024-09-15 16:50:56,428 - root - INFO - Is JSON dirty?
+2024-09-15 16:50:56,428 - root - INFO - 
+***** BEGIN DIRTY *****
+```json
+[]
+```
+***** END DIRTY *****
+
+2024-09-15 16:50:56,428 - root - INFO - Match Found. Cleaning JSON...
+2024-09-15 16:50:56,428 - root - INFO - JSON cleaned:
+*****BEGIN CLEANED*****
+[]
+***** END CLENAED *****
+
+2024-09-15 16:50:56,428 - root - DEBUG - ***** END func clean_json *****
+2024-09-15 16:50:56,428 - root - DEBUG - 
+***** CLEANSED BEGIN *****
+[]
+***** CLEANSED END *****
+
+2024-09-15 16:50:56,428 - root - INFO - VarType: (cleanedJson): <class 'str'>
+2024-09-15 16:50:56,428 - root - INFO - VarType (questions): <class 'dict'>
+2024-09-15 16:50:56,428 - root - INFO - Processed page 2 in 0.597121 seconds
+
+2024-09-15 16:50:56,428 - root - INFO - LLM processing page 3
+2024-09-15 16:50:56,428 - root - DEBUG - ***** BEGIN func query *****
+2024-09-15 16:50:56,434 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': '***Special Considerations*** Pay attention to the choices for how to answer questions if it has relavent values.'}, {'role': 'system', 'content': '***General Instructions*** The input is a questionnaire. We need to get the questions into a different format. You are NOT answering questions, only extracting them. The questions maybe in a list similar to an excel sheet or as a paragraph. There may be heading pages, headers and footers and links to other documents as well as definitions. Some of the questions may be mingled with approapriate resposes and should be numbered but may not be.'}, {'role': 'system', 'content': '***Response Format*** Output must be formated as a JSON list with each question separated as an item in the list. Please then extract each question as follows: [Page Number] if one is provided, [ID] or [Question Number] - but only if one is provided. Do not add one if it is not there, [Question] - We are looking for the literal text of the question. DO NOT embellish the question, [Description] - ONLY if one is provided, [Choices] - If there are supplied suggested answers, please put them in this item.'}, {'role': 'system', 'content': '***Input to Process*** Title of Survey Respondent\nSenior Account Executive\nCompany Information\nG.1 Company Name\nTwilio\nG.2 Parent/Holding Company Name\nTwilio, Inc.\nG.3 How long has your company been in business?\n10+ years\nG.4 Where is your company headquartered?\n101 Spear St. San Francisco, CA 94105\nG.5 Approximately how many employees does your company have?\nDue Diligence Questionnaire\n9/9/2024Page 3 of 34'}], 'model': 'gpt-4-turbo'}}
+2024-09-15 16:50:56,434 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/chat/completions
+2024-09-15 16:50:56,434 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-09-15 16:50:56,434 - httpcore.http11 - DEBUG - send_request_headers.complete
+2024-09-15 16:50:56,434 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-09-15 16:50:56,435 - httpcore.http11 - DEBUG - send_request_body.complete
+2024-09-15 16:50:56,435 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-09-15 16:51:01,833 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 15 Sep 2024 20:51:01 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-expose-headers', b'X-Request-ID'), (b'openai-organization', b'twilio'), (b'openai-processing-ms', b'5239'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15552000; includeSubDomains; preload'), (b'x-ratelimit-limit-requests', b'10000'), (b'x-ratelimit-limit-tokens', b'2000000'), (b'x-ratelimit-remaining-requests', b'9999'), (b'x-ratelimit-remaining-tokens', b'1999611'), (b'x-ratelimit-reset-requests', b'6ms'), (b'x-ratelimit-reset-tokens', b'11ms'), (b'x-request-id', b'req_c970e88de19b7f5c7d71ed926919af9e'), (b'CF-Cache-Status', b'DYNAMIC'), (b'X-Content-Type-Options', b'nosniff'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8c3b7deeee036763-ATL'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2024-09-15 16:51:01,834 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-15 16:51:01,834 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-09-15 16:51:01,834 - httpcore.http11 - DEBUG - receive_response_body.complete
+2024-09-15 16:51:01,834 - httpcore.http11 - DEBUG - response_closed.started
+2024-09-15 16:51:01,834 - httpcore.http11 - DEBUG - response_closed.complete
+2024-09-15 16:51:01,834 - openai._base_client - DEBUG - HTTP Response: POST https://api.openai.com/v1/chat/completions "200 OK" Headers({'date': 'Sun, 15 Sep 2024 20:51:01 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'access-control-expose-headers': 'X-Request-ID', 'openai-organization': 'twilio', 'openai-processing-ms': '5239', 'openai-version': '2020-10-01', 'strict-transport-security': 'max-age=15552000; includeSubDomains; preload', 'x-ratelimit-limit-requests': '10000', 'x-ratelimit-limit-tokens': '2000000', 'x-ratelimit-remaining-requests': '9999', 'x-ratelimit-remaining-tokens': '1999611', 'x-ratelimit-reset-requests': '6ms', 'x-ratelimit-reset-tokens': '11ms', 'x-request-id': 'req_c970e88de19b7f5c7d71ed926919af9e', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'server': 'cloudflare', 'cf-ray': '8c3b7deeee036763-ATL', 'content-encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400'})
+2024-09-15 16:51:01,834 - openai._base_client - DEBUG - request_id: req_c970e88de19b7f5c7d71ed926919af9e
+2024-09-15 16:51:01,834 - root - DEBUG - ***** END func query *****
+2024-09-15 16:51:01,834 - root - DEBUG - 
+***** RAW BEGIN *****
+[
+    {
+        "Page Number": "Page 3 of 34",
+        "ID": "G.1",
+        "Question": "Company Name",
+        "Description": "",
+        "Choices": ""
+    },
+    {
+        "Page Number": "Page 3 of 34",
+        "ID": "G.2",
+        "Question": "Parent/Holding Company Name",
+        "Description": "",
+        "Choices": ""
+    },
+    {
+        "Page Number": "Page 3 of 34",
+        "ID": "G.3",
+        "Question": "How long has your company been in business?",
+        "Description": "",
+        "Choices": ["10+ years"]
+    },
+    {
+        "Page Number": "Page 3 of 34",
+        "ID": "G.4",
+        "Question": "Where is your company headquartered?",
+        "Description": "",
+        "Choices": ""
+    },
+    {
+        "Page Number": "Page 3 of 34",
+        "ID": "G.5",
+        "Question": "Approximately how many employees does your company have?",
+        "Description": "",
+        "Choices": ""
+    }
+]
+***** RAW END *****
+
+2024-09-15 16:51:01,835 - root - DEBUG - ***** BEGIN func clean_json *****
+2024-09-15 16:51:01,835 - root - INFO - Is JSON dirty?
+2024-09-15 16:51:01,835 - root - INFO - 
+***** BEGIN DIRTY *****
+[
+    {
+        "Page Number": "Page 3 of 34",
+        "ID": "G.1",
+        "Question": "Company Name",
+        "Description": "",
+        "Choices": ""
+    },
+    {
+        "Page Number": "Page 3 of 34",
+        "ID": "G.2",
+        "Question": "Parent/Holding Company Name",
+        "Description": "",
+        "Choices": ""
+    },
+    {
+        "Page Number": "Page 3 of 34",
+        "ID": "G.3",
+        "Question": "How long has your company been in business?",
+        "Description": "",
+        "Choices": ["10+ years"]
+    },
+    {
+        "Page Number": "Page 3 of 34",
+        "ID": "G.4",
+        "Question": "Where is your company headquartered?",
+        "Description": "",
+        "Choices": ""
+    },
+    {
+        "Page Number": "Page 3 of 34",
+        "ID": "G.5",
+        "Question": "Approximately how many employees does your company have?",
+        "Description": "",
+        "Choices": ""
+    }
+]
+***** END DIRTY *****
+
+2024-09-15 16:51:01,835 - root - INFO - Match Found. Cleaning JSON...
+2024-09-15 16:51:01,835 - root - INFO - JSON cleaned:
+*****BEGIN CLEANED*****
+[
+    {
+        "Page Number": "Page 3 of 34",
+        "ID": "G.1",
+        "Question": "Company Name",
+        "Description": "",
+        "Choices": ""
+    },
+    {
+        "Page Number": "Page 3 of 34",
+        "ID": "G.2",
+        "Question": "Parent/Holding Company Name",
+        "Description": "",
+        "Choices": ""
+    },
+    {
+        "Page Number": "Page 3 of 34",
+        "ID": "G.3",
+        "Question": "How long has your company been in business?",
+        "Description": "",
+        "Choices": ["10+ years"]
+    },
+    {
+        "Page Number": "Page 3 of 34",
+        "ID": "G.4",
+        "Question": "Where is your company headquartered?",
+        "Description": "",
+        "Choices": ""
+    },
+    {
+        "Page Number": "Page 3 of 34",
+        "ID": "G.5",
+        "Question": "Approximately how many employees does your company have?",
+        "Description": "",
+        "Choices": ""
+    }
+]
+***** END CLENAED *****
+
+2024-09-15 16:51:01,835 - root - DEBUG - ***** END func clean_json *****
+2024-09-15 16:51:01,835 - root - DEBUG - 
+***** CLEANSED BEGIN *****
+[
+    {
+        "Page Number": "Page 3 of 34",
+        "ID": "G.1",
+        "Question": "Company Name",
+        "Description": "",
+        "Choices": ""
+    },
+    {
+        "Page Number": "Page 3 of 34",
+        "ID": "G.2",
+        "Question": "Parent/Holding Company Name",
+        "Description": "",
+        "Choices": ""
+    },
+    {
+        "Page Number": "Page 3 of 34",
+        "ID": "G.3",
+        "Question": "How long has your company been in business?",
+        "Description": "",
+        "Choices": ["10+ years"]
+    },
+    {
+        "Page Number": "Page 3 of 34",
+        "ID": "G.4",
+        "Question": "Where is your company headquartered?",
+        "Description": "",
+        "Choices": ""
+    },
+    {
+        "Page Number": "Page 3 of 34",
+        "ID": "G.5",
+        "Question": "Approximately how many employees does your company have?",
+        "Description": "",
+        "Choices": ""
+    }
+]
+***** CLEANSED END *****
+
+2024-09-15 16:51:01,835 - root - INFO - VarType: (cleanedJson): <class 'str'>
+2024-09-15 16:51:01,835 - root - INFO - VarType (questions): <class 'dict'>
+2024-09-15 16:51:01,835 - root - INFO - Processed page 3 in 5.406624 seconds
+
+2024-09-15 16:51:01,835 - root - INFO - LLM processing page 4
+2024-09-15 16:51:01,835 - root - DEBUG - ***** BEGIN func query *****
+2024-09-15 16:51:01,839 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': '***Special Considerations*** Pay attention to the choices for how to answer questions if it has relavent values.'}, {'role': 'system', 'content': '***General Instructions*** The input is a questionnaire. We need to get the questions into a different format. You are NOT answering questions, only extracting them. The questions maybe in a list similar to an excel sheet or as a paragraph. There may be heading pages, headers and footers and links to other documents as well as definitions. Some of the questions may be mingled with approapriate resposes and should be numbered but may not be.'}, {'role': 'system', 'content': '***Response Format*** Output must be formated as a JSON list with each question separated as an item in the list. Please then extract each question as follows: [Page Number] if one is provided, [ID] or [Question Number] - but only if one is provided. Do not add one if it is not there, [Question] - We are looking for the literal text of the question. DO NOT embellish the question, [Description] - ONLY if one is provided, [Choices] - If there are supplied suggested answers, please put them in this item.'}, {'role': 'system', 'content': '***Input to Process*** G.6 Has your organization ever been the subject of any legal claims, formal complaints,\nregulatory investigations or enforcement actions relating to data protection?\nIf yes, please provide details.\nYes\nNo\nG.7 Has your company suffered a data loss or security breach within the last 3 years ?\nIf yes, please provide details.\nYes\nNo\nPoints of Contact\nG.8 Who within your organization is responsible for Information Security Compliance?\nName: Twilio\nJob Title: Security Customer Enablement Organization\nEmail Address: security-customer-trust@twilio.com\nPhone Number:\nG.9 Who is your Data Protection Officer (DPO)?\nName:\nJob Title:\nEmail Address:\nPhone Number:\nDue Diligence Questionnaire\n9/9/2024Page 4 of 34'}], 'model': 'gpt-4-turbo'}}
+2024-09-15 16:51:01,840 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/chat/completions
+2024-09-15 16:51:01,840 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-09-15 16:51:01,840 - httpcore.http11 - DEBUG - send_request_headers.complete
+2024-09-15 16:51:01,840 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-09-15 16:51:01,840 - httpcore.http11 - DEBUG - send_request_body.complete
+2024-09-15 16:51:01,840 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>

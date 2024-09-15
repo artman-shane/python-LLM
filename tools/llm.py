@@ -12,18 +12,16 @@ from openai import OpenAI # Used to interact with the OpenAI API
 
 class LLM:
 
-    def __init__(self):
+    def __init__(self, logging):
         # load_dotenv(override=True)
-        self.systemTools = SystemTools()
-        self.debug = self.systemTools.str_to_bool(os.getenv('DEBUG'))
-        self.debug_data_output = self.systemTools.str_to_bool(os.getenv('DEBUG_DATA_OUTPUT'))
-        self.debug_function_name = self.systemTools.str_to_bool(os.getenv('DEBUG_FUNCTION_NAME'))
+        self.logging = logging
+        self.systemTools = SystemTools(self.logging)
         # load_dotenv(override=True)
-        if self.debug_function_name: print(f"***** BEGIN class init LLM *****")
+        self.logging.debug(f"***** BEGIN class init LLM *****")
         # Set the OpenAI API Key
         self.client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
-        self.handleFiles = HandleFiles()
-        if self.debug_function_name: print(f"***** END class init LLM *****")
+        self.handleFiles = HandleFiles(self.logging)
+        self.logging.debug(f"***** END class init LLM *****")
 
 
     # Function to query with the AI for response
@@ -31,7 +29,7 @@ class LLM:
     # _query - the query to ask the AI including prompting
     # Note: will not store responses in a messages list
     def query(self,_query):
-        if self.debug_function_name: print(f"***** BEGIN func query *****")
+        self.logging.debug(f"***** BEGIN func query *****")
         # Get the model to generate a response
         try:
             response = self.client.chat.completions.create(
@@ -39,7 +37,7 @@ class LLM:
                 messages=_query
             )
             # Add the AI's response to the messages list for future reference
-            if self.debug_function_name: print(f"***** END func query *****")
+            self.logging.debug(f"***** END func query *****")
             return response.choices[0].message.content
         except Exception as e:
             raise ValueError(f"An error occurred: {e}")
@@ -53,10 +51,10 @@ class LLM:
     def getAnswers(self, _questions, _answers, _llmPrompt=""):
         if _llmPrompt == "":
             _llmPrompt = "None"
-        if self.debug_function_name: print(f"***** BEGIN func getAnswers *****")
+        self.logging.debug(f"***** BEGIN func getAnswers *****")
         try:
-            if self.debug_data_output: print(f"Questions: {_questions}\nQuestions Type: {type(_questions)}")
-            if self.debug_data_output: print(f"Answers: {_answers}\nAnswers Type: {type(_answers)}")
+            self.logging.debug(f"Questions: {_questions}\nQuestions Type: {type(_questions)}")
+            self.logging.debug(f"Answers: {_answers}\nAnswers Type: {type(_answers)}")
             # Set the OpenAI API Key
             api_key = os.getenv('OPENAI_API_KEY')
             client = OpenAI(api_key=api_key)
@@ -79,9 +77,9 @@ class LLM:
             )
         
             response = self.systemTools.clean_json(response.choices[0].message.content)
-            if self.debug_data_output: print(f"Response: {response}")
+            self.logging.debug(f"Response: {response}")
             # Return the questions with responses.
-            if self.debug_function_name: print(f"***** END func getAnswers *****")
+            self.logging.debug(f"***** END func getAnswers *****")
             return response
         
         
