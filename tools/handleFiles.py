@@ -240,6 +240,7 @@ class HandleFiles:
             if self.debug: print(f"Converting df to logic excel file...")
             if self.debug_data_output: print(f"\n***** BEGIN Data to write *****\n{combined_df}\n***** END Data to write *****\n")
             # Write the DataFrame to an Excel file
+            print(f"Writing to Excel file: {file_path}")
             combined_df.to_excel(file_path, index=False)
 
             # if self.debug: print(f"Writing to Excel file...")
@@ -289,9 +290,9 @@ class HandleFiles:
             for question in questions_json:
                 x+=1
                 # Pause the processing for testing.
-                # if x==3:
-                #     print("\n\n*********\nLimiting output for testing\n*********\n\n")
-                #     break
+                if x==4:
+                    print("\n\n*********\nLimiting output for testing\n*********\n\n")
+                    break
                 # Only output if debugging is on
                 if self.debug_data_output:
                     print(f"Question: {question}")
@@ -368,6 +369,6 @@ class HandleFiles:
         if self.debug_data_output: print(f"\n***** QUESTIONS BEGIN *****\n{questions}\n***** QUESTIONS END *****\n")
         # Write the responses to an Excel file
         self.write_xlsx(os.path.join(self.folder_path, outputFilename), json.dumps(questions))   
-        print(f"\nComplete...\nFound {len(question_pages)} pages in the PDF {os.path.join(self.folder_path,inputFilename)}. Read and interrupted as questions.\nOutput written to {os.path.join(folder_path, outputFilename)}\n\n")
+        print(f"\nComplete...\nFound {len(question_pages)} pages in the PDF {os.path.join(self.folder_path,inputFilename)}. Read and interrupted as questions.\nOutput written to {os.path.join(self.folder_path, outputFilename)}\n\n")
     
     
