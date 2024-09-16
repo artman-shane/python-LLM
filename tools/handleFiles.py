@@ -353,6 +353,7 @@ class HandleFiles:
                         {"role": "system", "content": f'***Special Considerations*** {flagMgmt.llmPrompt}'},
                         {"role": "system", "content": f"***General Instructions*** {os.getenv('PDF_GENERAL_INSTRUCTIONS')}"},
                         {"role": "system", "content": f"***Response Format*** {os.getenv('PDF_RESPONSE_FORMAT')}"},
+                        {"role": "system", "content": f"***PDF Page Number*** {page_num + 1}"},
                         {"role": "system", "content": f"***Input to Process*** {page_text}"},
                     ]
 
