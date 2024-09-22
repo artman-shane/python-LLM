@@ -113,14 +113,14 @@ try:
         logger.info(f"Input Filename: {inputFilename}")
         logger.info(f"Output Filename: {outputFilename}")
         results = fileHandler.process_pdf(inputFilename, flagMgmt, llm)
-        # Results is a json string of questions. NOT object
+        # Results is a json string of questions. NOT an object
         # Check if we should answer questions now or just write the questions to a file.
         logger.debug(f"PDF Results:\nPDF Results Type: {type(results)}\n{results}\n\n")
         if flagMgmt.processQuestions:
             logger.info("Flag to process questions is set")
             print(f"Getting answers to questions...")
             logger.info("Getting answers to questions...")
-            logger.debug(f"Output Filename: {outputFilename}")
+            logger.info(f"Output Filename: {outputFilename}")
             results = fileHandler.process_questions(results, flagMgmt, llm)
             logger.debug(f"Question Results:\n{results}\n\n")
 
@@ -133,6 +133,8 @@ try:
         fileHandler.write_xlsx(os.path.join(fileHandler.folder_path, outputFilename), results)
         logger.info(f"Processing is complete.")
         print(f"Processing is complete.\n\n\n\n")
+        # This is to shut down the logger or it might result in a memory leak and exepction.
+        logger.removeHandler(handler)
 except Exception as e:
     logger.critical(f"\nAn error occurred: {traceback.format_exc()}\n\n{e}\n")
     print(f"\n\nError: {e}\n")
