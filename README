@@ -17,13 +17,14 @@ Note that the LLM prompting is modified in the .env for ease
 To read in PDF or XLS for questions to format and output into XLSX:
 `python3 createXLSfromQuestionnaire.py`
 
-usage: <python3 createXLSfromQuestionnaire.py [-pq or --processQuestions | -h or --help | -lp or --llmPrompt]>
+usage: <python3 createXLSfromQuestionnaire.py [-pq or --processQuestions | -h or --help | -lpq or --llmPromptQuestins | -lpa or --llmPromptAnswers]>
 -h = Help
 -pq = Process questions while running.
--lp = Add dynamic detail to the prompt. This goes into the LLM as "Special Consideration" to help form better responses to questions.
+-lpa = Add dynamic detail to the prompt answering section. This goes into the LLM as "Special Consideration" to help form better responses to questions.
+-lpq = Add dynamic detail to the prompt question generation section. This goes into the LLM as "Special Consideration" to help form better responses to questions.
 
 example: in our PDF sample, choice were provided for many answers. The output will populate with these choices in a separate colum or in the response directly.
-<python3 createXLSfromQuestionnaire.py -pq -sl -lp Pay attention to the choices for how to answer questions if it has relavent values.>
+<python3 createXLSfromQuestionnaire.py -pq -sl -lpa Pay attention to the choices for how to answer questions if it has relavent values.>
 
 Notes:
 Questions File (INPUT): When reading the xlsx:

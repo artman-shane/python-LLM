@@ -24,14 +24,20 @@ os.system('cls' if os.name == 'nt' else 'clear')
 # Configure logging
 if not os.path.exists(os.getenv("LOGGING_FOLDER")):
     os.makedirs(os.getenv("LOGGING_FOLDER"), exist_ok=True)
-log_file = os.path.join(os.getenv("LOGGING_FOLDER"),os.getenv("LOGGING_FILE"))
-handler = RotatingFileHandler(log_file, maxBytes=5*1024*1024, backupCount=10) # 5MB log files, 10 files
-formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-handler.setFormatter(formatter)
-logging.getLogger().addHandler(handler)
-logging.getLogger().setLevel(logging.DEBUG)
+try:
+    log_file = os.path.join(os.getenv("LOGGING_FOLDER"),os.getenv("LOGGING_FILE"))
+    handler = RotatingFileHandler(log_file, maxBytes=5*1024*1024, backupCount=10) # 5MB log files, 10 files
+    formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+    handler.setFormatter(formatter)
+    logger = logging.getLogger()
+    logger.addHandler(handler)
+    logger.setLevel(str.upper(os.getenv("LOGGING_LEVEL")))
+except Exception as e:
+    print(f"An error occurred while setting up the logging: {e}")
+    print(f"Check the .env file for the LOGGING_FOLDER, LOGGING_FILE, and LOGGING_LEVEL for accuracies.")
+    sys.exit(1)
 
-systemTools = SystemTools(logging)
+systemTools = SystemTools(logger)
 
 # Main function
 
@@ -41,22 +47,22 @@ try:
     outputFilename = ""
     
     # Get the filename of the file to read
-    fileHandler = HandleFiles(logging)
+    fileHandler = HandleFiles(logger)
 
     # Get the flags
-    flagMgmt = FlagsMgmt(logging,sys.argv[1:])
+    flagMgmt = FlagsMgmt(logger,sys.argv[1:])
  
     folder_path = fileHandler.folder_path
-    logging.info(f"Folder path: {folder_path}")
+    logger.info(f"Folder path: {folder_path}")
     # Setup the LLM
-    llm = LLM(logging)
+    llm = LLM(logger)
 
     # Get the filename of the file to read
     while inputFilename.endswith('.xlsx') == False and inputFilename.endswith('.pdf') == False:
         print(f"Input Filename - needs to end with .pdf or .xlsx and exist in /{folder_path}/: ")
         inputFilename = fileHandler.getFilename(folder_path)
     
-    logging.info(f"Input Filename: {inputFilename}")
+    logger.info(f"Input Filename: {inputFilename}")
     
     # Get the filename of the file to write the answers
     while outputFilename.endswith('.xlsx') == False:
@@ -65,69 +71,73 @@ try:
         if outputFilename.endswith('.xlsx') == False:
             print(f"\nPlease try again. The filename needs to end with .xlsx\n\n")
     
-    logging.info(f"Output Filename: {outputFilename}")
+    logger.info(f"Output Filename: {outputFilename}")
 
     # Now we need read the questions
-    logging.info(f"Folder and file: {os.path.join(folder_path, inputFilename)}")
+    logger.info(f"Folder and file: {os.path.join(folder_path, inputFilename)}")
 
     if inputFilename.endswith('.xlsx'):
-        logging.info("Reading xlsx file")
+        logger.info("Reading xlsx file")
 
         # Read the input from the excel file
         # Output is a JSON str
         questions = fileHandler.read_xlsx(os.path.join(folder_path, inputFilename))
-        logging.debug(f"Questions:\n{questions}\n\n")
-        logging.info(f"Process questions")
+        logger.debug(f"Questions:\n{questions}\n\n")
+        logger.info(f"Process questions")
         
         if flagMgmt.processQuestions:
-            logging.info("Flag to process questions is set")
+            logger.info("Flag to process questions is set")
             results = fileHandler.process_questions(questions, flagMgmt, llm)
-            logging.debug(f"Results:\n{results}\n\n")
+            logger.debug(f"Results:\n{results}\n\n")
             print(f"Writing questions and answers to file...")
-            logging.ingo(f"Writing questions and answers to file...")
+            logger.ingo(f"Writing questions and answers to file...")
             fileHandler.write_xlsx(os.path.join(fileHandler.folder_path, outputFilename), json.dumps(results))
-            logging.debug(f"Results sent to write_xlsx:\ntype(results): {type(results)}\n{json.dumps(results)}\n\n")
+            logger.debug(f"Results sent to write_xlsx:\ntype(results): {type(results)}\n{json.dumps(results)}\n\n")
         else:
             # Flatten questions
             questions_json = json.loads(questions)
-            logging.debug(f"Questions JSON:\n{questions_json}\n\n")
-            logging.info(f"Flatten questions")
+            logger.debug(f"Questions JSON:\n{questions_json}\n\n")
+            logger.info(f"Flatten questions")
             flat_questions = systemTools.getFlatJson(questions_json)
-            logging.debug(f"Flat questions:\n{flat_questions}\n\n")
+            logger.debug(f"Flat questions:\n{flat_questions}\n\n")
 
-            logging.info(f"Writing questions to file...")
-            logging.info(f"Path and Filename: {os.path.join(fileHandler.folder_path, outputFilename)}")
+            logger.info(f"Writing questions to file...")
+            logger.info(f"Path and Filename: {os.path.join(fileHandler.folder_path, outputFilename)}")
             print(f"Writing questions to file...")
             fileHandler.write_xlsx(os.path.join(fileHandler.folder_path, outputFilename), flat_questions)
 
     elif inputFilename.endswith('.pdf'):
-        logging.info("Reading pdf file")
+        logger.info("Reading pdf file")
         print("Reading pdf file")
         # Read the input from the pdf file and process questions
-        logging.info(f"Input Filename: {inputFilename}")
-        logging.info(f"Output Filename: {outputFilename}")
+        logger.info(f"Input Filename: {inputFilename}")
+        logger.info(f"Output Filename: {outputFilename}")
         results = fileHandler.process_pdf(inputFilename, flagMgmt, llm)
         # Results is a json string of questions. NOT object
         # Check if we should answer questions now or just write the questions to a file.
-        logging.debug(f"PDF Results:\nPDF Results Type: {type(results)}\n{results}\n\n")
+        logger.debug(f"PDF Results:\nPDF Results Type: {type(results)}\n{results}\n\n")
         if flagMgmt.processQuestions:
-            logging.info("Flag to process questions is set")
+            logger.info("Flag to process questions is set")
             print(f"Getting answers to questions...")
-            logging.info("Getting answers to questions...")
-            logging.debug(f"Output Filename: {outputFilename}")
+            logger.info("Getting answers to questions...")
+            logger.debug(f"Output Filename: {outputFilename}")
             results = fileHandler.process_questions(results, flagMgmt, llm)
-            logging.debug(f"Question Results:\n{results}\n\n")
+            logger.debug(f"Question Results:\n{results}\n\n")
 
         # Write the results to an Excel file.
-        # results could be a list of questions or a list of questions and answers
-        logging.info(f"Writing results to {os.path.join(fileHandler.folder_path, outputFilename)}")
-        fileHandler.write_xlsx(os.path.join(fileHandler.folder_path, outputFilename), json.dumps(results))   
-
+        # Process results to output file
+        if not isinstance(results, str):
+            logger.info(f"Results is not a string. Converting to string.")
+            results = json.dumps(results)
+        logger.info(f"Writing questions and answers to excel")
+        fileHandler.write_xlsx(os.path.join(fileHandler.folder_path, outputFilename), results)
+        logger.info(f"Processing is complete.")
+        print(f"Processing is complete.\n\n\n\n")
 except Exception as e:
-    logging.critical(f"\nAn error occurred: {traceback.format_exc()}\n\n{e}\n")
+    logger.critical(f"\nAn error occurred: {traceback.format_exc()}\n\n{e}\n")
     print(f"\n\nError: {e}\n")
     sys.exit(1)
 except KeyboardInterrupt:
-    logging.warning("\nUser cancelled the request. Exiting now.")
+    logger.warning("\nUser cancelled the request. Exiting now.")
     print("\nUser cancelled the request. Exiting now.")
     sys.exit(0)

@@ -4,8 +4,8 @@ import sys
 import json
 
 class SystemTools:
-    def __init__(self,logging):
-        self.logging = logging
+    def __init__(self,logger):
+        self.logger = logger
 
     def str_to_bool(self, _string):
             if _string.lower() in ("true","1","yes","on"):
@@ -17,13 +17,13 @@ class SystemTools:
     # Parameters:
     #   questions: JSON object containing the questions
     def getFlatJson(self, _questions):
-        self.logging.debug(f"***** BEGIN func getFlatJson *****")
+        self.logger.debug(f"***** BEGIN func getFlatJson *****")
         # Test if object is json
         try:
             # Check if there is a parent key. Could be a sheet or page key.
-            self.logging.info(f"Checking if questions is a dictionary")
+            self.logger.info(f"Checking if questions is a dictionary")
             if isinstance(_questions, dict):
-                self.logging.info(f"Questions is a dictionary. Collapsing...")
+                self.logger.info(f"Questions is a dictionary. Collapsing...")
                 collapsedQuestions = []
                 for key in _questions:
                     # Combine the sheet as a key in the questions.
@@ -35,7 +35,7 @@ class SystemTools:
                     collapsedQuestions.extend(new_items)
         except Exception as e:
             print(f"Error: Questions must be a JSON Dictionary object {e}")
-        self.logging.debug(f"***** END func getFlatJson *****")
+        self.logger.debug(f"***** END func getFlatJson *****")
         return collapsedQuestions
     
     # Function to clean up a JSON string
