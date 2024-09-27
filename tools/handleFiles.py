@@ -71,7 +71,7 @@ class HandleFiles:
                 reader = PyPDF2.PdfReader(file)
                 num_pages = len(reader.pages)
                 print(f"Number of pages in the PDF: {num_pages}")
-                if int(os.getenv('MAX_PDF_PAGES')) > 0: print(f"Processing limited to {os.getenv('MAX_PDF_PAGES')} pages")
+                if int(os.getenv('MAX_PDF_PAGES')) > 0: print(f"Processing limited to {os.getenv('MAX_PDF_PAGES')} pages per .env")
                 text = ""
                 x=0
                 for page in reader.pages:
@@ -363,7 +363,7 @@ class HandleFiles:
                 # For example if the MAX_PDF_PAGES = 5, we will process page_num 0, 1, 2, 3, 4 and stop at 5 which is actually the 6th page.
                 # If the max_pdf_pages is 0 or does not exist, we process all pages
                 if max_pdf_pages > 0 and (page_num) >= max_pdf_pages:
-                    print(f"Reached the maximum number of pages to process ({max_pdf_pages}).\nSkipping remaining pages...")
+                    print(f"Reached the maximum number of pages to process ({max_pdf_pages}) per .env.\nSkipping remaining pages...")
                     break
 
                 print(f"Processing PDF page {page_num + 1} of {len(question_pages)}")

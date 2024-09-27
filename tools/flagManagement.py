@@ -21,6 +21,7 @@ class FlagsMgmt:
         fileHandler = HandleFiles(self.logger)
         self.llmPromptQuestions = ""
         self.llmPromptAnswers = ""
+        self.sigLite = False
 
         # Read the flags set at the command line
         # Check if multiple flags are present

@@ -48,6 +48,7 @@ try:
     
     # Get the filename of the file to read
     fileHandler = HandleFiles(logger)
+    systemTools.set_file_handler(fileHandler)
 
     # Get the flags
     flagMgmt = FlagsMgmt(logger,sys.argv[1:])
@@ -75,24 +76,17 @@ try:
 
     # Now we need read the questions
     logger.info(f"Folder and file: {os.path.join(folder_path, inputFilename)}")
-
+    # Read the input from the excel file
     if inputFilename.endswith('.xlsx'):
         logger.info("Reading xlsx file")
-
-        # Read the input from the excel file
-        # Output is a JSON str
+        # Read the input from the excel file - Output is a JSON str
         questions = fileHandler.read_xlsx(os.path.join(folder_path, inputFilename))
-        logger.debug(f"Questions:\n{questions}\n\n")
-        logger.info(f"Process questions")
-        
+        logger.debug(f"Questions:\n{questions}\n\n")        
         if flagMgmt.processQuestions:
-            logger.info("Flag to process questions is set")
-            results = fileHandler.process_questions(questions, flagMgmt, llm)
-            logger.debug(f"Results:\n{results}\n\n")
+            results = systemTools.process_questions(questions, flagMgmt, llm)
+            logger.debug(f"processQuestions Results:\n{results}\n\n")
             print(f"Writing questions and answers to file...")
-            logger.ingo(f"Writing questions and answers to file...")
             fileHandler.write_xlsx(os.path.join(fileHandler.folder_path, outputFilename), json.dumps(results))
-            logger.debug(f"Results sent to write_xlsx:\ntype(results): {type(results)}\n{json.dumps(results)}\n\n")
         else:
             # Flatten questions
             questions_json = json.loads(questions)
@@ -105,7 +99,7 @@ try:
             logger.info(f"Path and Filename: {os.path.join(fileHandler.folder_path, outputFilename)}")
             print(f"Writing questions to file...")
             fileHandler.write_xlsx(os.path.join(fileHandler.folder_path, outputFilename), flat_questions)
-
+    # Read the input from the pdf file
     elif inputFilename.endswith('.pdf'):
         logger.info("Reading pdf file")
         print("Reading pdf file")
@@ -117,11 +111,12 @@ try:
         # Check if we should answer questions now or just write the questions to a file.
         logger.debug(f"PDF Results:\nPDF Results Type: {type(results)}\n{results}\n\n")
         if flagMgmt.processQuestions:
+            # TODO:I want to process questions individually after writing the questions to a file.
             logger.info("Flag to process questions is set")
             print(f"Getting answers to questions...")
             logger.info("Getting answers to questions...")
             logger.info(f"Output Filename: {outputFilename}")
-            results = fileHandler.process_questions(results, flagMgmt, llm)
+            results = systemTools.process_questions(results, flagMgmt, llm)
             logger.debug(f"Question Results:\n{results}\n\n")
 
         # Write the results to an Excel file.
