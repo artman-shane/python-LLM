@@ -8,6 +8,7 @@ import requests
 from bs4 import BeautifulSoup
 from collections import Counter
 import re
+import csv
 
 # Load the environment variablese
 load_dotenv()
@@ -131,3 +132,26 @@ if os.path.exists(documents_output_file):
 
 with open(documents_output_file, 'w') as file:
     json.dump(documents, file, indent=4)
+
+
+# Function to write documents to CSV
+def write_documents_to_csv(documents, output_csv_file):
+    with open(output_csv_file, mode='w', newline='') as file:
+        writer = csv.writer(file)
+        # Write headers
+        writer.writerow(['URL', 'Title', 'Table Headers', 'Table Rows'])
+        
+        for doc in documents:
+            doc = json.loads(doc)  # Convert JSON string back to dictionary
+            url = doc.get('url', '')
+            title = doc.get('title', '')
+            for table in doc.get('tables', []):
+                headers = ', '.join(table.get('headers', []))
+                for row in table.get('rows', []):
+                    writer.writerow([url, title, headers, ', '.join(row)])
+
+# Define the output CSV file path
+documents_csv_file = os.path.join(output_dir, os.getenv("DOCUMENTS_CSV_FILE", 'documents.csv'))
+
+# Write documents to CSV
+write_documents_to_csv(documents, documents_csv_file)
